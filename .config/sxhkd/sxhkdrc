@@ -1,0 +1,13 @@
+#sxhkd config
+
+
+#Volume Keys
+
+XF86AudioRaiseVolume
+	pulseaudio-ctl up 2
+
+XF86AudioLowerVolume
+	pulseaudio-ctl down 2
+
+XF86AudioMute
+	pulseaudio-ctl mute
