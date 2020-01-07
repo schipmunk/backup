@@ -414,6 +414,7 @@ bindsym $mod+x 				mode "$mode_system"
 bindsym $mod+Shift+c 			reload
 
 bindsym $mod+v	 			exec pavucontrol
+bindsym $mod+Shift+v			exec --no-startup-id urxvt -e alsamixer
 
 bindsym $mod+b 				border none
 bindsym $mod+Shift+b 			border pixel 3
