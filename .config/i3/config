@@ -44,6 +44,7 @@ assign [class="Tixati"] $ws5
 assign [class="Skype"] $ws6
 assign [class="discord"] $ws6
 assign [class="vlc"] $ws7
+assign [class="zoom"] $ws6
 
 # Open specific applications in floating mode
 for_window [title="alsamixer"] floating enable border pixel 1
@@ -90,22 +91,19 @@ exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
 exec_always --no-startup-id feh --bg-scale ~/Pictures/wallpaper.png
 exec --no-startup-id i3-msg 'workspace $ws2; exec firefox; workspace $ws1'
-exec --no-startup-id i3-msg 'workspace $ws1; exec urxvt; workspace $ws1'
+exec --no-startup-id i3-msg 'workspace $ws1; exec i3-sensible-terminal; workspace $ws1'
 exec tixati
 exec thunderbird
 
 # Theme colors
 # class                   border  backgr. text    indic.   child_border
-#  client.focused          #556064 #1ABC9C #2F3D44 #FDF6E3
-#  client.focused_inactive #2F3D44 #2F3D44 #1ABC9C #454948
-#  client.unfocused        #2F3D44 #2F3D44 #1ABC9C #454948
-  client.urgent           #E5201D #EF201D #FDF63E #E5201D
-  client.placeholder      #000000 #0c0c0c #ffffff #000000 
-  client.background       #2B2C2B
+  client.urgent           #BF616A #EF201D #FDF63E #BF616A
+  client.placeholder      #000000 #2E3440 #D8DEE9 #000000 
+  client.background       #2E3440
 
-  client.focused          #556064 #1ABC9C #1ABC9C #FDF6E3
-  client.focused_inactive #2F3D44 #2F3D44 #2F3D44 #454948
-  client.unfocused        #2F3D44 #2F3D44 #2F3D44 #454948
+  client.focused          #8FBCBB #8FBCBB #8FBCBB #5E81AC
+  client.focused_inactive #2E3440 #2E3440 #2E3440 #2E3440
+  client.unfocused        #2E3440 #2E3440 #2E3440 #2E3440
 
 # Color palette used for the terminal ( ~/.Xresources file )
 # Colors are gathered based on the documentation:
@@ -155,16 +153,16 @@ bar {
 	strip_workspace_numbers no
 
     colors {
-        background #222D31
-        statusline #DDDDDD
-        separator  #777777
+        background #2E3440
+        statusline #D8DEE9
+        separator  #D8DEE9
 
 #                      border  backgr. text
-        focused_workspace  #16A085 #16A085 #222D31
-        active_workspace   #222D31 #222D31 #DDDDDD
-        inactive_workspace #222D31 #222D31 #777777
-        binding_mode       #DDDDDD #222D31 #DDDDDD
-        urgent_workspace   #DDDDDD #DDDDDD #E5201D
+        focused_workspace  #8FBCBB #8FBCBB #2E3440
+        active_workspace   #2E3440 #2E3440 #ECEFF4
+        inactive_workspace #2E3440 #2E3440 #D8DEE9
+        binding_mode       #D8DEE9 #2E3440 #D8DEE9
+        urgent_workspace   #D8DEE9 #D8DEE9 #BF616A
     }
 }
 
@@ -401,7 +399,7 @@ bindsym $mod+Shift+l 			move right
 
 bindsym $mod+semicolon 			split toggle
 
-bindsym $mod+Return 			exec terminal
+bindsym $mod+Return 			exec i3-sensible-terminal
 
 ##############
 #Z ROW
@@ -414,7 +412,7 @@ bindsym $mod+x 				mode "$mode_system"
 bindsym $mod+Shift+c 			reload
 
 bindsym $mod+v	 			exec pavucontrol
-bindsym $mod+Shift+v			exec --no-startup-id urxvt -e alsamixer
+bindsym $mod+Shift+v			exec --no-startup-id i3-sensible-terminal -e alsamixer
 
 bindsym $mod+b 				border none
 bindsym $mod+Shift+b 			border pixel 3
