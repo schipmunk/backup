@@ -101,7 +101,7 @@ exec thunderbird
   client.placeholder      #000000 #2E3440 #D8DEE9 #000000 
   client.background       #2E3440
 
-  client.focused          #8FBCBB #8FBCBB #8FBCBB #5E81AC
+  client.focused          #5E81AC #5E81AC #5E81AC #A3BE8C
   client.focused_inactive #2E3440 #2E3440 #2E3440 #2E3440
   client.unfocused        #2E3440 #2E3440 #2E3440 #2E3440
 
@@ -158,7 +158,7 @@ bar {
         separator  #D8DEE9
 
 #                      border  backgr. text
-        focused_workspace  #8FBCBB #8FBCBB #2E3440
+        focused_workspace  #5E81AC #5E81AC #2E3440
         active_workspace   #2E3440 #2E3440 #ECEFF4
         inactive_workspace #2E3440 #2E3440 #D8DEE9
         binding_mode       #D8DEE9 #2E3440 #D8DEE9

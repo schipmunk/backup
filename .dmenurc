@@ -12,7 +12,7 @@ DMENU_NB="#2E3440"
 DMENU_NF="#D8DEE9"
 
 ## background colour for selected menu-items
-DMENU_SB="#8FBCBB"
+DMENU_SB="#5E81AC"
 
 ## textcolour for selected menu-items
 DMENU_SF="#2E3440"
