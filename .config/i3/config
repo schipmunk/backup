@@ -146,6 +146,7 @@ bar {
 	tray_output primary
 #	tray_output eDP1
 
+	bindsym button1 nop
 	bindsym button4 nop
 	bindsym button5 nop
 #   font xft:URWGothic-Book 11
@@ -434,6 +435,12 @@ bindsym $mod+Shift+space 		floating toggle
 
 bindsym $mod+KP_Add 			exec galculator
 
+
+##############
+#MOUSE
+##############
+
+bindsym button1				nop
 
 # change focus
 bindsym $mod+Left 			focus left
