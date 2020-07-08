@@ -147,3 +147,4 @@ alias gitdot='/usr/bin/git --git-dir=/home/schipmunk/.gitdot/ --work-tree=/home/
 # set VIM as default
 export VISUAL=vim;
 export EDITOR=vim;
+
