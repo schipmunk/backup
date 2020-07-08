@@ -22,3 +22,8 @@ call plug#end()
 
 colorscheme nord
 
+let mapleader = " "
+
+nnoremap <leader>f :FZF<CR>
+
+let $FZF_DEFAULT_COMMAND = 'find'
