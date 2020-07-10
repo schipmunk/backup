@@ -25,5 +25,6 @@ colorscheme nord
 let mapleader = " "
 
 nnoremap <leader>f :FZF<CR>
+nnoremap <leader>o :Ex<CR>
 
 let $FZF_DEFAULT_COMMAND = 'find'
