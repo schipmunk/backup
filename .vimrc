@@ -7,6 +7,9 @@ set smartcase
 set undodir=~/.vom/undodir
 set undofile
 set incsearch
+set colorcolumn:80
+
+:imap jj <Esc>l
 
 call plug#begin('~/.vim/plugged')
 
