@@ -399,6 +399,7 @@ bindsym $mod+l 				focus right
 bindsym $mod+Shift+l 			move right
 
 bindsym $mod+semicolon 			split toggle
+bindsym $mod+apostrophe			split horizontal
 
 bindsym $mod+Return 			exec i3-sensible-terminal
 
@@ -425,6 +426,8 @@ bindsym $mod+m 				bar mode toggle
 bindsym $mod+Shift+greater 		move workspace to output right
 
 bindsym $mod+Shift+less 		move workspace to output left
+
+bindsym $mod+slash					split vertical
 
 bindsym $mod+space 			focus mode_toggle
 bindsym $mod+Shift+space 		floating toggle
