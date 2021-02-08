@@ -90,7 +90,7 @@ exec --no-startup-id clipit
 #exec --no-startup-id xautolock -time 10 -locker blurlock
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
-exec_always --no-startup-id feh --bg-scale ~/Pictures/wallpaper.png
+exec_always --no-startup-id nitrogen --restore
 exec --no-startup-id i3-msg 'workspace $ws2; exec firefox; workspace $ws1'
 exec --no-startup-id i3-msg 'workspace $ws1; exec i3-sensible-terminal; workspace $ws1'
 exec tixati
@@ -98,7 +98,7 @@ exec thunderbird
 
 # Theme colors
 # class                   border  backgr. text    indic.   child_border
-  client.urgent           #BF616A #EF201D #FDF63E #BF616A
+  client.urgent           #BF616A #EF201D #EF201D #BF616A
   client.placeholder      #000000 #2E3440 #D8DEE9 #000000 
   client.background       #2E3440
 
@@ -453,6 +453,10 @@ bindsym $mod+KP_Add 			exec galculator
 ##############
 
 bindsym button1				nop
+bindsym button2				nop
+bindsym button3				nop
+bindsym button4				nop
+bindsym button5				nop
 
 # change focus
 bindsym $mod+Left 			focus left
