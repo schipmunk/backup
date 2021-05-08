@@ -1,3 +1,24 @@
+font:
+    normal:
+          family: Hasklug Nerd Font
+          style: Regular
+
+    bold:
+          family: Hasklug Nerd Font
+          style: Bold
+
+    italic:
+          family: Hasklug Nerd Font
+          style: Italic
+
+    bold_italic:
+          family: Hasklug Nerd Font
+          style: Bold Italic
+
+    size: 11
+
+
+
 # Copyright (c) 2017-present Arctic Ice Studio <development@arcticicestudio.com>
 # Copyright (c) 2017-present Sven Greb <code@svengreb.de>
 
