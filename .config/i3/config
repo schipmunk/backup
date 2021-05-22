@@ -95,7 +95,7 @@ exec --no-startup-id i3-msg 'workspace $ws2; exec firefox; workspace $ws1'
 exec --no-startup-id i3-msg 'workspace $ws1; exec i3-sensible-terminal; workspace $ws1'
 exec tixati
 exec thunderbird
-
+exec_always --no-startup-id synology-drive
 # Theme colors
 # class                   border  backgr. text    indic.   child_border
   client.urgent           #BF616A #EF201D #EF201D #BF616A
