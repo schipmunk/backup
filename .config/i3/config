@@ -96,7 +96,7 @@ exec --no-startup-id i3-msg 'workspace $ws1; exec i3-sensible-terminal; workspac
 exec tixati
 exec thunderbird
 exec_always --no-startup-id synology-drive
-exec_always --no-startup-id picom
+exec_always --no-startup-id picom -b -d
 
 # Theme colors
 # class                   border  backgr. text    indic.   child_border
