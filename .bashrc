@@ -144,6 +144,9 @@ export YAOURT_COLORS="nb=1:pkg=1:ver=1;32:lver=1;45:installed=1;42:grp=1;34:od=1
 neofetch
 alias gitdot='/usr/bin/git --git-dir=/home/schipmunk/.gitdot/ --work-tree=/home/schipmunk'
 
+#pacman package list
+alias yay='pacman -Qqetn > ~/pkglist.txt && pacman -Qqem > ~/foreignpkglist.txt && yay'
+
 # set VIM as default
 export VISUAL=vim;
 export EDITOR=vim;
