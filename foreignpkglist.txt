@@ -1,0 +1,15 @@
+chromium-widevine
+minecraft-launcher
+minecraft-server
+nord-vim
+nordic-theme-git
+open-fuse-iso
+pepper-flash
+skypeforlinux-stable-bin
+tixati
+ttf-ms-fonts
+ttf-vista-fonts
+vim-plug
+xdg-su
+xrasengan
+zoom
