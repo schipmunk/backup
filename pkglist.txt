@@ -59,8 +59,8 @@ manjaro-browser-settings
 manjaro-firmware
 manjaro-hotfixes
 manjaro-i3-settings
+manjaro-pipewire
 manjaro-printer
-manjaro-pulse
 manjaro-ranger-settings
 manjaro-release
 manjaro-system
@@ -84,7 +84,10 @@ numlockx
 obs-studio
 pa-applet
 patchutils
+pavucontrol
+pipewire-zeroconf
 polkit-gnome
+pulseeffects
 pulsemixer
 qt5-styleplugins
 qt5ct
