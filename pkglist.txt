@@ -46,7 +46,6 @@ libreoffice-still
 licenses
 lightdm-settings
 linux510-nvidia
-linux511-nvidia
 linux512-nvidia
 lutris
 lxappearance

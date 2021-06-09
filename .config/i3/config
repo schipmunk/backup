@@ -95,6 +95,7 @@ exec --no-startup-id i3-msg 'workspace $ws2; exec firefox; workspace $ws1'
 exec --no-startup-id i3-msg 'workspace $ws1; exec i3-sensible-terminal; workspace $ws1'
 exec tixati
 exec thunderbird
+exec discord
 exec_always --no-startup-id synology-drive
 exec_always --no-startup-id picom -b -d
 
