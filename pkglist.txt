@@ -85,7 +85,6 @@ pa-applet
 pamixer
 patchutils
 pavucontrol
-pipewire-zeroconf
 polkit-gnome
 pulseeffects
 pulsemixer
@@ -112,6 +111,7 @@ vertex-maia-themes
 vi
 vibrancy-icons-teal
 viewnior
+vlc
 volumeicon
 wallpapers-juhraya
 xautolock
