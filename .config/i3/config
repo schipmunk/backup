@@ -352,6 +352,7 @@ bindsym $mod+Shift+Tab 			move container to output right; focus output right
 bindsym $mod+q 				kill
 bindsym $mod+Shift+q			kill -9 'xdotool getwindowfocus getwindowpid'
 
+bindsym $mod+w				exec firefox
 
 bindsym $mod+r 				mode "resize"
 bindsym $mod+Shift+r 			restart
@@ -424,8 +425,6 @@ bindsym $mod+Shift+v			exec --no-startup-id i3-sensible-terminal -e alsamixer
 bindsym $mod+b 				border none
 bindsym $mod+Shift+b 			border pixel 3
 bindsym $mod+Ctrl+b 			border normal
-
-bindsym $mod+c				exec --no-startup-id xrasengan --try-reload-active-layout
 
 bindsym $mod+n 				move container to workspace $wsn; focus output right; move container to workspace $wsn; focus output right
 bindsym $mod+Mod1+n				move container to workspace $wsn

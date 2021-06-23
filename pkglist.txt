@@ -80,6 +80,7 @@ networkmanager-vpnc
 nfs-utils
 ntp
 numlockx
+nvtop
 obs-studio
 pa-applet
 pamixer
