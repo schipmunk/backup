@@ -1,5 +1,6 @@
 acpi
 acpid
+adwaita-maia
 alacritty
 amd-ucode
 android-tools
@@ -24,6 +25,7 @@ deluge-gtk
 dfc
 discord
 downgrade
+easyeffects
 ecryptfs-utils
 element-desktop
 epdfview
@@ -32,6 +34,7 @@ exfat-utils
 fakeroot
 ffmpegthumbnailer
 firefox
+flameshot
 galculator
 gcolor2
 gparted
@@ -53,7 +56,7 @@ libreoffice-still
 licenses
 lightdm-settings
 linux510-nvidia
-linux512-nvidia
+linux513-nvidia
 lutris
 lxappearance
 lxinput
@@ -95,10 +98,10 @@ pamixer
 patch
 patchutils
 pavucontrol
+piper
 pkgconf
 polkit-gnome
 powertop
-pulseeffects
 pulsemixer
 qt5-styleplugins
 qt5ct
