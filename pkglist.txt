@@ -11,8 +11,6 @@ automake
 awesome-terminal-fonts
 b43-fwcutter
 bison
-blueman
-bluez-utils
 bpytop
 chromium
 clementine
@@ -43,6 +41,7 @@ gufw
 hardinfo
 htop
 inetutils
+intel-ucode
 iputils
 ipw2100-fw
 ipw2200-fw
@@ -61,6 +60,7 @@ make
 man-db
 man-pages
 manjaro-alsa
+manjaro-bluetooth
 manjaro-browser-settings
 manjaro-firmware
 manjaro-hotfixes
