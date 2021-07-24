@@ -41,7 +41,6 @@ gufw
 hardinfo
 htop
 inetutils
-intel-ucode
 iputils
 ipw2100-fw
 ipw2200-fw

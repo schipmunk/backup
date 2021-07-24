@@ -404,7 +404,7 @@ bindsym $mod+Shift+k 			move up
 bindsym $mod+l 				focus right
 bindsym $mod+Shift+l 			move right
 
-bindsym $mod+semicolon 			split toggle
+bindsym $mod+semicolon 			split vertical
 bindsym $mod+apostrophe			split horizontal
 
 bindsym $mod+Return 			exec i3-sensible-terminal
@@ -413,7 +413,7 @@ bindsym $mod+Return 			exec i3-sensible-terminal
 #Z ROW
 ##############
 
-bindsym $mod+z	 			exec --no-startup-id morc_menu
+bindsym $mod+z	 			focus child
 
 bindsym $mod+x 				mode "$mode_system"
 
