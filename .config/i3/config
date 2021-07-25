@@ -281,15 +281,15 @@ mode "$mode_gaps_outer" {
 #FUNCTION ROW
 ##############
 
-bindsym $mod+Shift+Escape 		exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+bindsym $mod+Shift+Escape			exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
-bindsym Print 				exec --no-startup-id flameshot gui
+bindsym Print						exec --no-startup-id flameshot gui
 bindsym $mod+Print --release 		exec --no-startup-id i3-scrot -w
 bindsym $mod+Shift+Print --release 	exec --no-startup-id i3-scrot -s
 
 #bindsym XF86AudioRaiseVolume 		exec --no-startup-id pulseaudio-ctl up 1
 #bindsym XF86AudioLowerVolume 		exec --no-startup-id pulseaudio-ctl down 1
-#bindsym XF86AudioMute 			exec --no-startup-id pulseaudio-ctl mute
+#bindsym XF86AudioMute				exec --no-startup-id pulseaudio-ctl mute
 # Screen brightness controls
 # bindsym XF86MonBrightnessUp 		exec "xbacklight -inc 10; notify-send 'brightness up'"
 # bindsym XF86MonBrightnessDown 	exec "xbacklight -dec 10; notify-send 'brightness down'"
@@ -298,180 +298,180 @@ bindsym $mod+Shift+Print --release 	exec --no-startup-id i3-scrot -s
 ##############
 #NUMBER ROW
 ##############
-bindsym $mod+1				workspace $ws1
-bindsym $mod+Ctrl+1			move container to workspace $ws1
-bindsym $mod+Shift+1			move container to workspace $ws1; workspace $ws1
+bindsym $mod+1						workspace $ws1
+bindsym $mod+Ctrl+1					move container to workspace $ws1
+bindsym $mod+Shift+1				move container to workspace $ws1; workspace $ws1
 
-bindsym $mod+2				workspace $ws2
-bindsym $mod+Ctrl+2 			move container to workspace $ws2
-bindsym $mod+Shift+2 			move container to workspace $ws2; workspace $ws2
+bindsym $mod+2						workspace $ws2
+bindsym $mod+Ctrl+2					move container to workspace $ws2
+bindsym $mod+Shift+2				move container to workspace $ws2; workspace $ws2
 
-bindsym $mod+3 				workspace $ws3
-bindsym $mod+Ctrl+3 			move container to workspace $ws3
-bindsym $mod+Shift+3 			move container to workspace $ws3; workspace $ws3
+bindsym $mod+3						workspace $ws3
+bindsym $mod+Ctrl+3					move container to workspace $ws3
+bindsym $mod+Shift+3				move container to workspace $ws3; workspace $ws3
 
-bindsym $mod+4 				workspace $ws4
-bindsym $mod+Ctrl+4 			move container to workspace $ws4
-bindsym $mod+Shift+4 			move container to workspace $ws4; workspace $ws4
+bindsym $mod+4						workspace $ws4
+bindsym $mod+Ctrl+4					move container to workspace $ws4
+bindsym $mod+Shift+4				move container to workspace $ws4; workspace $ws4
 
-bindsym $mod+5 				workspace $ws5
-bindsym $mod+Ctrl+5 			move container to workspace $ws5
-bindsym $mod+Shift+5 			move container to workspace $ws5; workspace $ws5
+bindsym $mod+5						workspace $ws5
+bindsym $mod+Ctrl+5					move container to workspace $ws5
+bindsym $mod+Shift+5				move container to workspace $ws5; workspace $ws5
 
-bindsym $mod+6 				workspace $ws6
-bindsym $mod+Ctrl+6 			move container to workspace $ws6
-bindsym $mod+Shift+6 			move container to workspace $ws6; workspace $ws6
+bindsym $mod+6						workspace $ws6
+bindsym $mod+Ctrl+6					move container to workspace $ws6
+bindsym $mod+Shift+6				move container to workspace $ws6; workspace $ws6
 
-bindsym $mod+7 				workspace $ws7
-bindsym $mod+Ctrl+7 			move container to workspace $ws7
-bindsym $mod+Shift+7 			move container to workspace $ws7; workspace $ws7
+bindsym $mod+7						workspace $ws7
+bindsym $mod+Ctrl+7					move container to workspace $ws7
+bindsym $mod+Shift+7				move container to workspace $ws7; workspace $ws7
 
-bindsym $mod+8 				workspace $ws8
-bindsym $mod+Ctrl+8 			move container to workspace $ws8
-bindsym $mod+Shift+8 			move container to workspace $ws8; workspace $ws8
+bindsym $mod+8						workspace $ws8
+bindsym $mod+Ctrl+8					move container to workspace $ws8
+bindsym $mod+Shift+8				move container to workspace $ws8; workspace $ws8
 
-bindsym $mod+9 				workspace $ws9
-bindsym $mod+Ctrl+9 			move container to workspace $ws9
-bindsym $mod+Shift+9 			move container to workspace $ws9; workspace $ws9
+bindsym $mod+9						workspace $ws9
+bindsym $mod+Ctrl+9					move container to workspace $ws9
+bindsym $mod+Shift+9				move container to workspace $ws9; workspace $ws9
 
-bindsym $mod+0 				workspace $ws10
-bindsym $mod+Ctrl+0 			move container to workspace $ws10
-bindsym $mod+Shift+0 			move container to workspace $ws10; workspace $ws10
+bindsym $mod+0						workspace $ws10
+bindsym $mod+Ctrl+0					move container to workspace $ws10
+bindsym $mod+Shift+0				move container to workspace $ws10; workspace $ws10
 
-bindsym $mod+minus 			scratchpad show
-bindsym $mod+Shift+minus 		move scratchpad
+bindsym $mod+minus					scratchpad show
+bindsym $mod+Shift+minus			move scratchpad
 
 ##############
 #Q ROW
 ##############
-bindsym Mod1+Tab			workspace next_on_output
-bindsym Mod1+Shift+Tab			workspace prev_on_output
-bindsym $mod+Tab 			focus output right
-bindsym $mod+Shift+Tab 			move container to output right; focus output right
+bindsym Mod1+Tab					workspace next_on_output
+bindsym Mod1+Shift+Tab				workspace prev_on_output
+bindsym $mod+Tab					focus output right
+bindsym $mod+Shift+Tab				move container to output right; focus output right
 
-bindsym $mod+q 				kill
-bindsym $mod+Shift+q			kill -9 'xdotool getwindowfocus getwindowpid'
+bindsym $mod+q						kill
+bindsym $mod+Shift+q				kill -9 'xdotool getwindowfocus getwindowpid'
 
-bindsym $mod+w				exec firefox
+bindsym $mod+w						exec firefox
 
-bindsym $mod+r 				mode "resize"
-bindsym $mod+Shift+r 			restart
+bindsym $mod+r						mode "resize"
+bindsym $mod+Shift+r				restart
 
-bindsym $mod+t 				layout toggle splith tabbed 
-bindsym $mod+Shift+t 		layout toggle split
-bindsym $mod+Ctrl+t 		layout stacking
+bindsym $mod+t						layout toggle splith tabbed 
+bindsym $mod+Shift+t				layout toggle split
+bindsym $mod+Ctrl+t					layout stacking
 
-bindsym $mod+y				resize shrink width 5 px
+bindsym $mod+y						resize shrink width 5 px
 
-bindsym $mod+u				resize shrink height 5 px
+bindsym $mod+u						resize shrink height 5 px
 
-bindsym $mod+i				resize grow height 5 px
+bindsym $mod+i						resize grow height 5 px
 
-bindsym $mod+o				resize grow width 5 px
+bindsym $mod+o						resize grow width 5 px
+
+bindsym $mod+bracketleft			gaps inner current minus 5
+bindsym $mod+Shift+bracketleft		gaps outer current minus 5
+bindsym $mod+Ctrl+bracketleft		mode "$mode_gaps"
+
+bindsym $mod+bracketright			gaps inner current plus 5
+bindsym $mod+Shift+bracketright		gaps outer current plus 5
+bindsym $mod+Ctrl+bracketright		mode "$mode_gaps"
 
 ##############
 #A ROW
 ##############
 
-bindsym $mod+a 				focus parent
+bindsym $mod+a						focus parent
 
-bindsym $mod+Shift+s 		sticky toggle
+bindsym $mod+Shift+s				sticky toggle
 
-#bindsym $mod+d 				exec --no-startup-id dmenu_recency -l 30 -fn "Hasklug Nerd Font"
-bindsym $mod+d				exec --no-startup-id rofi -show run
-bindsym $mod+Shift+d 		exec --no-startup-id morc_menu
+#bindsym $mod+d						exec --no-startup-id dmenu_recency -l 30 -fn "Hasklug Nerd Font"
+bindsym $mod+d						exec --no-startup-id rofi -show run
+bindsym $mod+Shift+d				exec --no-startup-id morc_menu
 
-bindsym $mod+f 				fullscreen toggle
-bindsym $mod+Shift+f 		exec pcmanfm
+bindsym $mod+f						fullscreen toggle
+bindsym $mod+Shift+f				exec pcmanfm
 
-bindsym $mod+bracketleft		gaps inner current minus 5
-bindsym $mod+Shift+bracketleft		gaps outer current minus 5
-bindsym $mod+Ctrl+bracketleft		mode "$mode_gaps"
+bindsym $mod+h						focus left
+bindsym $mod+Shift+h				move left
 
-bindsym $mod+bracketright		gaps inner current plus 5
-bindsym $mod+Shift+bracketright		gaps outer current plus 5
-bindsym $mod+Ctrl+bracketright		mode "$mode_gaps"
+bindsym $mod+j						focus down
+bindsym $mod+Shift+j				move down
 
-bindsym $mod+h 				focus left
-bindsym $mod+Shift+h 			move left
+bindsym $mod+k						focus up
+bindsym $mod+Shift+k				move up
 
-bindsym $mod+j 				focus down
-bindsym $mod+Shift+j 			move down
+bindsym $mod+l						focus right
+bindsym $mod+Shift+l				move right
 
-bindsym $mod+k 				focus up
-bindsym $mod+Shift+k 			move up
+bindsym $mod+semicolon				split vertical
+bindsym $mod+apostrophe				split horizontal
 
-bindsym $mod+l 				focus right
-bindsym $mod+Shift+l 			move right
-
-bindsym $mod+semicolon 			split vertical
-bindsym $mod+apostrophe			split horizontal
-
-bindsym $mod+Return 			exec i3-sensible-terminal
+bindsym $mod+Return					exec i3-sensible-terminal
 
 ##############
 #Z ROW
 ##############
 
-bindsym $mod+z	 			focus child
+bindsym $mod+z						focus child
 
-bindsym $mod+x 				mode "$mode_system"
+bindsym $mod+x						mode "$mode_system"
 
-bindsym $mod+Shift+c 			reload
+bindsym $mod+Shift+c				reload
 
-bindsym $mod+v	 			exec pavucontrol
-bindsym $mod+Shift+v			exec --no-startup-id i3-sensible-terminal -e alsamixer
+bindsym $mod+v						exec pavucontrol
+bindsym $mod+Shift+v				exec --no-startup-id i3-sensible-terminal -e alsamixer
 
-bindsym $mod+b 				border none
-bindsym $mod+Shift+b 			border pixel 3
-bindsym $mod+Ctrl+b 			border normal
+bindsym $mod+b						border none
+bindsym $mod+Shift+b				border pixel 3
+bindsym $mod+Ctrl+b					border normal
 
-bindsym $mod+n 				move container to workspace $wsn; focus output right; move container to workspace $wsn; focus output right
-bindsym $mod+Mod1+n				move container to workspace $wsn
-bindsym $mod+Mod1+Shift+n		workspace $wsn; move container to workspace back_and_forth; workspace back_and_forth
-bindsym $mod+Ctrl+n 			workspace $wsn
-bindsym $mod+Shift+n 			workspace $wsn; focus left; move container to workspace back_and_forth; move container to workspace back_and_forth; workspace back_and_forth; move container to output right
+bindsym $mod+n						move container to workspace $wsn; focus output right; move container to workspace $wsn; focus output right
+bindsym $mod+Mod1+n					move container to workspace $wsn
+bindsym $mod+Mod1+Shift+n			workspace $wsn; move container to workspace back_and_forth; workspace back_and_forth
+bindsym $mod+Ctrl+n					workspace $wsn
+bindsym $mod+Shift+n				workspace $wsn; focus left; move container to workspace back_and_forth; move container to workspace back_and_forth; workspace back_and_forth; move container to output right
 
-bindsym $mod+m 				bar mode toggle
+bindsym $mod+m						bar mode toggle
 
-bindsym $mod+Shift+greater 		move workspace to output right
+bindsym $mod+Shift+greater			move workspace to output right
 
-bindsym $mod+Shift+less 		move workspace to output left
+bindsym $mod+Shift+less				move workspace to output left
 
 bindsym $mod+slash					split vertical
 
-bindsym $mod+space 			focus mode_toggle
-bindsym $mod+Shift+space 		floating toggle
+bindsym $mod+space					focus mode_toggle
+bindsym $mod+Shift+space			floating toggle
 
 ##############
 #NUMPAD
 ##############
 
-bindsym $mod+KP_Add 			exec galculator
+bindsym $mod+KP_Add					exec galculator
 
 
 ##############
 #MOUSE
 ##############
 
-bindsym button1				nop
-bindsym button2				nop
-bindsym button3				nop
-bindsym button4				nop
-bindsym button5				nop
+bindsym button1						nop
+bindsym button2						nop
+bindsym button3						nop
+bindsym button4						nop
+bindsym button5						nop
 
 # change focus
-bindsym $mod+Left 			focus left
-bindsym $mod+Down 			focus down
-bindsym $mod+Up 			focus up
-bindsym $mod+Right 			focus right
+bindsym $mod+Left					focus left
+bindsym $mod+Down					focus down
+bindsym $mod+Up						focus up
+bindsym $mod+Right					focus right
 
 # move focused window
-bindsym $mod+Shift+Left 		move left
-bindsym $mod+Shift+Down 		move down
-bindsym $mod+Shift+Up 			move up
-bindsym $mod+Shift+Right 		move right
+bindsym $mod+Shift+Left				move left
+bindsym $mod+Shift+Down				move down
+bindsym $mod+Shift+Up				move up
+bindsym $mod+Shift+Right			move right
 
 #navigate workspaces next / previous
-bindsym $mod+Ctrl+Right 		workspace next
-bindsym $mod+Ctrl+Left 			workspace prev
+bindsym $mod+Ctrl+Right				workspace next
+bindsym $mod+Ctrl+Left				workspace prev
