@@ -3,7 +3,7 @@
 
 # Set mod key (Mod1=<Alt>, Mod4=<Super>)
 set $mod Mod4
-font pango:Arial Black 1
+font pango:Hasklug Nerd Font Medium 1
 
 #setting outputs
 #exec_always --no-startup-id xrandr  --output DP-2 --mode 1920x1080 --rate 144 --pos 1920x0 --rotate normal  --output DP-4 --primary --mode 1920x1080 --rate 144 --pos 0x0 --rotate normal
@@ -44,6 +44,7 @@ assign [class="Thunderbird"] $ws4
 assign [class="Tixati"] $ws5
 assign [class="Skype"] $ws6
 assign [class="discord"] $ws6
+assign [class="element"] $ws6
 assign [class="vlc"] $ws7
 assign [class="zoom"] $ws6
 
@@ -78,15 +79,12 @@ for_window [class="Xfburn"] floating enable
 # Autostart applications
 exec --no-startup-id sxhkd
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
-#exec --no-startup-id nitrogen --restore; sleep 1; compton -b
 exec --no-startup-id nm-applet
 exec --no-startup-id xfce4-power-manager
 #exec --no-startup-id pamac-tray
 exec --no-startup-id clipit
-# exec --no-startup-id blueman-applet
+exec --no-startup-id blueman-applet
 # exec_always --no-startup-id sbxkb
-#exec --no-startup-id start_conky_maia
-# exec --no-startup-id start_conky_green
 #exec --no-startup-id xautolock -time 10 -locker blurlock
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
@@ -187,16 +185,9 @@ smart_gaps on
 floating_modifier $mod
 focus_follows_mouse no
 
-################################################################################################
-## sound-section - DO NOT EDIT if you wish to automatically upgrade Alsa -> Pulseaudio later! ##
-################################################################################################
-
-#exec --no-startup-id volumeicon
-#bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
-#exec --no-startup-id pulseaudio
-#exec --no-startup-id pa-applet
-
-################################################################################################
+##############
+#MODES
+##############
 
 # Set shut down, restart and locking features
 set $mode_system (l)ock, (e)xit, switch_(u)ser, (s)uspend, (h)ibernate, (r)eboot, (Shift+s)hutdown
@@ -215,16 +206,18 @@ mode "$mode_system" {
 }
 
 # Resize window (you can also use the mouse for that)
-mode "resize" {
+
+set $resize h|left shrink width, l|right grow width, j|down grow height, k|up shrink height
+mode "$resize" {
         # These bindings trigger as soon as you enter the resize mode
         # Pressing left will shrink the window’s width.
         # Pressing right will grow the window’s width.
         # Pressing up will shrink the window’s height.
         # Pressing down will grow the window’s height.
-        bindsym j resize shrink width 5 px or 5 ppt
-        bindsym k resize grow height 5 px or 5 ppt
-        bindsym l resize shrink height 5 px or 5 ppt
-        bindsym semicolon resize grow width 5 px or 5 ppt
+        bindsym h resize shrink width 5 px or 5 ppt
+        bindsym j resize grow height 5 px or 5 ppt
+        bindsym k resize shrink height 5 px or 5 ppt
+        bindsym l resize grow width 5 px or 5 ppt
 
         # same bindings, but for the arrow keys
         bindsym Left resize shrink width 10 px or 10 ppt
@@ -354,7 +347,7 @@ bindsym $mod+Shift+q				kill -9 'xdotool getwindowfocus getwindowpid'
 
 bindsym $mod+w						exec firefox
 
-bindsym $mod+r						mode "resize"
+bindsym $mod+r						mode "$resize"
 bindsym $mod+Shift+r				restart
 
 bindsym $mod+t						layout toggle splith tabbed 
