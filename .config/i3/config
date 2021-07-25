@@ -12,15 +12,15 @@ font pango:Hasklug Nerd Font Medium 1
 # to display names or symbols instead of plain workspace numbers you can use
 # something like: set $ws1 1:mail
 #                 set $ws2 2:
-set $ws1 "1:PRIM"
-set $ws2 "2:GAME"
-set $ws3 "3:TOR"
-set $ws4 "4:MEDIA"
-set $wsq "Q:WWW"
-set $wsw "W:CAL" 
-set $wse "E:CHAT"
-set $wsr "R:DOC"
-set $wsn "Min"
+set $ws1 "1:1:PRIM"
+set $ws2 "2:2:GAME"
+set $ws3 "3:3:TOR"
+set $ws4 "4:4:MEDIA"
+set $wsq "5:Q:WWW"
+set $wsw "6:W:CAL" 
+set $wse "7:E:CHAT"
+set $wsr "8:R:DOC"
+set $wsn "9:N:Min"
 
 # Assigning workspaces to specific monitors
 workspace $ws1 output DP-0
@@ -144,12 +144,12 @@ bar {
 	tray_output primary
 #	tray_output eDP1
 
-	bindsym button1 nop
+	#bindsym button1 nop
 	bindsym button4 nop
 	bindsym button5 nop
 #   font xft:URWGothic-Book 11
 	font pango:Hasklug Nerd Font Medium 10
-	strip_workspace_numbers no
+	strip_workspace_numbers yes
 
     colors {
         background #2E3440
