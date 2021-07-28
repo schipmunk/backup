@@ -3,7 +3,7 @@
 
 # Set mod key (Mod1=<Alt>, Mod4=<Super>)
 set $mod Mod4
-font pango:Hasklug Nerd Font Medium 1
+font pango:Hasklug Nerd Font Medium 0
 
 #setting outputs
 #exec_always --no-startup-id xrandr  --output DP-2 --mode 1920x1080 --rate 144 --pos 1920x0 --rotate normal  --output DP-4 --primary --mode 1920x1080 --rate 144 --pos 0x0 --rotate normal
