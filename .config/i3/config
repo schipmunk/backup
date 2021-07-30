@@ -142,12 +142,10 @@ bar {
 
 ## please set your primary output first. Example: 'xrandr --output eDP1 --primary'
 	tray_output primary
-#	tray_output eDP1
 
-	#bindsym button1 nop
+	bindsym button1 nop
 	bindsym button4 nop
 	bindsym button5 nop
-#   font xft:URWGothic-Book 11
 	font pango:Hasklug Nerd Font Medium 10
 	strip_workspace_numbers yes
 
