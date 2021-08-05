@@ -8,6 +8,7 @@ set undodir=~/.vom/undodir
 set undofile
 set incsearch
 set colorcolumn:80
+set so=999
 
 :imap jj <Esc>l
 
@@ -33,10 +34,11 @@ nnoremap <leader>o :Ex<CR>
 " Make Y behave like D and C
 nnoremap Y y$
 
-" Searches stay centered
+" Cursor stays centered
 nnoremap n nzzzv
 nnoremap N Nzzzv
 nnoremap J mzJ`z
+nnoremap <leader>zz :let &scrolloff=999-&scrolloff<CR>
 
 " Move text up and down
 nnoremap <leader>k :m .-2<CR>==
