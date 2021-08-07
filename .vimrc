@@ -1,6 +1,7 @@
 syntax on
-set rnu
-set tabstop=4 softtabstop=4
+set nu rnu
+set tabstop=4
+set expandtab
 set shiftwidth=4
 set smartindent
 set smartcase

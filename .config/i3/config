@@ -48,6 +48,7 @@ assign [class="zoom"] $wse
 for_window [title="alsamixer"] floating enable border pixel 1
 for_window [class="calamares"] floating enable border normal
 for_window [class="Clipgrab"] floating enable
+for_window [class="Yad"] floating enable
 for_window [title="File Transfer*"] floating enable
 for_window [class="Galculator"] floating enable border pixel 1
 for_window [class="GParted"] floating enable border normal
@@ -136,18 +137,18 @@ set_from_resource $term_color15    color15
 
 # Start i3bar to display a workspace bar (plus the system information i3status if available)
 bar {
-	i3bar_command i3bar
-	status_command i3status
-	position bottom
+    i3bar_command i3bar
+    status_command i3status
+    position bottom
 
 ## please set your primary output first. Example: 'xrandr --output eDP1 --primary'
-	tray_output primary
+    tray_output primary
 
-	bindsym button1 nop
-	bindsym button4 nop
-	bindsym button5 nop
-	font pango:Hasklug Nerd Font Medium 10
-	strip_workspace_numbers yes
+    bindsym button1 nop
+    bindsym button4 nop
+    bindsym button5 nop
+    font pango:Hasklug Nerd Font Medium 10
+    strip_workspace_numbers yes
 
     colors {
         background #2E3440
@@ -262,6 +263,7 @@ mode "$mode_gaps_outer" {
         bindsym Escape mode "default"
 }
 
+#START_KEYS
 ##############
 #BINDINGS
 ##############
@@ -270,185 +272,184 @@ mode "$mode_gaps_outer" {
 #FUNCTION ROW
 ##############
 
-bindsym $mod+Shift+Escape			exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+bindsym $mod+Shift+Escape           exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
-bindsym Print						exec --no-startup-id flameshot gui
-bindsym $mod+Print --release 		exec --no-startup-id i3-scrot -w
-bindsym $mod+Shift+Print --release 	exec --no-startup-id i3-scrot -s
+bindsym Print                       exec --no-startup-id flameshot gui
+bindsym $mod+Print --release        exec --no-startup-id i3-scrot -w
+bindsym $mod+Shift+Print --release  exec --no-startup-id i3-scrot -s
 
-#bindsym XF86AudioRaiseVolume 		exec --no-startup-id pulseaudio-ctl up 1
-#bindsym XF86AudioLowerVolume 		exec --no-startup-id pulseaudio-ctl down 1
-#bindsym XF86AudioMute				exec --no-startup-id pulseaudio-ctl mute
-# Screen brightness controls
-# bindsym XF86MonBrightnessUp 		exec "xbacklight -inc 10; notify-send 'brightness up'"
-# bindsym XF86MonBrightnessDown 	exec "xbacklight -dec 10; notify-send 'brightness down'"
+#bindsym XF86AudioRaiseVolume       exec --no-startup-id pulseaudio-ctl up 1
+#bindsym XF86AudioLowerVolume       exec --no-startup-id pulseaudio-ctl down 1
+#bindsym XF86AudioMute              exec --no-startup-id pulseaudio-ctl mute
+#bindsym XF86MonBrightnessUp        exec "xbacklight -inc 10; notify-send 'brightness up'"
+#bindsym XF86MonBrightnessDown      exec "xbacklight -dec 10; notify-send 'brightness down'"
 
 
 ##############
 #NUMBER ROW
 ##############
-bindsym $mod+1						workspace $ws1
-bindsym $mod+Ctrl+1					move container to workspace $ws1
-bindsym $mod+Shift+1				move container to workspace $ws1; workspace $ws1
 
-bindsym $mod+2						workspace $ws2
-bindsym $mod+Ctrl+2					move container to workspace $ws2
-bindsym $mod+Shift+2				move container to workspace $ws2; workspace $ws2
+bindsym $mod+1                      workspace $ws1
+bindsym $mod+Ctrl+1                 move container to workspace $ws1
+bindsym $mod+Shift+1                move container to workspace $ws1; workspace $ws1
 
-bindsym $mod+3						workspace $ws3
-bindsym $mod+Ctrl+3					move container to workspace $ws3
-bindsym $mod+Shift+3				move container to workspace $ws3; workspace $ws3
+bindsym $mod+2                      workspace $ws2
+bindsym $mod+Ctrl+2                 move container to workspace $ws2
+bindsym $mod+Shift+2                move container to workspace $ws2; workspace $ws2
 
-bindsym $mod+4						workspace $ws4
-bindsym $mod+Ctrl+4					move container to workspace $ws4
-bindsym $mod+Shift+4				move container to workspace $ws4; workspace $ws4
+bindsym $mod+3                      workspace $ws3
+bindsym $mod+Ctrl+3                 move container to workspace $ws3
+bindsym $mod+Shift+3                move container to workspace $ws3; workspace $ws3
 
-bindsym $mod+q						workspace $wsq
-bindsym $mod+Ctrl+q					move container to workspace $wsq
-bindsym $mod+Shift+q				move container to workspace $wsq; workspace $wsq
+bindsym $mod+4                      workspace $ws4
+bindsym $mod+Ctrl+4                 move container to workspace $ws4
+bindsym $mod+Shift+4                move container to workspace $ws4; workspace $ws4
 
-bindsym $mod+w						workspace $wsw
-bindsym $mod+Ctrl+w					move container to workspace $wsw
-bindsym $mod+Shift+w				move container to workspace $wsw; workspace $wsw
+bindsym $mod+q                      workspace $wsq
+bindsym $mod+Ctrl+q                 move container to workspace $wsq
+bindsym $mod+Shift+q                move container to workspace $wsq; workspace $wsq
 
-bindsym $mod+e						workspace $wse
-bindsym $mod+Ctrl+e					move container to workspace $wse
-bindsym $mod+Shift+e				move container to workspace $wse; workspace $wse
+bindsym $mod+w                      workspace $wsw
+bindsym $mod+Ctrl+w                 move container to workspace $wsw
+bindsym $mod+Shift+w                move container to workspace $wsw; workspace $wsw
 
-bindsym $mod+r						workspace $wsr
-bindsym $mod+Ctrl+r					move container to workspace $wsr
-bindsym $mod+Shift+r				move container to workspace $wsr; workspace $wsr
+bindsym $mod+e                      workspace $wse
+bindsym $mod+Ctrl+e                 move container to workspace $wse
+bindsym $mod+Shift+e                move container to workspace $wse; workspace $wse
 
-bindsym $mod+minus					scratchpad show
-bindsym $mod+Shift+minus			move scratchpad
+bindsym $mod+r                      workspace $wsr
+bindsym $mod+Ctrl+r                 move container to workspace $wsr
+bindsym $mod+Shift+r                move container to workspace $wsr; workspace $wsr
+
+bindsym $mod+minus                  scratchpad show
+bindsym $mod+Shift+minus            move scratchpad
 
 ##############
 #Q ROW
 ##############
-bindsym Mod1+Tab					workspace next_on_output
-bindsym Mod1+Shift+Tab				workspace prev_on_output
-bindsym $mod+Tab					focus output right
-bindsym $mod+Shift+Tab				move container to output right; focus output right
+
+bindsym Mod1+Tab                    workspace next_on_output
+bindsym Mod1+Shift+Tab              workspace prev_on_output
+bindsym $mod+Tab                    focus output right
+bindsym $mod+Shift+Tab              move container to output right; focus output right
 
 
-bindsym $mod+t						layout toggle splith tabbed 
-bindsym $mod+Shift+t				layout toggle split
-bindsym $mod+Ctrl+t					layout stacking
+bindsym $mod+t                      layout toggle splith tabbed 
+bindsym $mod+Shift+t                layout toggle split
+bindsym $mod+Ctrl+t                 layout stacking
 
-bindsym $mod+y						resize shrink width 10 px
+bindsym $mod+y                      resize shrink width 10 px
 
-bindsym $mod+u						resize shrink height 10 px
+bindsym $mod+u                      resize shrink height 10 px
 
-bindsym $mod+i						resize grow height 10 px
+bindsym $mod+i                      resize grow height 10 px
 
-bindsym $mod+o						resize grow width 10 px
+bindsym $mod+o                      resize grow width 10 px
 
-bindsym $mod+bracketleft			gaps inner current minus 5
-bindsym $mod+Shift+bracketleft		gaps outer current minus 5
-bindsym $mod+Ctrl+bracketleft		mode "$mode_gaps"
+bindsym $mod+bracketleft            gaps inner current minus 5
+bindsym $mod+Shift+bracketleft      gaps outer current minus 5
+bindsym $mod+Ctrl+bracketleft       mode "$mode_gaps"
 
-bindsym $mod+bracketright			gaps inner current plus 5
-bindsym $mod+Shift+bracketright		gaps outer current plus 5
-bindsym $mod+Ctrl+bracketright		mode "$mode_gaps"
+bindsym $mod+bracketright           gaps inner current plus 5
+bindsym $mod+Shift+bracketright     gaps outer current plus 5
+bindsym $mod+Ctrl+bracketright      mode "$mode_gaps"
 
 ##############
 #A ROW
 ##############
 
-bindsym $mod+a						focus parent
+bindsym $mod+a                      focus parent
 
-bindsym $mod+s						sticky toggle
+bindsym $mod+s                      sticky toggle
 
-#bindsym $mod+d						exec --no-startup-id dmenu_recency -l 30 -fn "Hasklug Nerd Font"
-bindsym $mod+d						exec --no-startup-id rofi -show run
+#bindsym $mod+d                     exec --no-startup-id dmenu_recency -l 30 -fn "Hasklug Nerd Font"
+bindsym $mod+d                      exec --no-startup-id rofi -show run
 
-bindsym $mod+f						fullscreen toggle
-bindsym $mod+Shift+f				exec pcmanfm
+bindsym $mod+f                      fullscreen toggle
+bindsym $mod+Shift+f                exec pcmanfm
 
-bindsym $mod+h						focus left
-bindsym $mod+Shift+h				move left
+bindsym $mod+h                      focus left
+bindsym $mod+Shift+h                move left
 
-bindsym $mod+j						focus down
-bindsym $mod+Shift+j				move down
+bindsym $mod+j                      focus down
+bindsym $mod+Shift+j                move down
 
-bindsym $mod+k						focus up
-bindsym $mod+Shift+k				move up
+bindsym $mod+k                      focus up
+bindsym $mod+Shift+k                move up
 
-bindsym $mod+l						focus right
-bindsym $mod+Shift+l				move right
+bindsym $mod+l                      focus right
+bindsym $mod+Shift+l                move right
 
-bindsym $mod+semicolon				split vertical
-bindsym $mod+apostrophe				split horizontal
+bindsym $mod+semicolon              split vertical
+bindsym $mod+apostrophe             split horizontal
 
-bindsym $mod+Return					exec i3-sensible-terminal
-bindsym $mod+Shift+Return			exec firefox
+bindsym $mod+Return                 exec i3-sensible-terminal
+bindsym $mod+Shift+Return           exec firefox
 
 ##############
 #Z ROW
 ##############
 
-bindsym $mod+z						focus child
-bindsym $mod+Shift+z				mode "$resize"
+bindsym $mod+z                      focus child
+bindsym $mod+Shift+z                mode "$resize"
 
-bindsym $mod+x						mode "$mode_system"
-bindsym $mod+Shift+x				restart
+bindsym $mod+x                      mode "$mode_system"
+bindsym $mod+Shift+x                restart
 
-bindsym $mod+c						kill
-bindsym $mod+Shift+c				reload
+bindsym $mod+c                      kill
+bindsym $mod+Shift+c                reload
 
-bindsym $mod+v						exec pavucontrol
-bindsym $mod+Shift+v				exec --no-startup-id i3-sensible-terminal -e alsamixer
+bindsym $mod+v                      exec pavucontrol
+bindsym $mod+Shift+v                exec --no-startup-id i3-sensible-terminal -e alsamixer
 
-bindsym $mod+b						border none
-bindsym $mod+Shift+b				border pixel 3
-bindsym $mod+Ctrl+b					border normal
+bindsym $mod+b                      border none
+bindsym $mod+Shift+b                border pixel 3
+bindsym $mod+Ctrl+b                 border normal
 
-bindsym $mod+n						move container to workspace $wsn; focus output right; move container to workspace $wsn; focus output right
-bindsym $mod+Mod1+n					move container to workspace $wsn
-bindsym $mod+Mod1+Shift+n			workspace $wsn; move container to workspace back_and_forth; workspace back_and_forth
-bindsym $mod+Ctrl+n					workspace $wsn
-bindsym $mod+Shift+n				workspace $wsn; focus left; move container to workspace back_and_forth; move container to workspace back_and_forth; workspace back_and_forth; move container to output right
+bindsym $mod+n                      move container to workspace $wsn; focus output right; move container to workspace $wsn; focus output right
+bindsym $mod+Mod1+n                 move container to workspace $wsn
+bindsym $mod+Mod1+Shift+n           workspace $wsn; move container to workspace back_and_forth; workspace back_and_forth
+bindsym $mod+Ctrl+n                 workspace $wsn
+bindsym $mod+Shift+n                workspace $wsn; focus left; move container to workspace back_and_forth; move container to workspace back_and_forth; workspace back_and_forth; move container to output right
 
-bindsym $mod+m						bar mode toggle
+bindsym $mod+m                      bar mode toggle
 
-bindsym $mod+Shift+greater			move workspace to output right
+bindsym $mod+Shift+greater          move workspace to output right
 
-bindsym $mod+Shift+less				move workspace to output left
+bindsym $mod+Shift+less             move workspace to output left
 
-bindsym $mod+slash					split vertical
+bindsym $mod+Shift+slash            exec "i3-sensible-terminal -e ~/.config/i3/keybindings.sh
 
-bindsym $mod+space					focus mode_toggle
-bindsym $mod+Shift+space			floating toggle
+bindsym $mod+space                  focus mode_toggle
+bindsym $mod+Shift+space            floating toggle
 
 ##############
 #NUMPAD
 ##############
 
-bindsym $mod+KP_Add					exec galculator
+bindsym $mod+KP_Add                 exec galculator
 
+bindsym $mod+Left                   focus left
+bindsym $mod+Down                   focus down
+bindsym $mod+Up                     focus up
+bindsym $mod+Right                  focus right
+
+bindsym $mod+Shift+Left             move left
+bindsym $mod+Shift+Down             move down
+bindsym $mod+Shift+Up               move up
+bindsym $mod+Shift+Right            move right
+
+bindsym $mod+Ctrl+Right             workspace next
+bindsym $mod+Ctrl+Left              workspace prev
+
+#END_KEYS
 
 ##############
 #MOUSE
 ##############
 
-bindsym button1						nop
-bindsym button2						nop
-bindsym button3						nop
-bindsym button4						nop
-bindsym button5						nop
-
-# change focus
-bindsym $mod+Left					focus left
-bindsym $mod+Down					focus down
-bindsym $mod+Up						focus up
-bindsym $mod+Right					focus right
-
-# move focused window
-bindsym $mod+Shift+Left				move left
-bindsym $mod+Shift+Down				move down
-bindsym $mod+Shift+Up				move up
-bindsym $mod+Shift+Right			move right
-
-#navigate workspaces next / previous
-bindsym $mod+Ctrl+Right				workspace next
-bindsym $mod+Ctrl+Left				workspace prev
+bindsym button1                     nop
+bindsym button2                     nop
+bindsym button3                     nop
+bindsym button4                     nop
+bindsym button5                     nop
