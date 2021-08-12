@@ -100,7 +100,7 @@ exec_always --no-startup-id picom -b -d
   client.placeholder      #000000 #2E3440 #D8DEE9 #000000 
   client.background       #2E3440
 
-  client.focused          #5E81AC #5E81AC #5E81AC #A3BE8C
+  client.focused          #5E81AC #5E81AC #5E81AC #D8DEE9
   client.focused_inactive #2E3440 #2E3440 #2E3440 #2E3440
   client.unfocused        #2E3440 #2E3440 #2E3440 #2E3440
 
