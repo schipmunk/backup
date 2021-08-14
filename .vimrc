@@ -45,4 +45,8 @@ nnoremap <leader>zz :let &scrolloff=999-&scrolloff<CR>
 nnoremap <leader>k :m .-2<CR>==
 nnoremap <leader>j :m .+1<CR>==
 
+" Leader o and O inserts 2 lines
+nnoremap <leader>O O<ESC>O
+nnoremap <leader>o o<cr>
+
 let $FZF_DEFAULT_COMMAND = 'find'

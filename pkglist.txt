@@ -102,7 +102,6 @@ qt5-styleplugins
 qt5ct
 rofi
 rsync
-sbxkb
 spectre-meltdown-checker
 steam-manjaro
 sxhkd
