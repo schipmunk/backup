@@ -4,10 +4,10 @@
 #Volume Keys
 
 XF86AudioRaiseVolume
-	pamixer -i 2
+	pamixer -i 5
 
 XF86AudioLowerVolume
-	pamixer -d 2
+	pamixer -d 5
 
 XF86AudioMute
 	pamixer -t
