@@ -51,6 +51,7 @@ licenses
 lightdm-settings
 linux510-nvidia
 linux513-nvidia
+linux514-nvidia
 lutris
 lxappearance
 lxinput
