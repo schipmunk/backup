@@ -1,0 +1,16 @@
+# Autostart applications
+exec --no-startup-id sxhkd
+exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+exec --no-startup-id nm-applet
+exec --no-startup-id xfce4-power-manager
+exec --no-startup-id clipit
+exec --no-startup-id blueman-applet
+#exec --no-startup-id xautolock -time 10 -locker blurlock
+exec_always --no-startup-id nitrogen --restore
+exec --no-startup-id i3-msg 'workspace $wsq; exec firefox; workspace $ws1'
+exec --no-startup-id i3-msg 'workspace $ws1; exec i3-sensible-terminal; workspace $ws1'
+exec tixati
+exec thunderbird
+exec discord
+exec_always --no-startup-id synology-drive
+exec_always --no-startup-id picom -b -d

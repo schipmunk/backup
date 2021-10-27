@@ -67,7 +67,7 @@ ethernet _first_ {
 
 memory {
         format = "RAM: %used Used; %available Free" 
-        threshold_degraded = "1G"
+        threshold_degraded = "4G"
         format_degraded = "MEMORY < %available"
 }
 

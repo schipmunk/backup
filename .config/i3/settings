@@ -1,0 +1,20 @@
+# set font to zero to minimize size of tabs in tabbed mode
+font pango:Hasklug Nerd Font Medium 0
+
+# set default desktop layout (default is tiling)
+workspace_layout tabbed
+workspace_auto_back_and_forth no
+force_display_urgency_hint 2000 ms
+focus_wrapping workspace
+for_window [class=".*"] title_format ""
+
+# default borders and gaps
+hide_edge_borders horizontal
+default_border pixel 3
+gaps inner 5
+gaps outer 5
+smart_gaps on
+
+# Use Mouse+$mod to drag floating windows
+floating_modifier $mod
+focus_follows_mouse no

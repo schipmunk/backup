@@ -1,0 +1,9 @@
+# Theme colors
+# class                   border  backgr. text    indic.   child_border
+  client.urgent           #BF616A #EF201D #EF201D #BF616A
+  client.placeholder      #000000 #2E3440 #D8DEE9 #000000 
+  client.background       #2E3440
+
+  client.focused          #5E81AC #5E81AC #5E81AC #BF616A
+  client.focused_inactive #2E3440 #2E3440 #2E3440 #2E3440
+  client.unfocused        #2E3440 #2E3440 #2E3440 #2E3440

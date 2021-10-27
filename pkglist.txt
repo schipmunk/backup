@@ -50,7 +50,6 @@ libreoffice-still
 licenses
 lightdm-settings
 linux510-nvidia
-linux513-nvidia
 linux514-nvidia
 lutris
 lxappearance
@@ -70,7 +69,6 @@ manjaro-printer
 manjaro-ranger-settings
 manjaro-release
 manjaro-system
-manjaro-zsh-config
 markdown_previewer
 memtest86+
 mkinitcpio-openswap
@@ -89,6 +87,7 @@ ntp
 numlockx
 nvtop
 obs-studio
+openshot
 pa-applet
 pamixer
 patch

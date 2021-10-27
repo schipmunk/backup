@@ -1,6 +1,7 @@
 chromium-widevine
 minecraft-launcher
 minecraft-server
+multimc5
 nord-vim
 nordic-theme-git
 open-fuse-iso
