@@ -17,15 +17,15 @@ bar {
     strip_workspace_numbers yes
 
     colors {
-        background $tdark1
-        statusline $tlight3
-        separator  $tlight3
+        background $t_bg
+        statusline $t_bgtext
+        separator  $t_bgtext
 
 #                          border       backgr.     text
-        focused_workspace  $tblue       $tblue      $tdark1
-        active_workspace   $tdark4      $tdark4     $tlight3
-        inactive_workspace $tdark1      $tdark1     $tlight3
-        binding_mode       $tlight3     $tdark1     $tlight3
-        urgent_workspace   $tlight3     $tlight3    $tred
+        focused_workspace  $t_focus     $t_focus    $t_foctext
+        active_workspace   $t_unfoc     $t_unfoc    $t_unfoctext
+        inactive_workspace $t_bg        $t_bg       $t_bgtext
+        binding_mode       $t_bgtext    $t_bg       $t_bgtext
+        urgent_workspace   $t_urgent    $t_urgent   $t_urgenttext
     }
 }

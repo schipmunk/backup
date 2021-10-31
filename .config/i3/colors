@@ -3,10 +3,10 @@
 
 # Theme colors
 # class                   border    backgr.     text        indic.child_border
-  client.urgent           $tred     $tred       $tred       $tred
-  client.placeholder      $tdark    $tdark1     $tdark      $tdark 
-  client.background       $tdark1
+  client.urgent           $t_urgent $t_urgent   $t_urgent   $t_urgent
+  client.placeholder      $t_bg     $t_bg       $t_bg       $t_bg 
+  client.background       $t_bg
 
-  client.focused          $tblue    $tblue      $tblue      $tred
-  client.focused_inactive $tdark1   $tdark1     $tdark1     $tdark1
-  client.unfocused        $tdark1   $tdark1     $tdark1     $tdark1
+  client.focused          $t_focus  $t_focus    $t_focus    $t_focusind
+  client.focused_inactive $t_bg     $t_bg       $t_bg       $t_bg
+  client.unfocused        $t_bg     $t_bg       $t_bg       $t_bg
