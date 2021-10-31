@@ -1,3 +1,6 @@
+# i3 config file (v4)
+# Please see http://i3wm.org/docs/userguide.html for a complete reference!
+
 # Start i3bar to display a workspace bar (plus the system information i3status if available)
 bar {
     i3bar_command i3bar
@@ -14,15 +17,15 @@ bar {
     strip_workspace_numbers yes
 
     colors {
-        background #2E3440
-        statusline #D8DEE9
-        separator  #D8DEE9
+        background $tdark1
+        statusline $tlight3
+        separator  $tlight3
 
-#                      border  backgr. text
-        focused_workspace  #5E81AC #5E81AC #2E3440
-        active_workspace   #4C566A #4C566A #D8DEE9
-        inactive_workspace #2E3440 #2E3440 #D8DEE9
-        binding_mode       #D8DEE9 #2E3440 #D8DEE9
-        urgent_workspace   #D8DEE9 #D8DEE9 #BF616A
+#                          border       backgr.     text
+        focused_workspace  $tblue       $tblue      $tdark1
+        active_workspace   $tdark4      $tdark4     $tlight3
+        inactive_workspace $tdark1      $tdark1     $tlight3
+        binding_mode       $tlight3     $tdark1     $tlight3
+        urgent_workspace   $tlight3     $tlight3    $tred
     }
 }

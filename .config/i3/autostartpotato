@@ -1,3 +1,6 @@
+# i3 config file (v4)
+# Please see http://i3wm.org/docs/userguide.html for a complete reference!
+
 # Autostart applications
 exec --no-startup-id sxhkd
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1

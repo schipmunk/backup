@@ -1,9 +1,26 @@
-# Theme colors
-# class                   border  backgr. text    indic.   child_border
-  client.urgent           #BF616A #EF201D #EF201D #BF616A
-  client.placeholder      #000000 #2E3440 #D8DEE9 #000000 
-  client.background       #2E3440
+# i3 config file (v4)
+# Please see http://i3wm.org/docs/userguide.html for a complete reference!
+ 
+set $tdark1 #2E3440
+set $tdark2 #3B4252
+set $tdark3 #434C5E
+set $tdark4 #4C566A
+set $tlight1 #ECEFF4
+set $tlight2 #E5E9F0
+set $tlight3 #D8DEE9
+set $tblue #5E81AC
+set $tred #BF616A
+set $torange #D08770
+set $tyellow #EBCB8B
+set $tgreen #A3BE8C
+set $tpurple #B48EAD
 
-  client.focused          #5E81AC #5E81AC #5E81AC #BF616A
-  client.focused_inactive #2E3440 #2E3440 #2E3440 #2E3440
-  client.unfocused        #2E3440 #2E3440 #2E3440 #2E3440
+# Theme colors
+# class                   border    backgr.     text        indic.child_border
+  client.urgent           $tred     $tred       $tred       $tred
+  client.placeholder      $tdark    $tdark1     $tdark      $tdark 
+  client.background       $tdark1
+
+  client.focused          $tblue    $tblue      $tblue      $tred
+  client.focused_inactive $tdark1   $tdark1     $tdark1     $tdark1
+  client.unfocused        $tdark1   $tdark1     $tdark1     $tdark1
