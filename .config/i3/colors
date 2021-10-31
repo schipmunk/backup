@@ -1,19 +1,5 @@
 # i3 config file (v4)
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
- 
-set $tdark1 #2E3440
-set $tdark2 #3B4252
-set $tdark3 #434C5E
-set $tdark4 #4C566A
-set $tlight1 #ECEFF4
-set $tlight2 #E5E9F0
-set $tlight3 #D8DEE9
-set $tblue #5E81AC
-set $tred #BF616A
-set $torange #D08770
-set $tyellow #EBCB8B
-set $tgreen #A3BE8C
-set $tpurple #B48EAD
 
 # Theme colors
 # class                   border    backgr.     text        indic.child_border
