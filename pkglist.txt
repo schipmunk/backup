@@ -117,6 +117,7 @@ vertex-maia-themes
 vi
 vibrancy-icons-teal
 viewnior
+vivaldi
 vlc
 volumeicon
 wmutils

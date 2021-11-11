@@ -128,8 +128,8 @@ bindsym $mod+Shift+l                move right
 bindsym $mod+semicolon              split vertical
 bindsym $mod+apostrophe             split horizontal
 
-bindsym $mod+Return                 exec i3-sensible-terminal
-bindsym $mod+Shift+Return           exec firefox
+bindsym $mod+Return                 exec $default_terminal
+bindsym $mod+Shift+Return           exec $default_browser
 
 ##############
 #Z ROW

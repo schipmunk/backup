@@ -26,6 +26,7 @@ Plug 'junegunn/fzf'
 call plug#end()
 
 colorscheme nord
+hi comment ctermfg=5
 
 let mapleader = " "
 
