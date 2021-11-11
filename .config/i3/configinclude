@@ -4,7 +4,7 @@
 # Set mod key (Mod1=<Alt>, Mod4=<Super>)
 set $mod Mod4
 
-set $default_browser firefox
+set $default_browser vivaldi-stable
 set $default_terminal alacritty
 set $default_torrent tixati
 set $default_email thunderbird

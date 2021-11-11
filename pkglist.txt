@@ -12,7 +12,6 @@ awesome-terminal-fonts
 b43-fwcutter
 bison
 bpytop
-chromium
 clementine
 clipit
 cpupower
