@@ -147,6 +147,9 @@ alias gitdot='/usr/bin/git --git-dir=/home/schipmunk/.gitdot/ --work-tree=/home/
 #pacman package list
 alias yay='pacman -Qqetn > ~/pkglist.txt && pacman -Qqem > ~/foreignpkglist.txt && yay'
 
+#vivaldi dark mode
+alias vivaldi-stable='vivaldi-stable --force-dark-mode'
+
 # set VIM as default
 export VISUAL=vim;
 export EDITOR=vim;

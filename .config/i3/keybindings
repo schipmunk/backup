@@ -129,7 +129,7 @@ bindsym $mod+semicolon              split vertical
 bindsym $mod+apostrophe             split horizontal
 
 bindsym $mod+Return                 exec $default_terminal
-bindsym $mod+Shift+Return           exec $default_browser --force-dark-mode
+bindsym $mod+Shift+Return           exec $default_browser
 
 ##############
 #Z ROW
