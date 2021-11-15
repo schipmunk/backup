@@ -1,0 +1,19 @@
+# i3 config file (v4)
+# Please see http://i3wm.org/docs/userguide.html for a complete reference!
+
+# Autostart applications
+exec --no-startup-id sxhkd
+exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+exec --no-startup-id nm-applet
+exec --no-startup-id xfce4-power-manager
+exec --no-startup-id clipit
+exec --no-startup-id blueman-applet
+#exec --no-startup-id xautolock -time 10 -locker blurlock
+exec_always --no-startup-id nitrogen --restore
+exec --no-startup-id i3-msg 'workspace $wsq; exec $default_browser; workspace $ws1'
+exec --no-startup-id i3-msg 'workspace $ws1; exec $default_terminal workspace $ws1'
+exec $default_torrent
+exec $default_email
+exec $default_chat
+exec_always --no-startup-id synology-drive
+exec_always --no-startup-id picom -b -d
