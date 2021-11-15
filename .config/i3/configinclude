@@ -11,9 +11,9 @@ set $default_email thunderbird
 set $default_chat discord
 
 include settings
-include workspace'hostname'
+include workspace`hostname`
 include forcefloat
-include autostart'hostname'
+include autostart`hostname`
 include themes/nord_dark
 include colors
 include bar
