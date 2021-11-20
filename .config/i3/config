@@ -13,9 +13,9 @@ set $default_chat discord
 include settings
 include workspace`hostname`
 include forcefloat
-include autostart`hostname`
 include themes/nord_dark
 include colors
 include bar
 include modes
 include keybindings
+include autostart`hostname`
