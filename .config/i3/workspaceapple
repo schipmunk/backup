@@ -29,10 +29,10 @@ workspace $wsr output DP-2
 #assign [class="firefox"] $wsq
 #assign [class="Chromium"] $wsq
 assign [class="Steam"] $ws2
-assign [class="(?i)default_email"] $wsw
+assign [class="(?i)$default_email"] $wsw
 assign [class="(?i)$default_torrent"] $ws3
 assign [class="Skype"] $wse
-assign [class="(?i)default_chat"] $wse
+assign [class="(?i)$default_chat"] $wse
 assign [class="element"] $wse
 assign [class="vlc"] $ws4
 assign [class="zoom"] $wse
