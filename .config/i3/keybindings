@@ -21,7 +21,6 @@ bindsym $mod+Shift+Print --release  exec --no-startup-id i3-scrot -s
 #bindsym XF86MonBrightnessUp        exec "xbacklight -inc 10; notify-send 'brightness up'"
 #bindsym XF86MonBrightnessDown      exec "xbacklight -dec 10; notify-send 'brightness down'"
 
-
 ##############
 #NUMBER ROW
 ##############
