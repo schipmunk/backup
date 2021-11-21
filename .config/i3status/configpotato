@@ -46,6 +46,12 @@ ethernet _first_ {
         format_down = " no LAN "
 }
 
+wireless _first_ {
+# format_up = "W: (%quality at %essid) %ip"
+format_up = "  %essid %quality "
+format_down = " no wlan "
+}
+
 #battery all {
 #        # format = "%status %percentage %remaining %emptytime"
 #        format = " %status %percentage"

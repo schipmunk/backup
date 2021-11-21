@@ -15,5 +15,5 @@ exec $default_email
 exec $default_chat
 exec_always --no-startup-id synology-drive
 exec_always --no-startup-id picom -b -d
+exec $default_browser
 exec --no-startup-id i3-msg 'workspace $ws1; exec $default_terminal'
-exec $default_terminal
