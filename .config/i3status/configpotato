@@ -49,7 +49,7 @@ ethernet _first_ {
 wireless _first_ {
 # format_up = "W: (%quality at %essid) %ip"
 format_up = "  %essid %quality "
-format_down = " no wlan "
+format_down = " no WIFI "
 }
 
 #battery all {
