@@ -153,7 +153,3 @@ alias vivaldi-stable='vivaldi-stable --force-dark-mode'
 #clear terminal and neofetch
 alias clear='clear && neofetch'
 
-# set VIM as default
-export VISUAL=vim;
-export EDITOR=vim;
-
