@@ -28,6 +28,7 @@ kvantum-qt5
 libgpod
 libreoffice-fresh
 light
+lightdm-gtk-greeter-settings
 lxappearance
 man-db
 man-pages
@@ -48,6 +49,7 @@ networkmanager-openvpn
 networkmanager-pptp
 networkmanager-vpnc
 ntp
+numlockx
 pamac-gtk
 pamixer
 pavucontrol
