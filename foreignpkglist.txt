@@ -1,16 +1,1 @@
-chromium-widevine
-minecraft-launcher
-minecraft-server
-multimc5
-nord-vim
-nordic-theme-git
-open-fuse-iso
-openrgb
-protonup-git
-skypeforlinux-stable-bin
-tixati
-ttf-ms-fonts
-ttf-vista-fonts
-vim-plug
-xdg-su
-zoom
+pulseaudio-ctl
