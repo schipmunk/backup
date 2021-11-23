@@ -47,6 +47,7 @@ lib32-flex
 lib32-mesa-demos
 libreoffice-still
 licenses
+lightdm-gtk-greeter-settings
 lightdm-settings
 linux510-nvidia
 linux514-nvidia
