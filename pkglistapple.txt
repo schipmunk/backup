@@ -54,6 +54,7 @@ pavucontrol
 pinebookpro-post-install
 polkit-gnome
 powertop
+pulseaudio-alsa
 qt5ct
 ranger
 rofi
