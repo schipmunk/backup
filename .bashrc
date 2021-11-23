@@ -145,7 +145,7 @@ neofetch
 alias gitdot='/usr/bin/git --git-dir=/home/schipmunk/.gitdot/ --work-tree=/home/schipmunk'
 
 #pacman package list
-alias yay='pacman -Qqetn > ~/pkglist.txt && pacman -Qqem > ~/foreignpkglist.txt && yay'
+alias yay='pacman -Qqetn > ~/pkglist$HOSTNAME.txt && pacman -Qqem > ~/foreignpkglist$HOSTNAME.txt && yay'
 
 #vivaldi dark mode
 alias vivaldi-stable='vivaldi-stable --force-dark-mode'

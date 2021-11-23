@@ -49,6 +49,7 @@ networkmanager-pptp
 networkmanager-vpnc
 ntp
 pamac-gtk
+pamixer
 pavucontrol
 pinebookpro-post-install
 polkit-gnome
