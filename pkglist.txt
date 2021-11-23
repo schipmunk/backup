@@ -1,6 +1,7 @@
 alacritty
 alsa-firmware
 ap6256-firmware
+arandr
 base
 blueman
 bluez-utils
