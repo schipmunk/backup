@@ -12,16 +12,17 @@ awesome-terminal-fonts
 b43-fwcutter
 bison
 bpytop
+bridge-utils
 clementine
 clipit
 cpupower
 cronie
 deluge
 discord
-dmidecode
 downgrade
 easyeffects
 ecryptfs-utils
+edk2-ovmf
 element-desktop
 epdfview
 etcher
@@ -118,6 +119,7 @@ vertex-maia-themes
 vi
 vibrancy-icons-teal
 viewnior
+virt-manager
 vivaldi
 vlc
 volumeicon
