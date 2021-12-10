@@ -171,6 +171,8 @@ bindsym $mod+Shift+space            floating toggle
 #NUMPAD
 ##############
 
+bindsym $mod+End                    mode "$mode_disable"
+
 bindsym $mod+KP_Add                 exec galculator
 
 bindsym $mod+Left                   focus left
