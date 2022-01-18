@@ -48,3 +48,4 @@ x-scheme-handler/trash=exo-file-manager.desktop;
 audio/mpeg=clementine.desktop;
 text/vnd.qt.linguist=vlc.desktop;
 application/x-xpinstall=thunderbird.desktop;
+video/mp4=vlc.desktop;org.openshot.OpenShot.desktop;

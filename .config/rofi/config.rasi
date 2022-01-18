@@ -1,4 +1,4 @@
 configuration {
-	theme: "~/.config/rofi/nord.rasi";
 	font: "Hasklug Nerd Font 10";
 }
+@theme "~/.config/rofi/nord.rasi"

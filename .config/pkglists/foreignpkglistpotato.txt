@@ -8,6 +8,7 @@ open-fuse-iso
 openrgb
 protonup-git
 skypeforlinux-stable-bin
+synology-drive
 tixati
 ttf-ms-fonts
 ttf-vista-fonts

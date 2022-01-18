@@ -60,6 +60,8 @@ bindsym $mod+Shift+r                move container to workspace $wsr; workspace 
 bindsym $mod+minus                  scratchpad show
 bindsym $mod+Shift+minus            move scratchpad
 
+bindsym $mod+equal                 exec galculator
+
 ##############
 #Q ROW
 ##############

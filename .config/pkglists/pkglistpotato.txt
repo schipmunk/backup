@@ -28,7 +28,6 @@ epdfview
 etcher
 exfat-utils
 fakeroot
-ffmpegthumbnailer
 firefox
 flameshot
 galculator
@@ -51,7 +50,6 @@ licenses
 lightdm-gtk-greeter-settings
 lightdm-settings
 linux510-nvidia
-linux514-nvidia
 linux515-nvidia
 lutris
 lxappearance
@@ -91,6 +89,7 @@ nvtop
 obs-studio
 openshot
 pa-applet
+pamac-gtk
 pamixer
 patch
 patchutils
@@ -107,7 +106,6 @@ rsync
 spectre-meltdown-checker
 steam-manjaro
 sxhkd
-synology-drive-client
 syslog-ng
 sysstat
 systemd-fsck-silent
