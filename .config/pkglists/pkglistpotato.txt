@@ -11,7 +11,6 @@ automake
 awesome-terminal-fonts
 b43-fwcutter
 bison
-bpytop
 bridge-utils
 clementine
 clipit
@@ -27,7 +26,6 @@ element-desktop
 epdfview
 etcher
 exfat-utils
-fakeroot
 firefox
 flameshot
 galculator
@@ -37,7 +35,6 @@ grub-theme-manjaro-dev
 gtk2fontsel
 gtksourceview-pkgbuild
 gufw
-hardinfo
 htop
 inetutils
 iputils
@@ -51,6 +48,7 @@ lightdm-gtk-greeter-settings
 lightdm-settings
 linux510-nvidia
 linux515-nvidia
+linux516-nvidia
 lutris
 lxappearance
 lxinput
@@ -70,6 +68,7 @@ manjaro-ranger-settings
 manjaro-release
 manjaro-system
 markdown_previewer
+matcha-gtk-theme
 memtest86+
 mkinitcpio-openswap
 moc
@@ -113,7 +112,6 @@ terminus-font
 thunderbird
 tlp
 tree
-vertex-maia-themes
 vi
 vibrancy-icons-teal
 viewnior

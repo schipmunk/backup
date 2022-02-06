@@ -1,4 +1,5 @@
 chromium-widevine
+hardinfo
 minecraft-launcher
 minecraft-server
 multimc5
@@ -12,6 +13,7 @@ synology-drive
 tixati
 ttf-ms-fonts
 ttf-vista-fonts
+vertex-maia-themes
 vim-plug
 xdg-su
 zoom

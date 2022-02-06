@@ -1,3 +1,7 @@
+window:
+    dimensions:
+        columns: 160
+        lines: 50
 font:
     normal:
           family: Hasklug Nerd Font
