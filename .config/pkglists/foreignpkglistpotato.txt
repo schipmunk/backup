@@ -8,6 +8,7 @@ nordic-theme-git
 open-fuse-iso
 openrgb
 protonup-git
+protonup-qt
 skypeforlinux-stable-bin
 synology-drive
 tixati

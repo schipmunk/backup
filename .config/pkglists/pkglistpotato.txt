@@ -12,6 +12,7 @@ awesome-terminal-fonts
 b43-fwcutter
 bison
 bridge-utils
+btop
 clementine
 clipit
 cpupower
@@ -30,6 +31,7 @@ firefox
 flameshot
 galculator
 gcolor2
+gnutls28
 gparted
 grub-theme-manjaro-dev
 gtk2fontsel
@@ -42,6 +44,7 @@ ipw2100-fw
 ipw2200-fw
 lib32-flex
 lib32-mesa-demos
+libpng12
 libreoffice-still
 licenses
 lightdm-gtk-greeter-settings
