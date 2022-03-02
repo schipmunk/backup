@@ -20,7 +20,6 @@ cronie
 deluge
 discord
 downgrade
-easyeffects
 ecryptfs-utils
 edk2-ovmf
 element-desktop
@@ -101,7 +100,6 @@ pkgconf
 polkit-gnome
 powertop
 pulsemixer
-qt5-styleplugins
 qt5ct
 rofi
 rsync

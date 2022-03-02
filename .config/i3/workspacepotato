@@ -16,10 +16,10 @@ set $wsr "8:R:DOC"
 set $wsn "9:N:Min"
 
 # Assigning workspaces to specific monitors
-workspace $ws1 output DP-0
-workspace $ws2 output DP-0
-workspace $ws3 output DP-0
-workspace $ws4 output DP-0
+workspace $ws1 output DP-4
+workspace $ws2 output DP-4
+workspace $ws3 output DP-4
+workspace $ws4 output DP-4
 workspace $wsq output DP-2
 workspace $wsw output DP-2
 workspace $wse output DP-2
