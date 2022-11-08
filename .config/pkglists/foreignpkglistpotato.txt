@@ -8,12 +8,12 @@ open-fuse-iso
 openrgb
 protonup-git
 protonup-qt
-qt5-styleplugins
 skypeforlinux-stable-bin
 synology-drive
 tixati
 ttf-ms-fonts
 ttf-vista-fonts
 vim-plug
+woeusb-ng
 xdg-su
 zoom

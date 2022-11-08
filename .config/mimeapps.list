@@ -49,3 +49,4 @@ audio/mpeg=clementine.desktop;
 text/vnd.qt.linguist=vlc.desktop;
 application/x-xpinstall=thunderbird.desktop;
 video/mp4=vlc.desktop;org.openshot.OpenShot.desktop;
+video/x-matroska=mpv.desktop;vlc.desktop;
