@@ -8,7 +8,6 @@ open-fuse-iso
 openrgb
 protonup-git
 protonup-qt
-skypeforlinux-stable-bin
 synology-drive
 tixati
 ttf-ms-fonts

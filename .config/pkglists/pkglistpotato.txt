@@ -1,6 +1,5 @@
 acpi
 acpid
-adwaita-maia
 alacritty
 amd-ucode
 android-tools
@@ -46,7 +45,6 @@ libreoffice-still
 lightdm-gtk-greeter-settings
 lightdm-settings
 linux515-nvidia
-linux519-nvidia
 linux60-nvidia
 lutris
 lxappearance
