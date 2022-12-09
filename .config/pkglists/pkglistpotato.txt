@@ -18,7 +18,6 @@ cpupower
 cronie
 deluge
 discord
-discord-canary
 downgrade
 ecryptfs-utils
 emacs

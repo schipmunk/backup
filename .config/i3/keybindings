@@ -153,11 +153,11 @@ bindsym $mod+b                      border none
 bindsym $mod+Shift+b                border pixel 3
 bindsym $mod+Ctrl+b                 border normal
 
-bindsym $mod+n                      move container to workspace $wsn; focus output right; move container to workspace $wsn; focus output right
-bindsym $mod+Mod1+n                 move container to workspace $wsn
-bindsym $mod+Mod1+Shift+n           workspace $wsn; move container to workspace back_and_forth; workspace back_and_forth
-bindsym $mod+Ctrl+n                 workspace $wsn
-bindsym $mod+Shift+n                workspace $wsn; focus left; move container to workspace back_and_forth; move container to workspace back_and_forth; workspace back_and_forth; move container to output right
+#bindsym $mod+n                      move container to workspace $wsn; focus output right; move container to workspace $wsn; focus output right
+#bindsym $mod+Mod1+n                 move container to workspace $wsn
+#bindsym $mod+Mod1+Shift+n           workspace $wsn; move container to workspace back_and_forth; workspace back_and_forth
+#bindsym $mod+Ctrl+n                 workspace $wsn
+#bindsym $mod+Shift+n                workspace $wsn; focus left; move container to workspace back_and_forth; move container to workspace back_and_forth; workspace back_and_forth; move container to output right
 
 bindsym $mod+m                      bar mode toggle
 
