@@ -13,7 +13,7 @@ bar {
     bindsym button1 nop
     bindsym button4 nop
     bindsym button5 nop
-    font pango:Hasklug Nerd Font Medium 10
+    font pango:Hasklug Nerd Font Medium 12
     strip_workspace_numbers yes
 
     colors {

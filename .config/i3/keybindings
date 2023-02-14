@@ -42,6 +42,22 @@ bindsym $mod+4                      workspace $ws4
 bindsym $mod+Ctrl+4                 move container to workspace $ws4
 bindsym $mod+Shift+4                move container to workspace $ws4; workspace $ws4
 
+bindsym $mod+5                      workspace $ws5
+bindsym $mod+Ctrl+5                 move container to workspace $ws5
+bindsym $mod+Shift+5                move container to workspace $ws5; workspace $ws5
+
+bindsym $mod+9                      ~/.config/i3/monitors2.sh
+bindsym $mod+0                      ~/.config/i3/monitors3.sh
+
+##############
+#Q ROW
+##############
+
+bindsym Mod1+Tab                    workspace next_on_output
+bindsym Mod1+Shift+Tab              workspace prev_on_output
+bindsym $mod+Tab                    focus output right
+bindsym $mod+Shift+Tab              move container to output right; focus output right
+
 bindsym $mod+q                      workspace $wsq
 bindsym $mod+Ctrl+q                 move container to workspace $wsq
 bindsym $mod+Shift+q                move container to workspace $wsq; workspace $wsq
@@ -62,16 +78,6 @@ bindsym $mod+minus                  scratchpad show
 bindsym $mod+Shift+minus            move scratchpad
 
 bindsym $mod+equal                 exec galculator
-
-##############
-#Q ROW
-##############
-
-bindsym Mod1+Tab                    workspace next_on_output
-bindsym Mod1+Shift+Tab              workspace prev_on_output
-bindsym $mod+Tab                    focus output right
-bindsym $mod+Shift+Tab              move container to output right; focus output right
-
 
 bindsym $mod+t                      layout toggle splith tabbed 
 bindsym $mod+Shift+t                layout toggle split
@@ -152,12 +158,6 @@ bindsym $mod+Shift+v                exec --no-startup-id i3-sensible-terminal -e
 bindsym $mod+b                      border none
 bindsym $mod+Shift+b                border pixel 3
 bindsym $mod+Ctrl+b                 border normal
-
-#bindsym $mod+n                      move container to workspace $wsn; focus output right; move container to workspace $wsn; focus output right
-#bindsym $mod+Mod1+n                 move container to workspace $wsn
-#bindsym $mod+Mod1+Shift+n           workspace $wsn; move container to workspace back_and_forth; workspace back_and_forth
-#bindsym $mod+Ctrl+n                 workspace $wsn
-#bindsym $mod+Shift+n                workspace $wsn; focus left; move container to workspace back_and_forth; move container to workspace back_and_forth; workspace back_and_forth; move container to output right
 
 bindsym $mod+m                      bar mode toggle
 

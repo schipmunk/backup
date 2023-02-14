@@ -26,7 +26,6 @@ exfat-utils
 firefox
 flameshot
 galculator
-gcolor2
 gnome-firmware
 gnutls28
 gparted
@@ -44,7 +43,7 @@ libreoffice-still
 lightdm-gtk-greeter-settings
 lightdm-settings
 linux515-nvidia
-linux60-nvidia
+linux61-nvidia
 lutris
 lxappearance
 lxinput
@@ -63,12 +62,10 @@ manjaro-printer
 manjaro-ranger-settings
 manjaro-release
 manjaro-system
-markdown_previewer
 matcha-gtk-theme
 memtest86+
 mkinitcpio-openswap
 moc
-mpv
 nano
 ncdu
 neofetch
@@ -95,7 +92,6 @@ polkit-gnome
 powertop
 pulsemixer
 qt5ct
-rofi
 rsync
 spectre-meltdown-checker
 steam
@@ -104,6 +100,7 @@ syslog-ng
 sysstat
 systemd-fsck-silent
 terminus-font
+texinfo
 thunderbird
 tlp
 tree
