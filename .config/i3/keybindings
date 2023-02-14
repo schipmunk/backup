@@ -46,8 +46,8 @@ bindsym $mod+5                      workspace $ws5
 bindsym $mod+Ctrl+5                 move container to workspace $ws5
 bindsym $mod+Shift+5                move container to workspace $ws5; workspace $ws5
 
-bindsym $mod+9                      ~/.config/i3/monitors2.sh
-bindsym $mod+0                      ~/.config/i3/monitors3.sh
+bindsym $mod+9                      exec ~/.config/i3/monitors2.sh
+bindsym $mod+0                      exec ~/.config/i3/monitors3.sh
 
 ##############
 #Q ROW
