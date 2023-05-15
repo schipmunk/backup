@@ -4,11 +4,11 @@ minecraft-launcher
 minecraft-server
 multimc-bin
 nord-vim
-nordic-theme-git
 open-fuse-iso
 openrgb
 protonup-git
 protonup-qt
+selectdefaultapplication-git
 synology-drive
 tixati
 ttf-ms-fonts

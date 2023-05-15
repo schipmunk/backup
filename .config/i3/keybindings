@@ -149,8 +149,8 @@ bindsym $mod+Shift+z                mode "$resize"
 bindsym $mod+x                      mode "$mode_system"
 bindsym $mod+Shift+x                restart
 
-bindsym $mod+c                      kill
-bindsym $mod+Shift+c                reload
+bindsym $mod+Ctrl+c                reload
+bindsym $mod+Shift+c                kill
 
 bindsym $mod+v                      exec pavucontrol
 bindsym $mod+Shift+v                exec --no-startup-id i3-sensible-terminal -e alsamixer
