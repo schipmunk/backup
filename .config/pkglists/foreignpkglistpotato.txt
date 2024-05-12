@@ -5,15 +5,13 @@ minecraft-server
 multimc-bin
 nord-vim
 open-fuse-iso
-openrgb
 protonup-git
-protonup-qt
 selectdefaultapplication-git
 synology-drive
 tixati
 ttf-ms-fonts
 ttf-vista-fonts
 vim-plug
-woeusb-ng
 xdg-su
+youtube-dl
 zoom

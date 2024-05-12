@@ -151,5 +151,5 @@ alias yay='pacman -Qqetn > ~/.config/pkglists/pkglist$HOSTNAME.txt && pacman -Qq
 alias vivaldi-stable='vivaldi-stable --force-dark-mode'
 
 #clear terminal and neofetch
-alias clear='clear && neofetch'
+alias clear='clear && fastfetch'
 

@@ -4,9 +4,9 @@
 set $t_bg #002B36
 set $t_bgtext #839496
 set $t_unfoc #073642
-set $t_unfoctext #839496
+set $t_unfoctext #2AA198
 set $t_focus #2AA198
-set $t_foctext #839496
+set $t_foctext #002B36
 set $t_focusind #D33682
 set $t_urgent #D33682
 set $t_urgenttext #839496
