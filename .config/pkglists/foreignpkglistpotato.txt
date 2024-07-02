@@ -7,6 +7,7 @@ nord-vim
 open-fuse-iso
 protonup-git
 selectdefaultapplication-git
+spectre-meltdown-checker
 synology-drive
 tixati
 ttf-ms-fonts

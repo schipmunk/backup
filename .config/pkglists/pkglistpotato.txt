@@ -44,6 +44,7 @@ lightdm-gtk-greeter-settings
 lightdm-settings
 linux66-nvidia
 linux68-nvidia
+linux69-nvidia
 lutris
 lxappearance
 lxinput
@@ -55,7 +56,6 @@ manjaro-alsa
 manjaro-bluetooth
 manjaro-browser-settings
 manjaro-hello
-manjaro-hotfixes
 manjaro-pipewire
 manjaro-printer
 manjaro-ranger-settings
@@ -92,8 +92,6 @@ protonup-qt
 pulsemixer
 qjackctl
 qt5ct
-solaar
-spectre-meltdown-checker
 steam
 sxhkd
 sysfsutils
