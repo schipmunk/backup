@@ -117,6 +117,7 @@ bindsym $mod+s                      sticky toggle
 
 #bindsym $mod+d                     exec --no-startup-id dmenu_recency -l 30 -fn "Hasklug Nerd Font"
 bindsym $mod+d                      exec --no-startup-id rofi -show run
+bindsym $mod+Shift+d                      exec --no-startup-id rofi -show drun
 
 bindsym $mod+f                      fullscreen toggle
 bindsym $mod+Shift+f                exec pcmanfm

@@ -17,7 +17,6 @@ clipit
 cpupower
 cronie
 deluge
-discord
 dmraid
 downgrade
 ecryptfs-utils
@@ -42,8 +41,8 @@ libpng12
 libreoffice-still
 lightdm-gtk-greeter-settings
 lightdm-settings
+linux610-nvidia
 linux66-nvidia
-linux68-nvidia
 linux69-nvidia
 lutris
 lxappearance

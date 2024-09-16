@@ -155,3 +155,6 @@ alias clear='clear && fastfetch'
 
 #Neovim instead of Vim
 alias vim='nvim'
+
+#flatpak Discord
+alias discord='flatpak run com.discordapp.Discord &'

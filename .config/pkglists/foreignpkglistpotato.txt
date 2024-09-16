@@ -1,5 +1,4 @@
 chromium-widevine
-discord-canary
 minecraft-launcher
 minecraft-server
 multimc-bin
