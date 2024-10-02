@@ -1,1 +1,2 @@
+gcolor2
 pulseaudio-ctl
