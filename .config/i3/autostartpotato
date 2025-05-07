@@ -10,6 +10,7 @@ exec --no-startup-id clipit
 exec --no-startup-id blueman-applet
 #exec --no-startup-id xautolock -time 10 -locker blurlock
 exec_always --no-startup-id nitrogen --restore
+exec_always --no-startup-id pia-client
 exec $default_torrent
 exec $default_email
 exec $default_chat
