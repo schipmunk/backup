@@ -1,6 +1,5 @@
 acpi
 acpid
-alacritty
 amd-ucode
 android-tools
 apparmor
@@ -14,6 +13,7 @@ bison
 brave-browser
 bridge-utils
 btop
+cantarell-fonts
 clipit
 conky
 cpupower
@@ -29,9 +29,11 @@ fastfetch
 firefox
 flameshot
 galculator
+gdm-settings
 gimp
 gnome-firmware
 gparted
+gsmartcontrol
 gtk2fontsel
 gtksourceview-pkgbuild
 gufw
@@ -46,12 +48,10 @@ lib32-mesa-demos
 libgpod
 libpng12
 libreoffice-still
-lightdm-gtk-greeter-settings
-lightdm-settings
 linux-meta
 linux-nvidia-meta
-linux613-nvidia
-linux614-nvidia
+linux612-nvidia
+linux617-nvidia
 lutris
 lxappearance
 lxinput
@@ -74,7 +74,6 @@ mkinitcpio-openswap
 mpv
 nano
 ncdu
-neovim
 netctl
 nethogs
 network-manager-applet
@@ -83,9 +82,12 @@ networkmanager-openvpn
 networkmanager-pptp
 networkmanager-vpnc
 nfs-utils
+niri
 nitrogen
 ntp
+numlockx
 nvtop
+nwg-look
 obs-studio
 openrgb
 openshot
@@ -103,6 +105,7 @@ pulsemixer
 qjackctl
 qt5ct
 steam
+swayidle
 sxhkd
 sysbench
 sysfsutils
@@ -113,6 +116,7 @@ texinfo
 thunderbird
 tlp
 tree
+udiskie
 ventoy
 vi
 vibrancy-icons-teal
