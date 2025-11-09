@@ -32,6 +32,7 @@ galculator
 gdm-settings
 gimp
 gnome-firmware
+gnome-tweaks
 gparted
 gsmartcontrol
 gtk2fontsel
@@ -91,6 +92,7 @@ nwg-look
 obs-studio
 openrgb
 openshot
+pamac-tray-icon-plasma
 pamixer
 papirus-icon-theme
 patch

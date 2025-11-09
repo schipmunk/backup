@@ -246,8 +246,9 @@ workspace "DOC" {
 // See the binds section below for more spawn examples.
 
 // This line starts waybar, a commonly used bar for Wayland compositors.
-spawn-at-startup "waybar" "-c" "~/.config/niri/waybar/config.jsonc" "-s" "~/.config/niri/waybar/style.css"
+//spawn-at-startup "waybar" "-c" "~/.config/niri/waybar/config.jsonc" "-s" "~/.config/niri/waybar/style.css"
 spawn-at-startup "nm-applet"
+spawn-at-startup "pamac-tray-plasma"
 spawn-at-startup "xfce4-power-manager"
 spawn-at-startup "blueman-applet"
 spawn-sh-at-startup "~/.config/niri/scripts/startup"
