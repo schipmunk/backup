@@ -9,33 +9,36 @@
     "modules-left": [
         "niri/workspaces",
         "niri/mode",
-        "sway/scratchpad",
-        "custom/media"
+        //"sway/scratchpad",
+        "custom/media",
+        "niri/window"
     ],
     "modules-center": [
-        "niri/window"
     ],
     "modules-right": [
         "mpd",
-        "idle_inhibitor",
-        "pulseaudio",
-        "network",
-        "power-profiles-daemon",
+        //"idle_inhibitor",
+        //"power-profiles-daemon",
         "cpu",
         "memory",
-        "temperature",
-        "backlight",
+        "disk#disk1",
+        "disk#disk2",
+        "disk#disk3",
+        "network",
+        //"temperature",
+        //"backlight",
         "keyboard-state",
-        "sway/language",
-        "battery",
-        "battery#bat2",
-        "clock",
+        //"sway/language",
+        //"battery",
+        //"battery#bat2",
+        "pulseaudio",
         "tray",
+        "clock",
         "custom/power"
     ],
     // Modules configuration
-    // "sway/workspaces": {
-    //     "disable-scroll": true,
+     "niri/workspaces": {
+         "disable-click": true,
     //     "all-outputs": true,
     //     "warp-on-scroll": false,
     //     "format": "{name}: {icon}",
@@ -49,7 +52,7 @@
     //         "focused": "",
     //         "default": ""
     //     }
-    // },
+    },
     "keyboard-state": {
         "numlock": true,
         "capslock": true,
@@ -58,6 +61,18 @@
             "locked": "",
             "unlocked": ""
         }
+    },
+    "disk#disk1": {
+        "path": "/",
+        "format": "SYS:{free}"
+    },
+    "disk#disk2": {
+        "path": "/home/schipmunk/4TBSamsung990/",
+        "format": "GAME:{free}"
+    },
+    "disk#disk3": {
+        "path": "/home/schipmunk/2TBCrucialP3/",
+        "format": "STOR:{free}"
     },
     "sway/mode": {
         "format": "<span style=\"italic\">{}</span>"
@@ -112,15 +127,32 @@
     },
     "clock": {
         // "timezone": "America/New_York",
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%Y-%m-%d}"
+        "tooltip-format": "<big>{:%Y %B %d}</big>\n<tt><small>{calendar}</small></tt>",
+            "calendar": {
+                    "mode"          : "year",
+                    "mode-mon-col"  : 3,
+                    "weeks-pos"     : "right",
+                    "on-scroll"     : 1,
+                    "format": {
+                              "months":     "<span color='#ffead3'><b>{}</b></span>",
+                              "days":       "<span color='#ecc6d9'><b>{}</b></span>",
+                              "weeks":      "<span color='#99ffdd'><b>W{}</b></span>",
+                              "weekdays":   "<span color='#ffcc66'><b>{}</b></span>",
+                              "today":      "<span color='#ff6699'><b><u>{}</u></b></span>"
+                              }
+            },
+        "format-alt": "{:%Y-%b-%d}"
     },
     "cpu": {
-        "format": "{usage}% ",
-        "tooltip": false
+        "interval": 3,
+        "format": "CPU:{usage}%",
+        "tooltip": false,
+        "on-click": "alacritty -e btop"
     },
     "memory": {
-        "format": "{}% "
+        "interval": 3,
+        "format": "RAM:{percentage}% {used}GB/{total}GB",
+        "on-click": "alacritty -e btop"
     },
     "temperature": {
         // "thermal-zone": 2,
