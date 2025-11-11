@@ -79,8 +79,9 @@ output "HDMI-A-1" {
 
 layout {
     gaps 4
-    background-color "transparent"
+    //background-color "transparent"
     center-focused-column "never"
+    always-center-single-column
     preset-column-widths {
         proportion 0.33333
         proportion 0.5
@@ -89,9 +90,13 @@ layout {
     default-column-width { proportion 0.5; }
 
     focus-ring {
-        width 4
+        width 2
         active-color "#5E81AC"
         inactive-color "#4C566A"
+    }
+
+    insert-hint {
+        color "#4C566A"
     }
 }
 workspace "PRIM" {
@@ -144,11 +149,12 @@ screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
 animations {
     // off
     // Slow down all animations by this factor. Values below 1 speed them up instead.
-    slowdown 0.5
+   // slowdown 0.5
 }
 
 overview {
-    backdrop-color "#2E344020"
+    backdrop-color "#8FBCBB"
+    zoom 0.3
 }
 gestures {
     hot-corners {
@@ -157,7 +163,7 @@ gestures {
 }
 layer-rule {
     match namespace="^wallpaper$"
-    place-within-backdrop true
+   // place-within-backdrop true
 }
 
 window-rule {
@@ -199,6 +205,14 @@ window-rule {
 window-rule {
     match at-startup=true app-id=r#"vivaldi-stable$"#
     open-on-workspace "WWW"
+    open-maximized true
+}
+window-rule {
+    match app-id=r#"vivaldi-stable$"#
+    match app-id=r#"brave-browser$"#
+    match app-id=r#"mpv$"#
+    match app-id=r#"vlc$"#
+    match title=r#"Steam$"#
     open-maximized true
 }
 

@@ -1,0 +1,16 @@
+background-color=#4C566A
+border-size=2
+border-color=#D8DEE9
+font=Hasklug Nerd Font Mono Medium 12
+default-timeout=5000
+format=%s\n%b
+
+[urgency=low]
+border-color=#D8DEE9
+
+[urgency=normal]
+border-color=#81A1C1
+
+[urgency=high]
+border-color=#BF616A
+default-timeout=0
