@@ -268,13 +268,13 @@ binds {
     Mod+Shift+T         { switch-preset-window-height; }
     Mod+Ctrl+T          { reset-window-height; }
     Mod+Y               { focus-monitor-left; }
-    Mod+Shift+Y         { move-column-to-monitor-left; }
+    Mod+Shift+Y         { move-workspace-to-monitor-left; }
     Mod+U               { focus-monitor-down; }
-    Mod+Shift+U         { move-column-to-monitor-down; }
+    Mod+Shift+U         { move-workspace-to-monitor-down; }
     Mod+I               { focus-monitor-up; }
-    Mod+Shift+I         { move-column-to-monitor-up; }
+    Mod+Shift+I         { move-workspace-to-monitor-up; }
     Mod+O               { focus-monitor-right; }
-    Mod+Shift+O         { move-column-to-monitor-right; }
+    Mod+Shift+O         { move-workspace-to-monitor-right; }
     Mod+Shift+BracketLeft     { consume-or-expel-window-left; }
     Mod+Shift+BracketRight    { consume-or-expel-window-right; }
 
@@ -282,9 +282,9 @@ binds {
     //A ROW
     //////////////////////
 
-    Mod+A               { focus-workspace-down; }
-    Mod+Shift+A         { move-column-to-workspace-down; }
-    Mod+Ctrl+A          { move-workspace-down; }
+    Mod+A               { focus-workspace-up; }
+    Mod+Shift+A         { move-column-to-workspace-up; }
+    Mod+Ctrl+A          { move-workspace-up; }
     Mod+S repeat=false  { toggle-overview; }
     Mod+D hotkey-overlay-title="Run a Desktop App: Rofi" { spawn "rofi" "-show" "drun"; }
     Mod+Shift+D hotkey-overlay-title="Run an Application: Rofi" { spawn "rofi" "-show" "run"; }
@@ -293,12 +293,16 @@ binds {
     Mod+Ctrl+F          { fullscreen-window; }
     Mod+H               { focus-column-left; }
     Mod+Shift+H         { move-column-left; }
+    Mod+Ctrl+H          { move-column-to-monitor-left; }
     Mod+J               { focus-window-down; }
     Mod+Shift+J         { move-window-down; }
+    Mod+Ctrl+J          { move-column-to-monitor-down; }
     Mod+K               { focus-window-up; }
     Mod+Shift+K         { move-window-up; }
+    Mod+Ctrl+K          { move-column-to-monitor-up; }
     Mod+L               { focus-column-right; }
     Mod+Shift+L         { move-column-right; }
+    Mod+Ctrl+L          { move-column-to-monitor-right; }
     Super+Shift+Semicolon hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
     Mod+Shift+Apostrophe hotkey-overlay-title="Screen off" { power-off-monitors; }
     Mod+Return hotkey-overlay-title="Open a Terminal: alacritty" { spawn "alacritty"; }
@@ -307,9 +311,9 @@ binds {
     //Z ROW
     //////////////////////
 
-    Mod+Z               { focus-workspace-up; }
-    Mod+Shift+Z         { move-column-to-workspace-up; }
-    Mod+Ctrl+Z          { move-workspace-up; }
+    Mod+Z               { focus-workspace-down; }
+    Mod+Shift+Z         { move-column-to-workspace-down; }
+    Mod+Ctrl+Z          { move-workspace-down; }
     Mod+Shift+X         { quit; }
     Mod+Shift+C repeat=false { close-window; }
     Mod+V               { spawn "pavucontrol"; }
