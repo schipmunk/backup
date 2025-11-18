@@ -1,0 +1,10 @@
+#!/bin/bash
+
+#Define the file and pattern
+FILE="/home/schipmunk/.config/niri/config.kdl"
+
+if grep -q "//off //monitor off" "$FILE"; then
+    sed -i 's/\/\/off \/\/monitor off/off \/\/monitor off/' "$FILE"
+else
+    sed -i 's/off \/\/monitor off/\/\/off \/\/monitor off/' "$FILE"
+fi
