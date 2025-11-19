@@ -262,8 +262,14 @@ binds {
     Mod+5               { focus-workspace 9; }
     Mod+Shift+5         { move-column-to-workspace 9; }
     Mod+6               { focus-monitor "DP-3"; }
+    Mod+Shift+6         { move-window-to-monitor "DP-3"; }
+    Mod+Ctrl+6          { move-workspace-to-monitor "DP-3"; }
     Mod+7               { focus-monitor "DP-2"; }
+    Mod+Shift+7         { move-window-to-monitor "DP-2"; }
+    Mod+Ctrl+7          { move-workspace-to-monitor "DP-2"; }
     Mod+8               { focus-monitor "HDMI-A-1"; }
+    Mod+Shift+8         { move-window-to-monitor "HDMI-A-1"; }
+    Mod+Ctrl+8          { move-workspace-to-monitor "HDMI-A-1"; }
     Mod+0               { spawn-sh "~/.config/niri/scripts/toggletv"; }
     Mod+Equal           { spawn "galculator"; }
 
