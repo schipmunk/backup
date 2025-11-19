@@ -91,7 +91,7 @@ output "HDMI-A-1" {
 
 layout {
     gaps 4
-    //background-color "transparent"
+    background-color "transparent"
     center-focused-column "never"
     always-center-single-column
     preset-column-widths {
@@ -142,6 +142,8 @@ spawn-at-startup "pamac-tray-plasma"
 spawn-at-startup "xfce4-power-manager"
 spawn-at-startup "blueman-applet"
 spawn-sh-at-startup "~/.config/niri/scripts/startup"
+spawn-sh-at-startup "swww-daemon -n overlay"
+spawn-sh-at-startup "swww img -n overlay ~/Pictures/Wallpapers/nordnightblur.png"
 spawn-at-startup "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
 spawn-at-startup "xwayland-satellite"
 spawn-at-startup "vivaldi-stable"
@@ -165,7 +167,7 @@ animations {
 }
 
 overview {
-    backdrop-color "#8FBCBB"
+    //backdrop-color "#8FBCBB"
     zoom 0.3
 }
 gestures {
@@ -174,8 +176,8 @@ gestures {
     }
 }
 layer-rule {
-    match namespace="^wallpaper$"
-   // place-within-backdrop true
+    match namespace="^swww-daemonoverlay$"
+    place-within-backdrop true
 }
 
 window-rule {
