@@ -1,12 +1,12 @@
 #!/bin/bash
 
 #Define the file and pattern
-FILE="/home/schipmunk/.config/niri/config.kdl"
+FILE="$HOME/.config/niri/config.kdl"
 
-if grep -q "//off //monitor off" "$FILE"; then
-    sed -i 's/\/\/off \/\/monitor off/off \/\/monitor off/' "$FILE"
+if grep -q "//off //toggletv" "$FILE"; then
+    sed -i 's/\/\/off \/\/toggletv/off \/\/toggletv/' "$FILE"
     notify-send "Output Changed" "TV is Off"
 else
-    sed -i 's/off \/\/monitor off/\/\/off \/\/monitor off/' "$FILE"
+    sed -i 's/off \/\/toggletv/\/\/off \/\/toggletv/' "$FILE"
     notify-send "Output Changed" "TV is On"
 fi

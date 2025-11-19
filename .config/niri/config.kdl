@@ -73,7 +73,7 @@ output "DP-2" {
 }
 
 output "HDMI-A-1" {
-    off //monitor off
+    off //toggletv
     mode "3840x2160@60"
     position x=5120 y=0
     /-layout {
