@@ -108,6 +108,7 @@ qjackctl
 qt5ct
 steam
 swayidle
+swww
 sxhkd
 sysbench
 sysfsutils
