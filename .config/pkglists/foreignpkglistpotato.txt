@@ -3,7 +3,6 @@ minecraft-launcher
 minecraft-server
 multimc-bin
 nord-vim
-open-fuse-iso
 private-internet-access-vpn
 protonup-git
 reiserfsprogs

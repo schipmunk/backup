@@ -64,18 +64,25 @@
     },
     "disk#disk1": {
         "path": "/",
-        "format": "SYS:{free}"
+        "format": "SYS:{free}",
+        "on-click": "pcmanfm ~/" 
     },
     "disk#disk2": {
         "path": "/home/schipmunk/4TBSamsung990/",
-        "format": "GAME:{free}"
+        "format": "GAME:{free}",
+        "on-click": "pcmanfm /home/schipmunk/4TBSamsung990/" 
     },
     "disk#disk3": {
         "path": "/home/schipmunk/2TBCrucialP3/",
-        "format": "STOR:{free}"
+        "format": "STOR:{free}",
+        "on-click": "pcmanfm /home/schipmunk/2TBCrucialP3/" 
     },
     "sway/mode": {
         "format": "<span style=\"italic\">{}</span>"
+    },
+    "niri/window": {
+        "separate-outputs": true,
+        "icon": true
     },
     "sway/scratchpad": {
         "format": "{icon} {count}",
@@ -141,7 +148,7 @@
                               "today":      "<span color='#ff6699'><b><u>{}</u></b></span>"
                               }
             },
-        "format-alt": "{:%Y-%b-%d}"
+        "on-click": "thunderbird -calendar"
     },
     "cpu": {
         "interval": 3,

@@ -90,7 +90,7 @@ output "HDMI-A-1" {
 }
 
 layout {
-    gaps 4
+    gaps 8
     background-color "transparent"
     center-focused-column "never"
     always-center-single-column
@@ -230,6 +230,10 @@ window-rule {
     match app-id=r#"discord$"#
     match title=r#"Steam$"#
     open-maximized true
+}
+window-rule {
+    geometry-corner-radius 12
+    clip-to-geometry true
 }
 
 binds {
