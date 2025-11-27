@@ -215,7 +215,6 @@ window-rule {
     match at-startup=true app-id=r#"steam$"#
     match app-id="steam_app_1284210"
     open-on-workspace "GAME"
-    open-maximized true
 }
 window-rule {
     match at-startup=true app-id=r#"tixati$"#
