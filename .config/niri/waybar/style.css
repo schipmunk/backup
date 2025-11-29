@@ -102,10 +102,16 @@ button:hover {
 #power-profiles-daemon,
 #mpd {
     padding: 0 10px;
-    color: #ffffff;
+    color: #D8DEE9;
 }
 
-#window,
+#window {
+    padding: 0 10px;
+    margin: 0 40px;
+    background-color: #4C556A;
+    border-radius: 20px;
+}
+
 #workspaces {
     margin: 0 4px;
 }

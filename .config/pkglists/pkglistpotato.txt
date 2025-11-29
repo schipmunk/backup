@@ -15,10 +15,8 @@ bridge-utils
 btop
 cantarell-fonts
 clipit
-conky
 cpupower
 cronie
-deluge
 dmraid
 downgrade
 dunst
@@ -32,7 +30,6 @@ galculator
 gdm-settings
 gimp
 gnome-firmware
-gnome-tweaks
 gparted
 gsmartcontrol
 gtk2fontsel
@@ -69,7 +66,6 @@ manjaro-ranger-settings
 manjaro-release
 manjaro-system
 matcha-gtk-theme
-meld
 memtest86+
 mkinitcpio-openswap
 mpv
@@ -100,6 +96,7 @@ patchutils
 pavucontrol
 piper
 pkgconf
+plasma-framework5
 polkit-gnome
 powertop
 protonup-qt
@@ -129,6 +126,7 @@ vivaldi
 vlc
 volumeicon
 webrtc-audio-processing
+weston
 wmutils
 xcursor-breeze
 xcursor-maia
