@@ -58,7 +58,7 @@ input {
 }
 
 cursor {
-    xcursor-theme "Future-cyan-cursors"
+    xcursor-theme "volantes_light_cursors"
     xcursor-size 32
 }
 
