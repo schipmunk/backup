@@ -1,4 +1,4 @@
-// This config is in the KDL format: https://kdl.dev
+// this config is in the kdl format: https://kdl.dev
 // "/-" comments out the following node.
 // Check the wiki for a full description of the configuration:
 // https://yalter.github.io/niri/Configuration:-Introduction
@@ -86,14 +86,6 @@ output "HDMI-A-1" {
     }
 }
 
-/-output "HDMI-A-1" {
-    mode "3840x2160@60"
-    position x=5120 y=0
-    layout {
-        default-column-width { proportion 1; }
-    }
-}
-
 layout {
     gaps 8
     background-color "transparent"
@@ -116,6 +108,7 @@ layout {
         color "#4C566A"
     }
 }
+
 workspace "PRIM" {
     open-on-output "DP-3"
 }
@@ -148,7 +141,7 @@ spawn-at-startup "xfce4-power-manager"
 spawn-at-startup "blueman-applet"
 spawn-sh-at-startup "~/.config/niri/scripts/startup"
 spawn-sh-at-startup "swww-daemon -n overlay"
-spawn-sh-at-startup "swww img -n overlay ~/Pictures/Wallpapers/nordnightblur.png"
+spawn-sh-at-startup "swww img -n overlay ~/pictures/wallpapers/nordnightblur.png"
 spawn-at-startup "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
 spawn-at-startup "xwayland-satellite"
 spawn-at-startup "vivaldi-stable"
@@ -163,7 +156,7 @@ hotkey-overlay {
 
 prefer-no-csd
 
-screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
+screenshot-path "~/Pictures/Screenshots/Screenshot_from_%Y-%m-%d_%H-%M-%S.png"
 
 animations {
     // off

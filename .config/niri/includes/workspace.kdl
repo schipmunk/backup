@@ -1,0 +1,29 @@
+// this config is in the kdl format: https://kdl.dev
+// "/-" comments out the following node.
+// Check the wiki for a full description of the configuration:
+// https://yalter.github.io/niri/Configuration:-Introduction
+
+workspace "PRIM" {
+    open-on-output "DP-3"
+}
+workspace "GAME" {
+    open-on-output "DP-3"
+}
+workspace "TOR" {
+    open-on-output "DP-3"
+}
+workspace "MEDIA" {
+    open-on-output "DP-3"
+}
+workspace "WWW" {
+    open-on-output "DP-2"
+}
+workspace "CAL" {
+    open-on-output "DP-2"
+}
+workspace "CHAT" {
+    open-on-output "DP-2"
+}
+workspace "DOC" {
+    open-on-output "DP-2"
+}

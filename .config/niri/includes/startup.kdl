@@ -1,0 +1,18 @@
+// this config is in the kdl format: https://kdl.dev
+// "/-" comments out the following node.
+// Check the wiki for a full description of the configuration:
+// https://yalter.github.io/niri/Configuration:-Introduction
+
+spawn-at-startup "nm-applet"
+spawn-at-startup "pamac-tray-plasma"
+spawn-at-startup "xfce4-power-manager"
+spawn-at-startup "blueman-applet"
+spawn-sh-at-startup "~/.config/niri/scripts/startup"
+spawn-sh-at-startup "swww-daemon -n overlay"
+spawn-sh-at-startup "swww img -n overlay ~/pictures/wallpapers/nordnightblur.png"
+spawn-at-startup "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
+spawn-at-startup "xwayland-satellite"
+spawn-at-startup "vivaldi-stable"
+spawn-at-startup "tixati"
+spawn-at-startup "alacritty"
+spawn-at-startup "steam"

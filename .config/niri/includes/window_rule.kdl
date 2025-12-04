@@ -1,0 +1,64 @@
+// this config is in the kdl format: https://kdl.dev
+// "/-" comments out the following node.
+// Check the wiki for a full description of the configuration:
+// https://yalter.github.io/niri/Configuration:-Introduction
+
+layer-rule {
+    match namespace="^swww-daemonoverlay$"
+    place-within-backdrop true
+}
+
+window-rule {
+    match app-id=r#"^org\.wezfurlong\.wezterm$"#
+    default-column-width {}
+}
+
+window-rule {
+    match app-id=r#"firefox$"# title="^Picture-in-Picture$"
+    open-floating true
+}
+
+window-rule {
+    match title="Guild Wars 2"
+    draw-border-with-background false
+    focus-ring {
+        off
+    }
+}
+window-rule {
+    match app-id=r#"galculator$"#
+    open-floating true
+}
+window-rule {
+    match at-startup=true app-id="Alacritty"
+    open-on-workspace "PRIM"
+    //open-maximized true
+}
+window-rule {
+    match at-startup=true app-id=r#"steam$"#
+    match app-id="steam_app_1284210"
+    open-on-workspace "GAME"
+}
+window-rule {
+    match at-startup=true app-id=r#"tixati$"#
+    open-on-workspace "TOR"
+    open-maximized true
+}
+window-rule {
+    match at-startup=true app-id=r#"vivaldi-stable$"#
+    open-on-workspace "WWW"
+    open-maximized true
+}
+window-rule {
+    match app-id=r#"vivaldi-stable$"#
+    match app-id=r#"brave-browser$"#
+    match app-id=r#"mpv$"#
+    match app-id=r#"vlc$"#
+    match app-id=r#"discord$"#
+    match title=r#"Steam$"#
+    open-maximized true
+}
+window-rule {
+    geometry-corner-radius 12
+    clip-to-geometry true
+}

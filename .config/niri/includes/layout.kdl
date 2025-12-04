@@ -1,0 +1,27 @@
+// this config is in the kdl format: https://kdl.dev
+// "/-" comments out the following node.
+// Check the wiki for a full description of the configuration:
+// https://yalter.github.io/niri/Configuration:-Introduction
+
+layout {
+    gaps 8
+    background-color "transparent"
+    center-focused-column "never"
+    always-center-single-column
+    preset-column-widths {
+        proportion 0.33333
+        proportion 0.5
+        proportion 0.66667
+    }
+    default-column-width { proportion 0.5; }
+
+    focus-ring {
+        width 2
+        active-color "#5E81AC"
+        inactive-color "#4C566A"
+    }
+
+    insert-hint {
+        color "#4C566A"
+    }
+}

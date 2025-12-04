@@ -1,0 +1,30 @@
+// this config is in the kdl format: https://kdl.dev
+// "/-" comments out the following node.
+// Check the wiki for a full description of the configuration:
+// https://yalter.github.io/niri/Configuration:-Introduction
+
+hotkey-overlay {
+    // Uncomment this line to disable the "Important Hotkeys" pop-up at startup.
+     skip-at-startup
+}
+
+prefer-no-csd
+
+screenshot-path "~/Pictures/Screenshots/Screenshot_from_%Y-%m-%d_%H-%M-%S.png"
+
+animations {
+    // off
+    // Slow down all animations by this factor. Values below 1 speed them up instead.
+   // slowdown 0.5
+}
+
+overview {
+    //backdrop-color "#8FBCBB"
+    zoom 0.3
+}
+
+gestures {
+    hot-corners {
+        off
+    }
+}
