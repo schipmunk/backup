@@ -1,0 +1,391 @@
+// this config is in the kdl format: https://kdl.dev
+// "/-" comments out the following node.
+// Check the wiki for a full description of the configuration:
+// https://yalter.github.io/niri/Configuration:-Introduction
+
+input {
+    keyboard {
+        xkb {
+            // You can set rules, model, layout, variant and options.
+            // For more information, see xkeyboard-config(7).
+
+            // For example:
+            // layout "us,ru"
+            // options "grp:win_space_toggle,compose:ralt,ctrl:nocaps"
+
+            // If this section is empty, niri will fetch xkb settings
+            // from org.freedesktop.locale1. You can control these using
+            // localectl set-x11-keymap.
+        }
+
+        numlock
+    }
+
+    touchpad {
+        // off
+        tap
+        // dwt
+        // dwtp
+        // drag false
+        // drag-lock
+        natural-scroll
+        // accel-speed 0.2
+        // accel-profile "flat"
+        // scroll-method "two-finger"
+        // disabled-on-external-mouse
+    }
+
+    mouse {
+        // off
+        // natural-scroll
+        // accel-speed 0.2
+        // accel-profile "flat"
+        // scroll-method "no-scroll"
+    }
+
+    trackpoint {
+        // off
+        // natural-scroll
+        // accel-speed 0.2
+        // accel-profile "flat"
+        // scroll-method "on-button-down"
+        // scroll-button 273
+        // scroll-button-lock
+        // middle-emulation
+    }
+
+     focus-follows-mouse max-scroll-amount="0%"
+}
+
+cursor {
+    xcursor-theme "volantes_light_cursors"
+    xcursor-size 32
+}
+
+output "DP-3" {
+    mode "2560x1440@164.958"
+    scale 1
+    transform "normal"
+    position x=0 y=0
+    focus-at-startup
+}
+
+output "DP-2" {
+    mode "2560x1440@164.958"
+    scale 1
+    transform "normal"
+    position x=2560 y=0
+}
+
+output "HDMI-A-1" {
+    off //toggletv
+    mode "3840x2160@60"
+    position x=5120 y=0
+    /-layout {
+        default-column-width { proportion 1; }
+    }
+}
+
+layout {
+    gaps 8
+    background-color "transparent"
+    center-focused-column "never"
+    always-center-single-column
+    preset-column-widths {
+        proportion 0.33333
+        proportion 0.5
+        proportion 0.66667
+    }
+    default-column-width { proportion 0.5; }
+
+    focus-ring {
+        width 2
+        active-color "#5E81AC"
+        inactive-color "#4C566A"
+    }
+
+    insert-hint {
+        color "#4C566A"
+    }
+}
+
+workspace "PRIM" {
+    open-on-output "DP-3"
+}
+workspace "GAME" {
+    open-on-output "DP-3"
+}
+workspace "TOR" {
+    open-on-output "DP-3"
+}
+workspace "MEDIA" {
+    open-on-output "DP-3"
+}
+workspace "WWW" {
+    open-on-output "DP-2"
+}
+workspace "CAL" {
+    open-on-output "DP-2"
+}
+workspace "CHAT" {
+    open-on-output "DP-2"
+}
+workspace "DOC" {
+    open-on-output "DP-2"
+}
+
+//spawn-at-startup "waybar" "-c" "~/.config/niri/waybar/config.jsonc" "-s" "~/.config/niri/waybar/style.css"
+spawn-at-startup "nm-applet"
+spawn-at-startup "pamac-tray-plasma"
+spawn-at-startup "xfce4-power-manager"
+spawn-at-startup "blueman-applet"
+spawn-sh-at-startup "~/.config/niri/scripts/startup"
+spawn-sh-at-startup "swww-daemon -n overlay"
+spawn-sh-at-startup "swww img -n overlay ~/pictures/wallpapers/nordnightblur.png"
+spawn-at-startup "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
+spawn-at-startup "xwayland-satellite"
+spawn-at-startup "vivaldi-stable"
+spawn-at-startup "tixati"
+spawn-at-startup "alacritty"
+spawn-at-startup "steam"
+
+hotkey-overlay {
+    // Uncomment this line to disable the "Important Hotkeys" pop-up at startup.
+     skip-at-startup
+}
+
+prefer-no-csd
+
+screenshot-path "~/Pictures/Screenshots/Screenshot_from_%Y-%m-%d_%H-%M-%S.png"
+
+animations {
+    // off
+    // Slow down all animations by this factor. Values below 1 speed them up instead.
+   // slowdown 0.5
+}
+
+overview {
+    //backdrop-color "#8FBCBB"
+    zoom 0.3
+}
+
+gestures {
+    hot-corners {
+        off
+    }
+}
+
+layer-rule {
+    match namespace="^swww-daemonoverlay$"
+    place-within-backdrop true
+}
+
+window-rule {
+    match app-id=r#"^org\.wezfurlong\.wezterm$"#
+    default-column-width {}
+}
+
+window-rule {
+    match app-id=r#"firefox$"# title="^Picture-in-Picture$"
+    open-floating true
+}
+
+window-rule {
+    match title="Guild Wars 2"
+    draw-border-with-background false
+    focus-ring {
+        off
+    }
+}
+window-rule {
+    match app-id=r#"galculator$"#
+    open-floating true
+}
+window-rule {
+    match at-startup=true app-id="Alacritty"
+    open-on-workspace "PRIM"
+    //open-maximized true
+}
+window-rule {
+    match at-startup=true app-id=r#"steam$"#
+    match app-id="steam_app_1284210"
+    open-on-workspace "GAME"
+}
+window-rule {
+    match at-startup=true app-id=r#"tixati$"#
+    open-on-workspace "TOR"
+    open-maximized true
+}
+window-rule {
+    match at-startup=true app-id=r#"vivaldi-stable$"#
+    open-on-workspace "WWW"
+    open-maximized true
+}
+window-rule {
+    match app-id=r#"vivaldi-stable$"#
+    match app-id=r#"brave-browser$"#
+    match app-id=r#"mpv$"#
+    match app-id=r#"vlc$"#
+    match app-id=r#"discord$"#
+    match title=r#"Steam$"#
+    open-maximized true
+}
+window-rule {
+    geometry-corner-radius 12
+    clip-to-geometry true
+}
+
+binds {
+    //////////////////////
+    //BINDINGS
+    //////////////////////
+
+    //////////////////////
+    //FUNCTION ROW
+    //////////////////////
+    
+    Mod+Escape allow-inhibiting=false { toggle-keyboard-shortcuts-inhibit; }
+    Ctrl+Shift+Escape { spawn "alacritty" "-e" "btop"; }
+    Print { screenshot; }
+    Ctrl+Print { screenshot-screen; }
+    Alt+Print { screenshot-window; }
+
+    //////////////////////
+    //NUMBER ROW
+    //////////////////////
+    
+    Mod+1               { focus-workspace "PRIM"; }
+    Mod+Shift+1         { move-column-to-workspace "PRIM"; }
+    Mod+2               { focus-workspace "GAME"; }
+    Mod+Shift+2         { move-column-to-workspace "GAME"; }
+    Mod+3               { focus-workspace "TOR"; }
+    Mod+Shift+3         { move-column-to-workspace "TOR"; }
+    Mod+4               { focus-workspace "MEDIA"; }
+    Mod+Shift+4         { move-column-to-workspace "MEDIA"; }
+    Mod+5               { focus-workspace 9; }
+    Mod+Shift+5         { move-column-to-workspace 9; }
+    Mod+6               { focus-monitor "DP-3"; }
+    Mod+Shift+6         { move-window-to-monitor "DP-3"; }
+    Mod+Ctrl+6          { move-workspace-to-monitor "DP-3"; }
+    Mod+7               { focus-monitor "DP-2"; }
+    Mod+Shift+7         { move-window-to-monitor "DP-2"; }
+    Mod+Ctrl+7          { move-workspace-to-monitor "DP-2"; }
+    Mod+8               { focus-monitor "HDMI-A-1"; }
+    Mod+Shift+8         { move-window-to-monitor "HDMI-A-1"; }
+    Mod+Ctrl+8          { move-workspace-to-monitor "HDMI-A-1"; }
+    Mod+0               { spawn-sh "~/.config/niri/scripts/toggletv"; }
+    Mod+Equal           { spawn "galculator"; }
+
+    //////////////////////
+    //Q ROW
+    //////////////////////
+
+    Alt+Tab             { focus-workspace-down; }
+    Alt+Shift+Tab       { focus-workspace-up; }
+    Mod+Tab             { focus-monitor-next; }
+    Mod+Shift+Tab       { focus-monitor-previous; }
+    Mod+Q               { focus-workspace "WWW"; }
+    Mod+Shift+Q         { move-column-to-workspace "WWW"; }
+    Mod+W               { focus-workspace "CAL"; }
+    Mod+Shift+W         { move-column-to-workspace "CAL"; }
+    Mod+E               { focus-workspace "CHAT"; }
+    Mod+Shift+E         { move-column-to-workspace "CHAT"; }
+    Mod+R               { focus-workspace "DOC"; }
+    Mod+Shift+R         { move-column-to-workspace "DOC"; }
+    Mod+T               { switch-preset-column-width; }
+    Mod+Shift+T         { switch-preset-window-height; }
+    Mod+Ctrl+T          { reset-window-height; }
+    Mod+Y               { focus-monitor-left; }
+    Mod+Shift+Y         { move-workspace-to-monitor-left; }
+    Mod+U               { focus-monitor-down; }
+    Mod+Shift+U         { move-workspace-to-monitor-down; }
+    Mod+I               { focus-monitor-up; }
+    Mod+Shift+I         { move-workspace-to-monitor-up; }
+    Mod+O               { focus-monitor-right; }
+    Mod+Shift+O         { move-workspace-to-monitor-right; }
+    Mod+Shift+BracketLeft     { consume-or-expel-window-left; }
+    Mod+Shift+BracketRight    { consume-or-expel-window-right; }
+
+    //////////////////////
+    //A ROW
+    //////////////////////
+
+    Mod+A               { focus-workspace-up; }
+    Mod+Shift+A         { move-column-to-workspace-up; }
+    Mod+Ctrl+A          { move-workspace-up; }
+    Mod+S repeat=false  { toggle-overview; }
+    Mod+D hotkey-overlay-title="Run a Desktop App: Rofi" { spawn "rofi" "-show" "drun"; }
+    Mod+Shift+D hotkey-overlay-title="Run an Application: Rofi" { spawn "rofi" "-show" "run"; }
+    Mod+F               { maximize-column; }
+    Mod+Shift+F         { spawn "pcmanfm"; }
+    Mod+Ctrl+F          { fullscreen-window; }
+    Mod+H               { focus-column-left; }
+    Mod+Shift+H         { move-column-left; }
+    Mod+Ctrl+H          { move-column-to-monitor-left; }
+    Mod+J               { focus-window-down; }
+    Mod+Shift+J         { move-window-down; }
+    Mod+Ctrl+J          { move-column-to-monitor-down; }
+    Mod+K               { focus-window-up; }
+    Mod+Shift+K         { move-window-up; }
+    Mod+Ctrl+K          { move-column-to-monitor-up; }
+    Mod+L               { focus-column-right; }
+    Mod+Shift+L         { move-column-right; }
+    Mod+Ctrl+L          { move-column-to-monitor-right; }
+    Super+Shift+Semicolon hotkey-overlay-title="Lock the Screen: swaylock" allow-when-locked=true { spawn "swaylock"; }
+    Mod+Shift+Apostrophe hotkey-overlay-title="Screen off" { power-off-monitors; }
+    Mod+Return hotkey-overlay-title="Open a Terminal: alacritty" { spawn "alacritty"; }
+
+    //////////////////////
+    //Z ROW
+    //////////////////////
+
+    Mod+Z               { focus-workspace-down; }
+    Mod+Shift+Z         { move-column-to-workspace-down; }
+    Mod+Ctrl+Z          { move-workspace-down; }
+    Mod+Shift+X         { quit; }
+    Mod+Shift+C repeat=false { close-window; }
+    Mod+V               { spawn "pavucontrol"; }
+    Mod+N               { set-column-width "-10%"; }
+    Mod+M               { set-column-width "+10%"; }
+    Mod+Shift+N         { set-window-height "-10%"; }
+    Mod+Shift+M         { set-window-height "+10%"; }
+    Mod+Shift+Comma     { move-workspace-to-monitor-left; }
+    Mod+Shift+Period    { move-workspace-to-monitor-right; }
+    Mod+Shift+Slash     { show-hotkey-overlay; }
+    Mod+Shift+Space     { toggle-window-floating; }
+    Mod+Space           { switch-focus-between-floating-and-tiling; }
+
+    //////////////////////
+    //NUMPAD
+    //////////////////////
+    
+    //END_KEYS
+    
+    //////////////////////
+    //SPECIAL
+    //////////////////////
+
+    XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.05+"; }
+    XF86AudioLowerVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.05-"; }
+    XF86AudioMute        allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"; }
+    XF86AudioMicMute     allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"; }
+    XF86MonBrightnessUp allow-when-locked=true { spawn "brightnessctl" "--class=backlight" "set" "+10%"; }
+    XF86MonBrightnessDown allow-when-locked=true { spawn "brightnessctl" "--class=backlight" "set" "10%-"; }
+
+    //////////////////////
+    //MOUSE
+    //////////////////////
+    Mod+WheelScrollDown      cooldown-ms=150 { focus-workspace-down; }
+    Mod+WheelScrollUp        cooldown-ms=150 { focus-workspace-up; }
+    Mod+Ctrl+WheelScrollDown cooldown-ms=150 { move-column-to-workspace-down; }
+    Mod+Ctrl+WheelScrollUp   cooldown-ms=150 { move-column-to-workspace-up; }
+    Mod+WheelScrollRight      { focus-column-right; }
+    Mod+WheelScrollLeft       { focus-column-left; }
+    Mod+Ctrl+WheelScrollRight { move-column-right; }
+    Mod+Ctrl+WheelScrollLeft  { move-column-left; }
+    Mod+Shift+WheelScrollDown      { focus-column-right; }
+    Mod+Shift+WheelScrollUp        { focus-column-left; }
+    Mod+Ctrl+Shift+WheelScrollDown { move-column-right; }
+    Mod+Ctrl+Shift+WheelScrollUp   { move-column-left; }
+
+}
