@@ -35,6 +35,11 @@ window-rule {
     //open-maximized true
 }
 window-rule {
+    match app-id="Alacritty"
+    opacity 0.9
+    //open-maximized true
+}
+window-rule {
     match at-startup=true app-id=r#"steam$"#
     match app-id="steam_app_1284210"
     open-on-workspace "GAME"

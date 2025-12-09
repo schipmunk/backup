@@ -158,3 +158,6 @@ alias vim='nvim'
 
 #flatpak Discord
 alias discord='flatpak run com.discordapp.Discord &'
+
+#electron apps should prefer wayland
+export ELECTRON_OZONE_PLATFORM_HINT=wayland
