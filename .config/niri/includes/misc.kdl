@@ -28,3 +28,7 @@ gestures {
         off
     }
 }
+
+recent-windows { 
+    off
+}

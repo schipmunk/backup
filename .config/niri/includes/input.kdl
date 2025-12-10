@@ -27,7 +27,7 @@ input {
     }
 
     touchpad {
-        // off
+        off
         tap
         // dwt
         // dwtp
@@ -49,7 +49,7 @@ input {
     }
 
     trackpoint {
-        // off
+         off
         // natural-scroll
         // accel-speed 0.2
         // accel-profile "flat"
