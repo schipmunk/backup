@@ -1,0 +1,12 @@
+#!/bin/bash
+
+chosen=$(echo -e "K Lock\nL Logout\nZ Sleep\nH Hibernate\nR Reboot\nS Shutdown" | rofi -dmenu -i -p "Power Menu:")
+
+case "$chosen" in
+    "K Lock") swaylock ;; 
+    "L Logout") niri msg action quit ;; 
+    "Z Sleep") systemctl suspend ;;
+    "H Hibernate") systemctl hibernate ;;
+    "R Reboot") systemctl reboot ;;
+    "S Shutdown") systemctl poweroff ;;
+esac
