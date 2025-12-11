@@ -26,6 +26,12 @@ window-rule {
     }
 }
 window-rule {
+    match title="btop_float"
+    open-floating true
+    default-column-width { fixed 1800; }
+    default-window-height { fixed 1200; }
+}
+window-rule {
     match app-id=r#"galculator$"#
     open-floating true
 }

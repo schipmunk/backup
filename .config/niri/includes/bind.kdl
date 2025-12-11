@@ -9,7 +9,7 @@ binds {
     //////////////////////
     
     Mod+Escape allow-inhibiting=false { toggle-keyboard-shortcuts-inhibit; }
-    Ctrl+Shift+Escape { spawn "alacritty" "-e" "btop"; }
+    Ctrl+Shift+Escape { spawn "alacritty" "-t" "btop_float" "-e" "btop"; }
     Print { screenshot; }
     Ctrl+Print { screenshot-screen; }
     Alt+Print { screenshot-window; }

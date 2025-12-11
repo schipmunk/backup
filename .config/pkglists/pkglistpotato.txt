@@ -18,6 +18,7 @@ clipit
 cpupower
 cronie
 dmraid
+dos2unix
 downgrade
 dunst
 ecryptfs-utils
