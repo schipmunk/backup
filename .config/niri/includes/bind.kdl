@@ -10,6 +10,7 @@ binds {
     
     Mod+Escape allow-inhibiting=false { toggle-keyboard-shortcuts-inhibit; }
     Ctrl+Shift+Escape { spawn "alacritty" "-t" "btop_float" "-e" "btop"; }
+    Ctrl+Shift+A { spawn "alacritty" "-t" "nvtop_float" "-e" "nvtop"; }
     Print { screenshot; }
     Ctrl+Print { screenshot-screen; }
     Alt+Print { screenshot-window; }

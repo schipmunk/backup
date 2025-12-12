@@ -27,6 +27,7 @@ window-rule {
 }
 window-rule {
     match title="btop_float"
+    match title="nvtop_float"
     open-floating true
     default-column-width { fixed 1800; }
     default-window-height { fixed 1200; }
@@ -54,6 +55,14 @@ window-rule {
     match at-startup=true app-id=r#"tixati$"#
     open-on-workspace "TOR"
     open-maximized true
+}
+window-rule {
+    match at-startup=true app-id=r#"signal-desktop$"#
+    open-on-workspace "CHAT"
+}
+window-rule {
+    match at-startup=true app-id=r#"com.discordapp.Discord$"#
+    open-on-workspace "CHAT"
 }
 window-rule {
     match at-startup=true app-id=r#"vivaldi-stable$"#
