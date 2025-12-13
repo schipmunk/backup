@@ -71,7 +71,7 @@ binds {
     Mod+Space           { switch-focus-between-floating-and-tiling; }
     Mod+Shift+Space     { toggle-window-floating; }
     Mod+T               { toggle-column-tabbed-display; }
-    Mod+P repeat=false  { toggle-overview; }
+    Mod+O repeat=false  { toggle-overview; }
 
     //Resize Windows
     Mod+N               { switch-preset-column-width; }

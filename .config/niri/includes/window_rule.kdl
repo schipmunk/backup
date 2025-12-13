@@ -82,6 +82,7 @@ window-rule {
 //Remove Focus Ring and Block behind GW2 Launcher
 window-rule {
     match title="Guild Wars 2"
+    open-on-workspace "GAME"
     draw-border-with-background false
     focus-ring {
         off
