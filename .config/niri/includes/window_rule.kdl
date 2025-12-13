@@ -3,27 +3,58 @@
 // Check the wiki for a full description of the configuration:
 // https://yalter.github.io/niri/Configuration:-Introduction
 
-layer-rule {
-    match namespace="^swww-daemonoverlay$"
-    place-within-backdrop true
-}
-
+//Startup Apps on Certain Workspaces
 window-rule {
-    match app-id=r#"^org\.wezfurlong\.wezterm$"#
-    default-column-width {}
+    match at-startup=true app-id="Alacritty"
+    open-on-workspace "PRIM"
+}
+window-rule {
+    match at-startup=true app-id=r#"steam$"#
+    open-on-workspace "GAME"
+}
+window-rule {
+    match at-startup=true app-id=r#"tixati$"#
+    open-on-workspace "TOR"
+}
+window-rule {
+    match at-startup=true app-id=r#"APPNAMEHERE$"#
+    open-on-workspace "MEDIA"
+}
+window-rule {
+    match at-startup=true app-id=r#"vivaldi-stable$"#
+    open-on-workspace "WWW"
+}
+window-rule {
+    match at-startup=true app-id=r#"APPNAMEHERE$"#
+    open-on-workspace "CAL"
+}
+window-rule {
+    match at-startup=true app-id=r#"signal-desktop$"#
+    match at-startup=true app-id=r#"com.discordapp.Discord$"#
+    open-on-workspace "CHAT"
+}
+window-rule {
+    match at-startup=true app-id=r#"brave-browser$"#
+    open-on-workspace "DOC"
 }
 
+//Always Maximized Apps
+window-rule {
+    match app-id=r#"vivaldi-stable$"#
+    match app-id=r#"brave-browser$"#
+    match app-id=r#"mpv$"#
+    match app-id=r#"vlc$"#
+    match app-id=r#"discord$"#
+    match app-id=r#"tixati$"#
+    match title=r#"Steam$"#
+    match app-id="steam_app_1284210"
+    open-maximized true
+}
+
+//Always Floating Apps
 window-rule {
     match app-id=r#"firefox$"# title="^Picture-in-Picture$"
     open-floating true
-}
-
-window-rule {
-    match title="Guild Wars 2"
-    draw-border-with-background false
-    focus-ring {
-        off
-    }
 }
 window-rule {
     match title="btop_float"
@@ -37,48 +68,28 @@ window-rule {
     open-floating true
 }
 window-rule {
-    match at-startup=true app-id="Alacritty"
-    open-on-workspace "PRIM"
-    //open-maximized true
+    geometry-corner-radius 12
+    clip-to-geometry true
 }
+
+//Make Alacritty Transparent
 window-rule {
     match app-id="Alacritty"
     opacity 0.9
     //open-maximized true
 }
+
+//Remove Focus Ring and Block behind GW2 Launcher
 window-rule {
-    match at-startup=true app-id=r#"steam$"#
-    match app-id="steam_app_1284210"
-    open-on-workspace "GAME"
+    match title="Guild Wars 2"
+    draw-border-with-background false
+    focus-ring {
+        off
+    }
 }
-window-rule {
-    match at-startup=true app-id=r#"tixati$"#
-    open-on-workspace "TOR"
-    open-maximized true
-}
-window-rule {
-    match at-startup=true app-id=r#"signal-desktop$"#
-    open-on-workspace "CHAT"
-}
-window-rule {
-    match at-startup=true app-id=r#"com.discordapp.Discord$"#
-    open-on-workspace "CHAT"
-}
-window-rule {
-    match at-startup=true app-id=r#"vivaldi-stable$"#
-    open-on-workspace "WWW"
-    open-maximized true
-}
-window-rule {
-    match app-id=r#"vivaldi-stable$"#
-    match app-id=r#"brave-browser$"#
-    match app-id=r#"mpv$"#
-    match app-id=r#"vlc$"#
-    match app-id=r#"discord$"#
-    match title=r#"Steam$"#
-    open-maximized true
-}
-window-rule {
-    geometry-corner-radius 12
-    clip-to-geometry true
+
+//Layer Rule to make blurred background in Overview Mode
+layer-rule {
+    match namespace="^swww-daemonoverlay$"
+    place-within-backdrop true
 }

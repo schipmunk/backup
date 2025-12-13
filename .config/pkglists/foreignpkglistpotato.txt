@@ -5,7 +5,6 @@ minecraft-server
 nord-vim
 private-internet-access-vpn
 protonup-git
-reiserfsprogs
 synology-drive
 tixati
 ttf-ms-fonts
