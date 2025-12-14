@@ -5,7 +5,8 @@
 
 hotkey-overlay {
     // Uncomment this line to disable the "Important Hotkeys" pop-up at startup.
-     skip-at-startup
+    skip-at-startup
+    hide-not-bound
 }
 
 prefer-no-csd
@@ -15,7 +16,7 @@ screenshot-path "~/Pictures/Screenshots/Screenshot_from_%Y-%m-%d_%H-%M-%S.png"
 animations {
     // off
     // Slow down all animations by this factor. Values below 1 speed them up instead.
-   // slowdown 0.5
+    // slowdown 0.5
 }
 
 overview {
@@ -34,5 +35,5 @@ recent-windows {
 }
 
 environment {
-   ELECTRON_OZONE_PLATFORM_HINT "auto"
+    ELECTRON_OZONE_PLATFORM_HINT "auto"
 }

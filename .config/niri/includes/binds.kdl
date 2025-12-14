@@ -6,24 +6,24 @@ binds {
 
 
     //Focusing Windows
-    Mod+H hotkey-overlay-title="Switch Focus to Window HJKL" { focus-column-left; }
-    Mod+J               { focus-window-down; }
-    Mod+K               { focus-window-up; }
-    Mod+L               { focus-column-right; }
+    Mod+H hotkey-overlay-title="Focus Column Left"  { focus-column-left; }
+    Mod+J hotkey-overlay-title="Focus Window Down"  { focus-window-down; }
+    Mod+K hotkey-overlay-title="Focus Window Up"    { focus-window-up; }
+    Mod+L hotkey-overlay-title="Focus Column Right" { focus-column-right; }
 
     //Moving Windows within workspace
-    Mod+Shift+H hotkey-overlay-title="Move Window HJKL" { move-column-left; }
-    Mod+Shift+J         { move-window-down; }
-    Mod+Shift+K         { move-window-up; }
-    Mod+Shift+L         { move-column-right; }
-    Mod+Shift+BracketLeft     { consume-or-expel-window-left; }
-    Mod+Shift+BracketRight    { consume-or-expel-window-right; }
+    Mod+Shift+H hotkey-overlay-title="Move Column Left"  { move-column-left; }
+    Mod+Shift+J hotkey-overlay-title="Move Window Down"  { move-window-down; }
+    Mod+Shift+K hotkey-overlay-title="Move Window Up"    { move-window-up; }
+    Mod+Shift+L hotkey-overlay-title="Move Column Right" { move-column-right; }
+    Mod+Shift+BracketLeft hotkey-overlay-title="Consume/Expel Window Left" { consume-or-expel-window-left; }
+    Mod+Shift+BracketRight hotkey-overlay-title="Consume/Expel Window Right" { consume-or-expel-window-right; }
 
     //Moving Windows to different monitor or workspace
-    Mod+Ctrl+H hotkey-overlay-title="Move Windows to Workspace/Monitor HJKL" { move-window-to-monitor-previous; }
-    Mod+Ctrl+J          { move-window-to-workspace-down; }
-    Mod+Ctrl+K          { move-window-to-workspace-up; }
-    Mod+Ctrl+L          { move-window-to-monitor-next; }
+    Mod+Ctrl+H hotkey-overlay-title="Move Window to Monitor Previous" { move-window-to-monitor-previous; }
+    Mod+Ctrl+J hotkey-overlay-title="Move Window to Workspace Down"   { move-window-to-workspace-down; }
+    Mod+Ctrl+K hotkey-overlay-title="Move Window to Workspace Up"     { move-window-to-workspace-up; }
+    Mod+Ctrl+L hotkey-overlay-title="Move Window to Monitor Next"     { move-window-to-monitor-next; }
 
     //Moving window to named workspaces
     Mod+Shift+1 hotkey-overlay-title="Move Window to Named Workspace 1234QWER" { move-window-to-workspace "PRIM"; }
@@ -37,7 +37,7 @@ binds {
     Mod+Shift+R         { move-window-to-workspace "DOC"; }
 
     //Focusing named workspaces
-    Mod+1 hotkey-overlay-title="Switch to Named Workspace 1234QWER" { focus-workspace "PRIM"; }
+    Mod+1 hotkey-overlay-title="Focus Named Workspace 1234QWER" { focus-workspace "PRIM"; }
     Mod+2               { focus-workspace "GAME"; }
     Mod+3               { focus-workspace "TOR"; }
     Mod+4               { focus-workspace "MEDIA"; }
@@ -48,65 +48,65 @@ binds {
     Mod+R               { focus-workspace "DOC"; }
 
     //Focusing Workspaces
-    Alt+H hotkey-overlay-title="Focus Workspace/Monitor HJKL" { focus-monitor-previous; }
-    Alt+J               { focus-workspace-down; }
-    Alt+K               { focus-workspace-up; }
-    Alt+L               { focus-monitor-next; }
-    Alt+Tab             { focus-workspace-down; }
-    Alt+Shift+Tab       { focus-workspace-up; }
-    Mod+Tab             { focus-monitor-next; }
-    Mod+Shift+Tab       { focus-monitor-previous; }
+    Alt+H hotkey-overlay-title="Focus Monitor Previous"         { focus-monitor-previous; }
+    Alt+J hotkey-overlay-title="Focus Workspace Down"           { focus-workspace-down; }
+    Alt+K hotkey-overlay-title="Focus Workspace Up"             { focus-workspace-up; }
+    Alt+L hotkey-overlay-title="Focus Monitor Next"             { focus-monitor-next; }
+    Alt+Tab hotkey-overlay-title="Focus Workspace Down"         { focus-workspace-down; }
+    Alt+Shift+Tab hotkey-overlay-title="Focus Workspace Up"     { focus-workspace-up; }
+    Mod+Tab hotkey-overlay-title="Focus Monitor Next"           { focus-monitor-next; }
+    Mod+Shift+Tab hotkey-overlay-title="Focus Monitor Previous" { focus-monitor-previous; }
 
     //Moving Workspaces
-    Alt+Shift+H hotkey-overlay-title="Move Workspace to Workspace/Monitor HJKL" { move-workspace-to-monitor-previous; }
-    Alt+Shift+J         { move-workspace-down; }
-    Alt+Shift+K         { move-workspace-up; }
-    Alt+Shift+L         { move-workspace-to-monitor-next; }
+    Alt+Shift+H hotkey-overlay-title="Move Workspace to Monitor Previous" { move-workspace-to-monitor-previous; }
+    Alt+Shift+J hotkey-overlay-title="Move Workspace Down"                { move-workspace-down; }
+    Alt+Shift+K hotkey-overlay-title="Move Workspace Up"                  { move-workspace-up; }
+    Alt+Shift+L hotkey-overlay-title="Move Workspace to Monitor Next"     { move-workspace-to-monitor-next; }
 
     //Manipulate Windows
     Mod+Shift+C repeat=false { close-window; }
-    Mod+F               { maximize-column; }
-    Alt+F               { maximize-window-to-edges; }
-    Mod+Ctrl+F          { fullscreen-window; }
-    Mod+Space           { switch-focus-between-floating-and-tiling; }
-    Mod+Shift+Space     { toggle-window-floating; }
-    Mod+T               { toggle-column-tabbed-display; }
-    Mod+O repeat=false  { toggle-overview; }
+    Mod+F hotkey-overlay-title="Maximize Column"                    { maximize-column; }
+    Alt+F hotkey-overlay-title="Windowed Fullscreen Focused Window" { maximize-window-to-edges; }
+    Mod+Ctrl+F hotkey-overlay-title="Fullscreen Focused Window"     { fullscreen-window; }
+    Mod+Space hotkey-overlay-title="Focus Toggle Floating/Tiling"   { switch-focus-between-floating-and-tiling; }
+    Mod+Shift+Space hotkey-overlay-title="Toggle Window Floating"   { toggle-window-floating; }
+    Mod+T hotkey-overlay-title="Toggle Column Tabbed"               { toggle-column-tabbed-display; }
+    Mod+O repeat=false hotkey-overlay-title="Toggle Overview"       { toggle-overview; }
 
     //Resize Windows
-    Mod+N               { switch-preset-column-width; }
-    Mod+Shift+N         { set-column-width "-10%"; }
-    Mod+M               { switch-preset-window-height; }
-    Mod+Shift+M         { set-window-height "-10%"; }
-    Mod+Comma           { set-window-height "100%"; }
-    Mod+Shift+Comma     { set-window-height "+10%"; }
-    Mod+Period          { set-column-width "100%"; }
-    Mod+Shift+Period    { set-column-width "+10%"; }
+    Mod+N hotkey-overlay-title="Cycle Column Width"           { switch-preset-column-width; }
+    Mod+Shift+N hotkey-overlay-title="Shrink Column Width"    { set-column-width "-10%"; }
+    Mod+M hotkey-overlay-title="Cycle Column Height"          { switch-preset-window-height; }
+    Mod+Shift+M hotkey-overlay-title="Shrink Window Height"   { set-window-height "-10%"; }
+    Mod+Comma hotkey-overlay-title="Full Height Window"       { set-window-height "100%"; }
+    Mod+Shift+Comma hotkey-overlay-title="Grow Window Height" { set-window-height "+10%"; }
+    Mod+Period hotkey-overlay-title="Full Width Column"       { set-column-width "100%"; }
+    Mod+Shift+Period hotkey-overlay-title="Grow Column Width" { set-column-width "+10%"; }
 
     //Launching Programs
-    Mod+Equal           { spawn "galculator"; }
-    Ctrl+Shift+Escape { spawn "alacritty" "-t" "btop_float" "-e" "btop"; }
-    Alt+Shift+Escape { spawn "alacritty" "-t" "nvtop_float" "-e" "nvtop"; }
-    Mod+Return hotkey-overlay-title="Open a Terminal: alacritty" { spawn "alacritty"; }
-    Mod+Shift+F         { spawn "pcmanfm"; }
-    Mod+V               { spawn "pavucontrol"; }
-    Mod+B               { spawn "brave-browser" "--incognito"; }
-    Mod+Shift+Slash     { show-hotkey-overlay; }
+    Mod+Equal hotkey-overlay-title="Calculator"         { spawn "galculator"; }
+    Ctrl+Shift+Escape hotkey-overlay-title="HTOP"       { spawn "alacritty" "-t" "btop_float" "-e" "btop"; }
+    Alt+Shift+Escape hotkey-overlay-title="NVTOP"       { spawn "alacritty" "-t" "nvtop_float" "-e" "nvtop"; }
+    Mod+Return hotkey-overlay-title="Open Terminal: alacritty" { spawn "alacritty"; }
+    Mod+Shift+F hotkey-overlay-title="File Manager"     { spawn "pcmanfm"; }
+    Mod+V hotkey-overlay-title="Volume Control"         { spawn "pavucontrol"; }
+    Mod+B hotkey-overlay-title="null"                   { spawn "brave-browser" "--incognito"; }
+    Mod+Shift+Slash hotkey-overlay-title="Show Overlay" { show-hotkey-overlay; }
 
     //Scripts
     Super+Shift+Semicolon hotkey-overlay-title="Lock the Screen: swaylock" allow-when-locked=true { spawn "swaylock"; }
-    Mod+Shift+Apostrophe hotkey-overlay-title="Screen off" { power-off-monitors; }
-    Mod+Shift+X hotkey-overlay-title="Shutdown Menu" { spawn-sh "~/.config/niri/scripts/rofi-power"; }
-    Mod+D hotkey-overlay-title="Run a Desktop App: Rofi" { spawn "rofi" "-show" "drun"; }
+    Mod+Shift+Apostrophe hotkey-overlay-title="Screen off"      { power-off-monitors; }
+    Mod+Shift+X hotkey-overlay-title="Shutdown Menu"            { spawn-sh "~/.config/niri/scripts/rofi-power"; }
+    Mod+D hotkey-overlay-title="Run a Desktop App: Rofi"        { spawn "rofi" "-show" "drun"; }
     Mod+Shift+D hotkey-overlay-title="Run an Application: Rofi" { spawn "rofi" "-show" "run"; }
 
     //Toggle TV output on/off
-    Mod+0               { spawn-sh "~/.config/niri/scripts/toggletv"; }
+    Mod+0 hotkey-overlay-title="Toggle TV" { spawn-sh "~/.config/niri/scripts/toggletv"; }
 
     //Screenshots
-    Print { screenshot; }
-    Ctrl+Print { screenshot-screen; }
-    Alt+Print { screenshot-window; }
+    Print hotkey-overlay-title="Screenshot" { screenshot; }
+    Ctrl+Print hotkey-overlay-title="Screenshot Screen" { screenshot-screen; }
+    Alt+Print hotkey-overlay-title="Screenshot Window" { screenshot-window; }
 
     //Toggle Keyboard Shortcuts for VM use
     Mod+Escape allow-inhibiting=false { toggle-keyboard-shortcuts-inhibit; }
