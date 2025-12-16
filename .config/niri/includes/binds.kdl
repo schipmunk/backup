@@ -90,12 +90,12 @@ binds {
     Mod+Return hotkey-overlay-title="Open Terminal: alacritty" { spawn "alacritty"; }
     Mod+Shift+F hotkey-overlay-title="File Manager"     { spawn "pcmanfm"; }
     Mod+V hotkey-overlay-title="Volume Control"         { spawn "pavucontrol"; }
-    Mod+B hotkey-overlay-title="null"                   { spawn "brave-browser" "--incognito"; }
+    Mod+B hotkey-overlay-title="null"                   { spawn-sh "brave --incognito"; }
     Mod+Shift+Slash hotkey-overlay-title="Show Overlay" { show-hotkey-overlay; }
 
     //Scripts
-    Super+Shift+Semicolon hotkey-overlay-title="Lock the Screen: swaylock" allow-when-locked=true { spawn "swaylock"; }
-    Mod+Shift+Apostrophe hotkey-overlay-title="Screen off"      { power-off-monitors; }
+    Mod+Shift+Z hotkey-overlay-title="Screen off"      { power-off-monitors; }
+    Super+Shift+A hotkey-overlay-title="Lock the Screen: swaylock" allow-when-locked=true { spawn "swaylock"; }
     Mod+Shift+X hotkey-overlay-title="Shutdown Menu"            { spawn-sh "~/.config/niri/scripts/rofi-power"; }
     Mod+D hotkey-overlay-title="Run a Desktop App: Rofi"        { spawn "rofi" "-show" "drun"; }
     Mod+Shift+D hotkey-overlay-title="Run an Application: Rofi" { spawn "rofi" "-show" "run"; }

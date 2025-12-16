@@ -30,7 +30,7 @@ window-rule {
     open-on-workspace "CAL"
 }
 window-rule {
-    match at-startup=true app-id=r#"signal-desktop$"#
+    match at-startup=true app-id=r#"signal$"#
     match at-startup=true app-id=r#"com.discordapp.Discord$"#
     open-on-workspace "CHAT"
 }
@@ -91,5 +91,9 @@ window-rule {
 //Layer Rule to make blurred background in Overview Mode
 layer-rule {
     match namespace="^swww-daemonoverlay$"
+    place-within-backdrop true
+}
+layer-rule {
+    match namespace="waybar"
     place-within-backdrop true
 }
