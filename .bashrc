@@ -145,7 +145,7 @@ fastfetch
 alias gitdot='/usr/bin/git --git-dir=/home/schipmunk/.gitdot/ --work-tree=/home/schipmunk'
 
 #pacman package list
-alias yay='pacman -Qqetn > ~/.config/pkglists/pkglist$HOSTNAME.txt && pacman -Qqem > ~/.config/pkglists/foreignpkglist$HOSTNAME.txt && yay'
+alias yay='pacman -Qqetn > ~/.config/pkglists/pkglist$HOSTNAME.txt && pacman -Qqem > ~/.config/pkglists/foreignpkglist$HOSTNAME.txt && flatpak list --app | cut -f2 > ~/.config/pkglists/flatpakpkglist$HOSTNAME.txt && yay'
 
 #vivaldi dark mode
 alias vivaldi-stable='vivaldi-stable --force-dark-mode'

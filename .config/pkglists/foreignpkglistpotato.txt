@@ -1,15 +1,10 @@
-chromium-widevine
-flatseal
 minecraft-launcher
 minecraft-server
 nord-vim
 private-internet-access-vpn
-protonup-git
 synology-drive
 tixati
 ttf-ms-fonts
 ttf-vista-fonts
-varia
 vim-plug
 youtube-dl
-zoom
