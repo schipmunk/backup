@@ -2,7 +2,6 @@ acpi
 acpid
 amd-ucode
 android-tools
-apparmor
 arandr
 artwork-i3
 autoconf
