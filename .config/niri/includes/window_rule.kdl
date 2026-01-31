@@ -90,7 +90,7 @@ window-rule {
 
 //Layer Rule to make blurred background in Overview Mode
 layer-rule {
-    match namespace="^swww-daemonoverlay$"
+    match namespace="dms:blurwallpaper"
     place-within-backdrop true
 }
 layer-rule {

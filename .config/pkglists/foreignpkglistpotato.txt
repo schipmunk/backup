@@ -1,7 +1,12 @@
+dms-shell-bin
+greetd-dms-greeter-git
 minecraft-launcher
 minecraft-server
 nord-vim
 private-internet-access-vpn
+quickshell-git
+scarlett2-firmware
+scarlett2-git
 synology-drive
 tixati
 ttf-ms-fonts

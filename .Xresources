@@ -54,8 +54,6 @@ XTerm*selectToClipboard: true
 *.color14: nord7
 *.color15: nord6
 
-Xcursor.theme: volantes_light_cursors
-Xcursor.size:                     32
 
 URxvt.font:                       xft:Hasklug Nerd Font
 
@@ -234,3 +232,5 @@ URxvt.keysym.Shift-Control-Down:  \033[1;6B
 ! -xos4-terminus-bold-r-normal--24-240-72-72-c-120-iso10646-1
 ! -xos4-terminus-bold-r-normal--28-280-72-72-c-140-iso10646-1
 ! -xos4-terminus-bold-r-normal--32-320-72-72-c-160-iso10646-1
+Xcursor.theme: volantes_light_cursors
+Xcursor.size: 32

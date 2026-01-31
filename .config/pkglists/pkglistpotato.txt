@@ -1,5 +1,6 @@
 acpi
 acpid
+alsa-scarlett-gui
 amd-ucode
 android-tools
 arandr
@@ -27,7 +28,6 @@ fastfetch
 firefox
 flameshot
 galculator
-gdm-settings
 gimp
 gnome-firmware
 gparted
@@ -47,7 +47,6 @@ libreoffice-still
 linux-meta
 linux-nvidia-meta
 linux612-nvidia
-linux618-nvidia
 lutris
 lxappearance
 lxinput
@@ -77,7 +76,6 @@ networkmanager-openvpn
 networkmanager-pptp
 networkmanager-vpnc
 nfs-utils
-niri
 ntp
 numlockx
 nvtop
@@ -101,8 +99,6 @@ qjackctl
 qt5ct
 signal-desktop
 steam
-swayidle
-swww
 sxhkd
 sysbench
 sysfsutils
@@ -122,7 +118,6 @@ virt-manager
 vivaldi
 vlc
 volumeicon
-weston
 wmutils
 xcursor-breeze
 xcursor-maia
