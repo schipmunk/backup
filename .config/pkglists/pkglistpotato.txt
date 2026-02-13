@@ -11,7 +11,6 @@ awesome-terminal-fonts
 b43-fwcutter
 bison
 brave-browser
-bridge-utils
 btop
 cantarell-fonts
 clipit
@@ -111,7 +110,6 @@ tlp
 tree
 udiskie
 ventoy
-vi
 vibrancy-icons-teal
 viewnior
 virt-manager

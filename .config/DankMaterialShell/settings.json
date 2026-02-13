@@ -105,7 +105,7 @@
       "width": 50
     }
   ],
-  "showWorkspaceIndex": false,
+  "showWorkspaceIndex": true,
   "showWorkspaceName": true,
   "showWorkspacePadding": false,
   "workspaceScrolling": false,
@@ -173,7 +173,7 @@
   "mediaSize": 1,
   "appLauncherViewMode": "list",
   "spotlightModalViewMode": "list",
-  "sortAppsAlphabetically": false,
+  "sortAppsAlphabetically": true,
   "appLauncherGridColumns": 4,
   "spotlightCloseNiriOverview": true,
   "niriOverviewOverlayEnabled": true,
@@ -198,7 +198,7 @@
       "cursorHideTimeout": 0
     }
   },
-  "launcherLogoMode": "apps",
+  "launcherLogoMode": "compositor",
   "launcherLogoCustomPath": "",
   "launcherLogoColorOverride": "",
   "launcherLogoColorInvertOnMode": false,
@@ -368,16 +368,24 @@
       "leftWidgets": [
         "launcherButton",
         "workspaceSwitcher",
-        "focusedWindow"
-      ],
-      "centerWidgets": [
-        "music",
         {
           "id": "clock",
-          "enabled": true,
-          "clockCompactMode": false
+          "enabled": true
         },
-        "weather"
+        {
+          "id": "weather",
+          "enabled": true
+        },
+        {
+          "id": "music",
+          "enabled": true
+        }
+      ],
+      "centerWidgets": [
+        {
+          "id": "focusedWindow",
+          "enabled": true
+        }
       ],
       "rightWidgets": [
         {
