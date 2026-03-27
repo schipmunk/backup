@@ -88,6 +88,12 @@ window-rule {
     }
 }
 
+//enable VRR for games through Steam
+window-rule {
+    match app-id="^steam_app"
+    variable-refresh-rate true
+}
+
 //Layer Rule to make blurred background in Overview Mode
 layer-rule {
     match namespace="dms:blurwallpaper"

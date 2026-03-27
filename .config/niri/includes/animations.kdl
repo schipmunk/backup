@@ -147,6 +147,6 @@ animations {
         "
     }
     horizontal-view-movement {
-        duration-ms 1500
+        duration-ms 1000
     }
 }
