@@ -100,7 +100,8 @@ binds {
     Super+Shift+A hotkey-overlay-title="Lock the Screen: DMS" allow-when-locked=true { spawn "dms" "ipc" "call" "lock" "lock"; }
     Super+Ctrl+A hotkey-overlay-title="Lock the Screen: DMS" allow-when-locked=true { spawn "dms" "ipc" "call" "lock" "lock"; }
     Mod+Shift+X hotkey-overlay-title="Shutdown Menu"            { spawn-sh "~/.config/niri/scripts/rofi-power"; }
-    Mod+D hotkey-overlay-title="Run a Desktop App: Rofi"        { spawn "rofi" "-show" "drun"; }
+    //Mod+D hotkey-overlay-title="Run a Desktop App: Rofi"        { spawn "rofi" "-show" "drun"; }
+    Mod+D hotkey-overlay-title="Run a Desktop App: DMS"        { spawn "dms" "ipc" "call" "spotlight" "toggle"; }
     Mod+Shift+D hotkey-overlay-title="Run an Application: Rofi" { spawn "rofi" "-show" "run"; }
 
     //Toggle TV output on/off

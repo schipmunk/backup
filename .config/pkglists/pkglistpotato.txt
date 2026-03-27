@@ -11,6 +11,7 @@ awesome-terminal-fonts
 b43-fwcutter
 bison
 brave-browser
+breeze-cursors5
 btop
 cantarell-fonts
 clipit
@@ -20,9 +21,9 @@ dmraid
 dos2unix
 downgrade
 dunst
+dysk
 ecryptfs-utils
 emacs
-exfat-utils
 fastfetch
 firefox
 flameshot
@@ -45,7 +46,7 @@ libgpod
 libreoffice-still
 linux-meta
 linux-nvidia-meta
-linux612-nvidia
+linux619-nvidia
 lutris
 lxappearance
 lxinput
@@ -117,7 +118,6 @@ vivaldi
 vlc
 volumeicon
 wmutils
-xcursor-breeze
 xcursor-maia
 xf86-input-elographics
 xf86-input-evdev

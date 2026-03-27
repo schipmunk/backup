@@ -63,3 +63,5 @@ x-scheme-handler/magnet=tixati.desktop
 x-scheme-handler/dsc=tixati.desktop
 application/x-magnet=tixati.desktop
 inode/directory=pcmanfm.desktop
+x-scheme-handler/sgnl=signal.desktop
+x-scheme-handler/signalcaptcha=signal.desktop

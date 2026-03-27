@@ -5,8 +5,8 @@ minecraft-server
 nord-vim
 private-internet-access-vpn
 quickshell-git
+scarlett2
 scarlett2-firmware
-scarlett2-git
 synology-drive
 tixati
 ttf-ms-fonts

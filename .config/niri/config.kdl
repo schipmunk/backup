@@ -10,5 +10,6 @@ include "includes/layout.kdl"
 include "includes/workspace.kdl"
 include "includes/startup.kdl"
 include "includes/binds.kdl"
+include "includes/animations.kdl"
 
 include "dms/cursor.kdl"
