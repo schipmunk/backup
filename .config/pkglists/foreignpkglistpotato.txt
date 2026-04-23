@@ -4,6 +4,7 @@ minecraft-launcher
 minecraft-server
 nord-vim
 private-internet-access-vpn
+python313
 quickshell-git
 scarlett2
 scarlett2-firmware

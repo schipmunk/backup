@@ -7,6 +7,7 @@
 window-rule {
     match at-startup=true app-id="Alacritty"
     open-on-workspace "PRIM"
+    open-focused false
 }
 window-rule {
     match at-startup=true app-id=r#"steam$"#
@@ -16,10 +17,12 @@ window-rule {
 window-rule {
     match at-startup=true app-id=r#"tixati$"#
     open-on-workspace "TOR"
+    open-focused false
 }
 window-rule {
     match at-startup=true app-id=r#"APPNAMEHERE$"#
     open-on-workspace "MEDIA"
+    open-focused false
 }
 window-rule {
     match at-startup=true app-id=r#"vivaldi-stable$"#
@@ -28,15 +31,18 @@ window-rule {
 window-rule {
     match at-startup=true app-id=r#"APPNAMEHERE$"#
     open-on-workspace "CAL"
+    open-focused false
 }
 window-rule {
     match at-startup=true app-id=r#"signal$"#
     match at-startup=true app-id=r#"com.discordapp.Discord$"#
     open-on-workspace "CHAT"
+    open-focused false
 }
 window-rule {
     match at-startup=true app-id=r#"brave-browser$"#
     open-on-workspace "DOC"
+    open-focused false
 }
 
 //Always Maximized Apps
@@ -83,6 +89,7 @@ window-rule {
     match title="Guild Wars 2"
     open-on-workspace "GAME"
     draw-border-with-background false
+    variable-refresh-rate true
     focus-ring {
         off
     }

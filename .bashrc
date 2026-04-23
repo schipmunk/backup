@@ -161,3 +161,6 @@ alias discord='flatpak run com.discordapp.Discord &'
 
 #electron apps should prefer wayland
 export ELECTRON_OZONE_PLATFORM_HINT=wayland
+
+source '/home/schipmunk/.bash_completions/comfy.sh'
+
