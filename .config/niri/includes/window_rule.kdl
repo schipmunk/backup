@@ -89,7 +89,7 @@ window-rule {
     match title="Guild Wars 2"
     open-on-workspace "GAME"
     draw-border-with-background false
-    variable-refresh-rate true
+//    variable-refresh-rate true
     focus-ring {
         off
     }
@@ -98,7 +98,7 @@ window-rule {
 //enable VRR for games through Steam
 window-rule {
     match app-id="^steam_app"
-    variable-refresh-rate true
+  //  variable-refresh-rate true
 }
 
 //Layer Rule to make blurred background in Overview Mode

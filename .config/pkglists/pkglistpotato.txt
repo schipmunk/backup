@@ -24,6 +24,7 @@ dunst
 dysk
 ecryptfs-utils
 emacs
+exfat-utils
 fastfetch
 firefox
 flameshot
@@ -46,7 +47,7 @@ libgpod
 libreoffice-still
 linux-meta
 linux-nvidia-meta
-linux619-nvidia
+linux618-nvidia
 lutris
 lxappearance
 lxinput

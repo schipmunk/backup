@@ -1,4 +1,3 @@
-dms-shell-bin
 greetd-dms-greeter-git
 minecraft-launcher
 minecraft-server
@@ -13,4 +12,5 @@ tixati
 ttf-ms-fonts
 ttf-vista-fonts
 vim-plug
+xwayland-satellite-git
 youtube-dl
