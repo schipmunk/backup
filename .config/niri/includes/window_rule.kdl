@@ -3,6 +3,22 @@
 // Check the wiki for a full description of the configuration:
 // https://yalter.github.io/niri/Configuration:-Introduction
 
+//General window rules
+window-rule {
+    geometry-corner-radius 12
+    clip-to-geometry true
+    popups {
+        geometry-corner-radius 12
+    }
+    shadow {
+        on
+        softness 15
+        offset x=5 y=5
+        draw-behind-window false
+        color "#000000AA"
+    }
+}
+
 //Startup Apps on Certain Workspaces
 window-rule {
     match at-startup=true app-id="Alacritty"
@@ -71,10 +87,6 @@ window-rule {
 window-rule {
     match app-id=r#"galculator$"#
     open-floating true
-}
-window-rule {
-    geometry-corner-radius 12
-    clip-to-geometry true
 }
 
 //Make Alacritty Transparent
