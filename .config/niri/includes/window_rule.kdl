@@ -85,7 +85,7 @@ window-rule {
     default-window-height { fixed 1200; }
 }
 window-rule {
-    match app-id=r#"galculator$"#
+    match app-id=r#"org.gnome.Calculator$"#
     open-floating true
 }
 

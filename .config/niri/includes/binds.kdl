@@ -84,7 +84,7 @@ binds {
     Mod+Shift+Period hotkey-overlay-title="Grow Column Width" { set-column-width "+10%"; }
 
     //Launching Programs
-    Mod+Equal hotkey-overlay-title="Calculator"         { spawn "galculator"; }
+    Mod+Equal hotkey-overlay-title="Calculator"         { spawn "gnome-calculator"; }
     Ctrl+Shift+Escape hotkey-overlay-title="HTOP"       { spawn "alacritty" "-t" "btop_float" "-e" "btop"; }
     Alt+Shift+Escape hotkey-overlay-title="NVTOP"       { spawn "alacritty" "-t" "nvtop_float" "-e" "nvtop"; }
     Mod+Return hotkey-overlay-title="Open Terminal: alacritty" { spawn "alacritty"; }
