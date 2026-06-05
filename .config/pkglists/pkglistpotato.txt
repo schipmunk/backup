@@ -28,7 +28,6 @@ exfat-utils
 fastfetch
 firefox
 flameshot
-galculator
 gimp
 gnome-calculator
 gnome-firmware
@@ -97,8 +96,6 @@ powertop
 prismlauncher
 protonup-qt
 pulsemixer
-qalculate-gtk
-qalculate-qt
 qjackctl
 qt5ct
 signal-desktop

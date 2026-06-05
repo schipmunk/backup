@@ -159,6 +159,9 @@ alias vim='nvim'
 #flatpak Discord
 alias discord='flatpak run com.discordapp.Discord &'
 
+#mkdir makes parent directories
+alias mkdir='mkdir -p'
+
 #electron apps should prefer wayland
 export ELECTRON_OZONE_PLATFORM_HINT=wayland
 

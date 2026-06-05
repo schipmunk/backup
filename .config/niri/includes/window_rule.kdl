@@ -52,6 +52,7 @@ window-rule {
 window-rule {
     match at-startup=true app-id=r#"signal$"#
     match at-startup=true app-id=r#"com.discordapp.Discord$"#
+    match at-startup=true app-id=r#"discord$"#
     open-on-workspace "CHAT"
     open-focused false
 }
@@ -103,6 +104,9 @@ window-rule {
     draw-border-with-background false
 //    variable-refresh-rate true
     focus-ring {
+        off
+    }
+    shadow {
         off
     }
 }
