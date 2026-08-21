@@ -88,7 +88,7 @@ binds {
     Ctrl+Shift+Escape hotkey-overlay-title="HTOP"       { spawn "alacritty" "-t" "btop_float" "-e" "btop"; }
     Alt+Shift+Escape hotkey-overlay-title="NVTOP"       { spawn "alacritty" "-t" "nvtop_float" "-e" "nvtop"; }
     Mod+Return hotkey-overlay-title="Open Terminal: alacritty" { spawn "alacritty"; }
-    Mod+Shift+F hotkey-overlay-title="File Manager"     { spawn "pcmanfm"; }
+    Mod+Shift+F hotkey-overlay-title="File Manager"     { spawn "thunar"; }
     Mod+V hotkey-overlay-title="Volume Control"         { spawn "pavucontrol"; }
     Mod+Shift+V hotkey-overlay-title="Scarlett Control" { spawn "alsa-scarlett-gui"; }
     Mod+B hotkey-overlay-title="null"                   { spawn-sh "brave --incognito"; }
