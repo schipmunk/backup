@@ -17,6 +17,7 @@ cantarell-fonts
 clipit
 cpupower
 cronie
+dgop
 dmraid
 dos2unix
 downgrade
@@ -28,6 +29,7 @@ exfat-utils
 fastfetch
 firefox
 flameshot
+flex
 gimp
 gnome-calculator
 gnome-firmware
@@ -41,13 +43,13 @@ i3-scrot
 i3exit
 inetutils
 kvantum-manjaro
-lib32-flex
 lib32-mesa-demos
 libgpod
 libreoffice-still
 linux-meta
 linux-nvidia-meta
 linux618-nvidia
+linux72-nvidia
 lutris
 lxappearance
 lxinput
@@ -121,6 +123,7 @@ vivaldi
 vlc
 volumeicon
 wmutils
+xarchiver
 xcursor-maia
 xf86-input-elographics
 xf86-input-evdev
