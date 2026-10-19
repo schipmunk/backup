@@ -2,6 +2,7 @@ dankcalendar-bin
 greetd-dms-greeter-bin
 lib32-extest
 minecraft-server
+noctalia-greeter
 private-internet-access-vpn
 python313
 scarlett2
@@ -10,4 +11,6 @@ synology-drive
 tixati
 ttf-ms-fonts
 ttf-vista-fonts
+umbriel-git
+xdg-desktop-portal-umbriel-git
 xwayland-satellite-git

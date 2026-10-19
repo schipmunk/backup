@@ -1,0 +1,40 @@
+[[workspace]]
+name = "PRIM"
+output = "DP-2"
+layout.mode = "scrolling"
+
+[[workspace]]
+name = "GAME"
+output = "DP-2"
+layout.mode = "scrolling"
+
+[[workspace]]
+name = "CAL"
+output = "DP-2"
+layout.mode = "scrolling"
+
+[[workspace]]
+name = "MEDIA"
+output = "DP-2"
+layout.mode = "scrolling"
+
+[[workspace]]
+name = "WWW"
+output = "DP-3"
+layout.mode = "scrolling"
+
+[[workspace]]
+name = "TOR"
+output = "DP-3"
+layout.mode = "scrolling"
+
+[[workspace]]
+name = "CHAT"
+output = "DP-3"
+layout.mode = "scrolling"
+
+[[workspace]]
+name = "DOC"
+output = "DP-3"
+layout.mode = "scrolling"
+

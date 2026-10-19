@@ -1,0 +1,184 @@
+config_version = 14
+
+[bar.default]
+background_opacity = 0.0
+border = "on_surface"
+capsule = true
+capsule_border = "#2E3440"
+capsule_fill = "#2E3440"
+capsule_foreground = "#D8DEE9"
+capsule_thickness = 0.99999998137354851
+center = [ "active_window" ]
+color = "on_surface_variant"
+concave_edge_corners = false
+end = [ "cpu", "ram", "clipboard", "widget", "network", "bluetooth", "volume", "tray", "notifications" ]
+font_scale = 1.0999999828636646
+icon_color = "tertiary"
+margin_ends = 0
+radius = 16
+scale = 1.1000000089406967
+start = [ "launcher", "workspaces", "clock", "weather" ]
+thickness = 32
+
+[calendar]
+enabled = true
+
+    [calendar.account.personal_google]
+    name = "Google"
+    type = "google"
+
+[control_center]
+sidebar = "full"
+sidebar_section = "none"
+
+[desktop_widgets]
+enabled = false
+
+[idle]
+behavior_order = [ "lock", "screen-off", "lock-and-suspend" ]
+
+    [idle.behavior.lock]
+    action = "lock"
+    enabled = true
+    timeout = 900.0
+
+    [idle.behavior.lock-and-suspend]
+    action = "lock_and_suspend"
+    enabled = false
+    timeout = 900.0
+
+    [idle.behavior.screen-off]
+    action = "screen_off"
+    enabled = true
+    timeout = 930.0
+
+[location]
+address = "04092"
+
+[lockscreen_widgets]
+schema_version = 2
+widget_order = [ "lockscreen-login-box@DP-2", "lockscreen-login-box@DP-3" ]
+
+    [lockscreen_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@DP-2"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 1280.0
+    cy = 1258.0
+    output = "DP-2"
+    placement_height = 1440.0
+    placement_width = 2560.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@DP-2".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = false
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@DP-3"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 1280.0
+    cy = 1258.0
+    output = "DP-3"
+    placement_height = 1440.0
+    placement_width = 2560.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@DP-3".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = false
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+[notification]
+layer = "overlay"
+
+[osd.kinds]
+media = false
+privacy = false
+
+[plugins]
+enabled = [ "yuuto/arch-updater" ]
+
+[shell]
+font_family = "Hasklig Medium"
+polkit_agent = true
+
+    [shell.panel]
+    open_near_click_control_center = true
+
+[theme]
+builtin = "Nord"
+custom_palette = "Nord Aurora"
+
+[wallpaper]
+directory = "/home/schipmunk/Pictures/Wallpapers"
+
+    [wallpaper.default]
+    path = "/home/schipmunk/Pictures/Wallpapers/nordnight.png"
+
+    [wallpaper.last]
+    path = "/home/schipmunk/Pictures/Wallpapers/nordnight.png"
+
+[widget.active_window]
+interactive = false
+title_scroll = "on_hover"
+
+[widget.clock]
+format = "{:%H:%M %a %d %b}"
+
+[widget.cpu]
+visualization = "none"
+
+[widget.network]
+show_label = false
+
+[widget.ram]
+stat = "ram_pct"
+visualization = "none"
+
+[widget.sysmon]
+stat = "disk_free_pct"
+
+[widget.tray]
+hide_passive = false
+
+[widget.widget]
+type = "yuuto/arch-updater:widget"
+
+[widget.workspaces]
+empty_color = "outline"
+focused_color = "tertiary"
+font_scale = 1.1000000000000001
+inactive_pill_size = 2.2000000000000002
+label_source = "name"
+max_label_chars = 7
+occupied_color = "outline"

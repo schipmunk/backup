@@ -9,7 +9,7 @@ workspace "PRIM" {
 workspace "GAME" {
     open-on-output "DP-2"
 }
-workspace "TOR" {
+workspace "CAL" {
     open-on-output "DP-2"
 }
 workspace "MEDIA" {
@@ -18,7 +18,7 @@ workspace "MEDIA" {
 workspace "WWW" {
     open-on-output "DP-3"
 }
-workspace "CAL" {
+workspace "TOR" {
     open-on-output "DP-3"
 }
 workspace "CHAT" {

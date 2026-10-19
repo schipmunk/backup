@@ -1,0 +1,52 @@
+# General
+# Optional session examples. XWayland support is enabled by default.
+# https://docs.noctalia.dev/umbriel/configuration/#general
+#
+[general]
+autostart = [
+    "noctalia",
+    "nm-applet",
+    "pamac-tray-plasma",
+    "xfce4-power-manager",
+    "blueman-applet",
+    "vivaldi-stable",
+    "signal-desktop",
+    "flatpak run com.discordapp.Discord",
+    "brave --incognito",
+    "tixati",
+    "alacritty",
+    "env LD_PRELOAD=/usr/lib32/libextest.so steam",
+    "~/.config/umbriel/scripts/startup",
+]
+
+mod_key = "Super"
+show_cheatsheet = false
+xwayland = true
+# Sharp X11 apps and games on scaled outputs; they see physical resolutions.
+xwayland_native_resolution = true
+# Umbriel announces the X11 interface scale and cursor theme through XSETTINGS.
+# Turn this off to run your own manager, such as xsettingsd.
+xwayland_xsettings = true
+
+[environment]
+ELECTRON_OZONE_PLATFORM_HINT = "auto"
+QT_QPA_PLATFORM = "wayland"
+PROTON_ENABLE_WAYLAND = "1"
+
+# Screencast
+# By default, the first target-changing action during an active share asks for
+# confirmation. Disable that protection only if immediate keybind changes are
+# preferred.
+# https://docs.noctalia.dev/umbriel/configuration/#screencast
+#
+[screencast]
+disable_dynamic_confirmation = true
+ 
+[overview]
+zoom = 0.3
+scroll_factor_horizontal = 1.0
+scroll_factor_vertical = 1.0
+background_blur = true
+workspace_wallpaper = true
+shortcuts = true
+shortcut_keys = "1234567890"

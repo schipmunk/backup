@@ -1,0 +1,139 @@
+# Keybinds
+# Defining this table replaces the built-in bind set, so every active bind that
+# should remain available is listed here.
+# Syntax: https://docs.noctalia.dev/umbriel/keybinds/
+# ==============================================================================
+[keybinds]
+
+
+
+# Focusing Windows
+"Alt+A" = "window-focus-left"
+"Alt+S" = "window-focus-down"
+"Alt+W" = "window-focus-up"
+"Alt+D" = "window-focus-right"
+"Alt+H" = "window-focus-left"
+"Alt+J" = "window-focus-down"
+"Alt+K" = "window-focus-up"
+"Alt+L" = "window-focus-right"
+"Alt+F1" = "window-focus-next"
+
+# Moving Windows within workspace
+"Alt+Shift+A" = "column-move-left"
+"Alt+Shift+S" = "window-move-down"
+"Alt+Shift+W" = "window-move-up"
+"Alt+Shift+D" = "column-move-right"
+"Alt+Shift+H" = "column-move-left"
+"Alt+Shift+J" = "window-move-down"
+"Alt+Shift+K" = "window-move-up"
+"Alt+Shift+L" = "column-move-right"
+"Alt+Q" = "window-consume-or-expel-left"
+"Alt+E" = "window-consume-or-expel-right"
+
+# Moving Windows to different monitor or workspace
+"Alt+Ctrl+A" = "window-move-to-output-previous"
+"Alt+Ctrl+S" = "window-move-to-workspace-next"
+"Alt+Ctrl+W" = "window-move-to-workspace-previous"
+"Alt+Ctrl+D" = "window-move-to-output-next"
+"Alt+Ctrl+H" = "window-move-to-output-previous"
+"Alt+Ctrl+J" = "window-move-to-workspace-next"
+"Alt+Ctrl+K" = "window-move-to-workspace-previous"
+"Alt+Ctrl+L" = "window-move-to-output-next"
+
+# Moving window to numbered workspaces
+"Mod+Shift+1" = "window-move-to-workspace:1"
+"Mod+Shift+2" = "window-move-to-workspace:2"
+"Mod+Shift+3" = "window-move-to-workspace:3"
+"Mod+Shift+4" = "window-move-to-workspace:4"
+"Mod+Shift+5" = "window-move-to-workspace:5"
+"Mod+Shift+6" = "window-move-to-workspace:6"
+"Mod+Shift+7" = "window-move-to-workspace:7"
+"Mod+Shift+8" = "window-move-to-workspace:8"
+"Mod+Shift+9" = "window-move-to-workspace:9"
+
+# Focusing numbered workspaces
+"Mod+1" = "workspace-switch:1"
+"Mod+2" = "workspace-switch:2"
+"Mod+3" = "workspace-switch:3"
+"Mod+4" = "workspace-switch:4"
+"Mod+5" = "workspace-switch:5"
+"Mod+6" = "workspace-switch:6"
+"Mod+7" = "workspace-switch:7"
+"Mod+8" = "workspace-switch:8"
+"Mod+9" = "workspace-switch:9"
+
+# Focusing directional workspaces and monitors
+"Mod+A" = "output-focus-previous"
+"Mod+S" = "workspace-next"
+"Mod+W" = "workspace-previous"
+"Mod+D" = "output-focus-next"
+"Mod+H" = "output-focus-previous"
+"Mod+J" = "workspace-next"
+"Mod+K" = "workspace-previous"
+"Mod+L" = "output-focus-next"
+"Mod+Tab" = "output-focus-next"
+"Mod+Shift+Tab" = "output-focus-previous"
+"Alt+Tab" = "workspace-next"
+"Alt+Shift+Tab" = "workspace-previous"
+
+# Moving directional workspaces or to different monitor
+"Mod+Shift+A" = "workspace-move-to-output-left"
+"Mod+Shift+S" = "workspace-move-down"
+"Mod+Shift+W" = "workspace-move-up"
+"Mod+Shift+D" = "workspace-move-to-output-right"
+"Mod+Shift+H" = "workspace-move-to-output-left"
+"Mod+Shift+J" = "workspace-move-down"
+"Mod+Shift+K" = "workspace-move-up"
+"Mod+Shift+L" = "workspace-move-to-output-right"
+
+# Manipulate Windows
+"Mod+Shift+C" = { action = "window-close", repeat = false }
+"Mod+F" = { action = "window-toggle-maximize", repeat = false }
+"Alt+F" = { action = "window-toggle-maximize-to-edges", repeat = false }
+"Mod+Ctrl+F" = { action = "window-toggle-fullscreen", repeat = false }
+"Mod+Space" = { action = "window-focus-switch-floating", repeat = false }
+"Mod+Shift+Space" = { action = "window-toggle-floating", repeat = false }
+"Mod+T" = { action = "column-toggle-tabbed", repeat = false }
+"Mod+O" = { action = "overview-toggle", repeat = false }
+"Mod+G" = "workspace-set-layout:toggle:scrolling,master"
+
+# Applications and session
+"Mod+Return" = { action = "spawn:alacritty", repeat = false }
+"Mod" = "spawn:noctalia msg panel-toggle launcher"
+"Mod+Escape" = "session-quit"
+"Mod+Shift+Escape" = { action = "shortcuts-inhibit-toggle", allow_when_inhibited = true, repeat = false }
+
+# Window state and layout
+"Mod+P" = { action = "window-toggle-pinned", repeat = false }
+"Mod+R" = "window-cycle-primary-extent"
+"Mod+Shift+R" = "window-cycle-primary-extent-back"
+"Mod+Comma" = "window-consume-left"
+"Mod+Period" = "window-consume-right"
+"Mod+Ctrl+Comma" = "window-consume-from-left"
+"Mod+Ctrl+Period" = "window-consume-from-right"
+# Needs layout.mode = "dwindle".
+# "Mod+Alt+T" = "layout-toggle-split"
+"Mod+Alt+Right" = "column-focus-tab-next"
+"Mod+Alt+Left" = "column-focus-tab-previous"
+"Mod+WheelUp" = "window-focus-left"
+"Mod+WheelDown" = "window-focus-right"
+
+# Workspaces
+
+# Scratchpad
+#"Mod+Shift+Space" = { action = "window-move-to-scratchpad", repeat = false }
+#"Mod+Space" = "scratchpad-toggle"
+#"Mod+Ctrl+Space" = { action = "window-restore-from-scratchpad", repeat = false }
+#"Mod+Tab" = "scratchpad-focus-next"
+
+# Media, volume and brightness keys from any input device, routed through the
+# Noctalia shell so its OSDs show. Safe while the session is locked.
+# https://docs.noctalia.dev/noctalia/compositor-settings/umbriel
+"XF86AudioRaiseVolume" = { action = "spawn:noctalia msg volume-up", allow_when_locked = true }
+"XF86AudioLowerVolume" = { action = "spawn:noctalia msg volume-down", allow_when_locked = true }
+"XF86AudioMute" = { action = "spawn:noctalia msg volume-mute", allow_when_locked = true, repeat = false }
+"XF86AudioPlay" = { action = "spawn:noctalia msg media toggle", allow_when_locked = true, repeat = false }
+"XF86AudioNext" = { action = "spawn:noctalia msg media next", allow_when_locked = true }
+"XF86AudioPrev" = { action = "spawn:noctalia msg media previous", allow_when_locked = true }
+"XF86MonBrightnessUp" = { action = "spawn:noctalia msg brightness-up", allow_when_locked = true }
+"XF86MonBrightnessDown" = { action = "spawn:noctalia msg brightness-down", allow_when_locked = true }

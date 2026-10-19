@@ -10,7 +10,7 @@ window-rule {
     popups {
         geometry-corner-radius 12
     }
-    shadow {
+   /- shadow {
         on
         softness 15
         offset x=5 y=5
@@ -127,3 +127,12 @@ layer-rule {
     match namespace="waybar"
     place-within-backdrop true
 }
+layer-rule {
+    match namespace="^noctalia-bar-[^\"]+$"
+
+    background-effect {
+        blur false
+        xray false
+    }
+}
+

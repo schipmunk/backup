@@ -1,0 +1,141 @@
+# Window rules
+# Rules combine in order, with later values overriding earlier ones.
+# https://docs.noctalia.dev/umbriel/window-rules/
+
+# Blur windows over the cached wallpaper blur. Set blur_optimized = false to
+# include overlapping windows behind them, at a GPU cost on every frame that
+# moves anything behind them.
+[[window_rule]]
+blur = true
+background_render = true
+
+#Startup Apps on Certain Workspaces
+[[window_rule]]
+match.at_startup = true
+match.app_id = "Alacritty"
+default_workspace = "PRIM"
+default_focused = false
+
+[[window_rule]]
+match.at_startup = true
+match.app_id = "^steam$"
+default_workspace = "GAME"
+default_focused = true
+default_scrolling_extent = 0.66667
+
+[[window_rule]]
+match.at_startup = true
+match.app_id = "thunderbird"
+default_workspace = "CAL"
+default_focused = false
+
+[[window_rule]]
+match.at_startup = true
+match.app_id = "vivaldi-stable"
+default_workspace = "WWW"
+default_focused = true
+
+[[window_rule]]
+match.at_startup = true
+match.app_id = "tixati"
+default_workspace = "TOR"
+default_focused = false
+
+[[window_rule]]
+match.at_startup = true
+match.app_id = ["signal", "com.discordapp.Discord", "discord"]
+default_workspace = "CHAT"
+default_focused = false
+
+[[window_rule]]
+match.at_startup = true
+match.app_id = "brave-browser"
+default_workspace = "DOC"
+default_focused = false
+
+#Always Maximized Apps
+[[window_rule]]
+match.app_id = [
+    "vivaldi-stable",
+    "brave-browser",
+    "mpv",
+    "vlc",
+    "steam_app_1284210",
+]
+default_maximize = true
+
+#Always Floating Apps
+[[window_rule]]
+match.title = ["btop_float", "nvtop_float",]
+default_floating = true
+default_floating_size_px = { width = 1800, height = 1200 }
+
+[[window_rule]]
+match.app_id = "org.gnome.Calculator"
+default_floating = true
+
+[[window_rule]]
+match.app_id = "^dev.noctalia.Noctalia$"
+default_floating = true
+default_floating_size_px = { width = 1020, height = 900 }
+
+[[window_rule]]
+match.app_id = "^dev.noctalia.UmbrielSharePicker$"
+default_floating = true
+default_floating_size_px = { width = 800, height = 600 }
+
+[[window_rule]]
+match.title = "^(Picture-in-Picture|Picture in picture)$"
+default_floating = true
+default_maximize = false
+default_position = { x = 20, y = 20, anchor = "bottom_right" }
+
+#Make Alacritty Transparent
+[[window_rule]]
+match.app_id = "Alacritty"
+opacity = 0.9
+
+#No Border around GW2 Launcher
+[[window_rule]]
+match.title = "Guild Wars 2"
+border_width = 0
+outer_border_width = 0
+border_effect = "off"
+
+[[window_rule]]
+match.title = "^notificationtoasts_.+_desktop"
+default_position = { x = 0, y = 0, anchor = "bottom_right" }
+default_focused = false
+default_pinned = true
+
+# Keep game menus inside their window; a focus or workspace keybind releases the pointer.
+# [[window_rule]]
+# match.app_id = "^steam_app_.*$"
+# confine_pointer = true
+
+# Keep an application drawing while it is hidden on another workspace, for programs whose other work stalls without it.
+# [[window_rule]]
+# match.app_id = "^obs$"
+# background_render = true
+
+# Named scratchpads can launch an application when toggled while empty.
+# [[scratchpad]]
+# name = "music"
+# spawn_when_empty = "spotify"
+
+# [[window_rule]]
+# match.app_id = "^spotify$"
+# default_scratchpad = "music"
+
+# Give scratchpad windows their own border colors.
+# [[window_rule]]
+# match.is_scratchpad = true
+# border_color_focused = "#E5C07BFF"
+# border_color_unfocused = "#5C4A2AFF"
+
+# Leave an application that draws its own corners and shadow undecorated.
+# [[window_rule]]
+# match.app_id = "^org[.]gnome[.]TextEditor$"
+# border_width = 0
+# corner_radius = 0
+# shadow = false

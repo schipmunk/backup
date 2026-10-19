@@ -1,0 +1,78 @@
+# Umbriel starting configuration
+#
+# Copy this file to ~/.config/umbriel/config.toml. Most changes apply when the
+# file is saved. Check edits with `umbriel config validate`.
+#
+# Complete reference: https://docs.noctalia.dev/umbriel/
+#
+# Commented settings below are examples, not built-in defaults.
+
+# ==============================================================================
+# Includes
+
+# Optional split configuration
+# https://docs.noctalia.dev/umbriel/configuration/#include
+[include]
+files = [
+    "includes/input.toml",
+    "includes/output.toml",
+    "includes/general.toml",
+    "includes/layout.toml",
+    "includes/appearance.toml",
+    "includes/workspaces.toml",
+    "includes/window_rules.toml",
+    "includes/layer_rules.toml",
+    "includes/effects.toml",
+    "includes/binds.toml",
+]
+
+[include.optional]
+files = []
+
+# ==============================================================================
+
+# ==============================================================================
+# Lid events
+# Remove the laptop panel from the desktop while the lid is closed, then
+# restore it when the lid opens. Replace eDP-1 with the name from
+# `umbriel outputs`.
+# https://docs.noctalia.dev/umbriel/configuration/#events
+#
+# [events]
+# lid_close = "umbriel msg output-disable:eDP-1"
+# lid_open = "umbriel msg output-enable:eDP-1"
+
+# ==============================================================================
+
+# ==============================================================================
+
+# ==============================================================================
+
+# ==============================================================================
+
+# ==============================================================================
+
+# ==============================================================================
+
+# ==============================================================================
+
+# ==============================================================================
+
+# ==============================================================================
+# Overview
+# Built-in overview and animation values are used. The top-left hot corner opens
+# the overview after a short delay.
+# Overview: https://docs.noctalia.dev/umbriel/workspaces-overview/
+# Animation: https://docs.noctalia.dev/umbriel/animation/
+#[hot_corners.top_left]
+#enabled = true
+#delay_ms = 500
+#action = "overview-open"
+
+# Optional live workspace reveal (see docs/user/animation.md).
+# Add the bundled effects/animation/workspace_wipe/effect.toml to your includes.
+# [animation.workspaces]
+# style = "reveal"          # Default: "slide"
+# effect = "workspace_wipe"
+# duration_ms = 300
+# curve = "easeout"

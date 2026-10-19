@@ -3,6 +3,7 @@
 // Check the wiki for a full description of the configuration:
 // https://yalter.github.io/niri/Configuration:-Introduction
 
+spawn-at-startup "noctalia"
 spawn-at-startup "nm-applet"
 spawn-at-startup "pamac-tray-plasma"
 spawn-at-startup "xfce4-power-manager"
