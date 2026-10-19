@@ -11,7 +11,7 @@ capsule_thickness = 0.99999998137354851
 center = [ "active_window" ]
 color = "on_surface_variant"
 concave_edge_corners = false
-end = [ "cpu", "ram", "clipboard", "widget", "network", "bluetooth", "volume", "tray", "notifications" ]
+end = [ "group:g3", "group:g1", "group:g2", "widget", "volume", "tray", "notifications" ]
 font_scale = 1.0999999828636646
 icon_color = "tertiary"
 margin_ends = 0
@@ -19,6 +19,42 @@ radius = 16
 scale = 1.1000000089406967
 start = [ "launcher", "workspaces", "clock", "weather" ]
 thickness = 32
+
+    [[bar.default.capsule_group]]
+    accordion = false
+    accordion_direction = "end"
+    border = "#2E3440"
+    enabled = true
+    fill = "#2E3440"
+    foreground = "#D8DEE9"
+    id = "g1"
+    members = [ "cpu", "ram" ]
+    opacity = 1.0
+    padding = 6.0
+
+    [[bar.default.capsule_group]]
+    accordion = false
+    accordion_direction = "end"
+    border = "#2E3440"
+    enabled = true
+    fill = "#2E3440"
+    foreground = "#D8DEE9"
+    id = "g2"
+    members = [ "network", "bluetooth" ]
+    opacity = 1.0
+    padding = 6.0
+
+    [[bar.default.capsule_group]]
+    accordion = false
+    accordion_direction = "end"
+    border = "#2E3440"
+    enabled = true
+    fill = "#2E3440"
+    foreground = "#D8DEE9"
+    id = "g3"
+    members = [ "screenshot", "clipboard" ]
+    opacity = 1.0
+    padding = 6.0
 
 [calendar]
 enabled = true

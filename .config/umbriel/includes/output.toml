@@ -17,3 +17,12 @@ position = [2561, 0]
 # vrr = "fullscreen"
 # hdr = "auto"
 # sdr_transfer = "gamma22" # Or "srgb" for piecewise SDR decoding in HDR.
+
+[output.HDMI-A-1]
+mode = "3840x2160@60"
+position = [5120, 0]
+enabled = false #toggletv
+# scale = 1.25
+# vrr = "fullscreen"
+# hdr = "auto"
+# sdr_transfer = "gamma22" # Or "srgb" for piecewise SDR decoding in HDR.

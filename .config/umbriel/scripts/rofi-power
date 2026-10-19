@@ -3,8 +3,8 @@
 chosen=$(echo -e "K Lock\nL Logout\nZ Sleep\nH Hibernate\nR Reboot\nS Shutdown" | rofi -dmenu -i -p "Power Menu:")
 
 case "$chosen" in
-    "K Lock") swaylock ;; 
-    "L Logout") niri msg action quit ;; 
+    "K Lock") noctalia msg session lock ;; 
+    "L Logout") umbriel msg session-quit ;; 
     "Z Sleep") systemctl suspend ;;
     "H Hibernate") systemctl hibernate ;;
     "R Reboot") systemctl reboot ;;

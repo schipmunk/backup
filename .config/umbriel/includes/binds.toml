@@ -16,7 +16,8 @@
 "Alt+J" = "window-focus-down"
 "Alt+K" = "window-focus-up"
 "Alt+L" = "window-focus-right"
-"Alt+F1" = "window-focus-next"
+"Alt+Q" = "column-focus-tab-previous"
+"Alt+E" = "column-focus-tab-next"
 
 # Moving Windows within workspace
 "Alt+Shift+A" = "column-move-left"
@@ -27,8 +28,10 @@
 "Alt+Shift+J" = "window-move-down"
 "Alt+Shift+K" = "window-move-up"
 "Alt+Shift+L" = "column-move-right"
-"Alt+Q" = "window-consume-or-expel-left"
-"Alt+E" = "window-consume-or-expel-right"
+"Alt+Shift+Q" = "window-consume-or-expel-left"
+"Alt+Shift+E" = "window-consume-or-expel-right"
+"Alt+Ctrl+Q" = "column-move-tab-previous"
+"Alt+Ctrl+E" = "column-move-tab-next"
 
 # Moving Windows to different monitor or workspace
 "Alt+Ctrl+A" = "window-move-to-output-previous"
@@ -96,29 +99,53 @@
 "Mod+T" = { action = "column-toggle-tabbed", repeat = false }
 "Mod+O" = { action = "overview-toggle", repeat = false }
 "Mod+G" = "workspace-set-layout:toggle:scrolling,master"
+"Mod+P" = { action = "window-toggle-pinned", repeat = false }
+
+# Resize Windows
+"Mod+E" = "window-cycle-primary-extent"
+"Mod+Shift+Q" = "window-modify-width-right:-0.1"
+"Mod+Shift+E" = "window-modify-width-right:0.1"
+"Mod+Q" = "window-cycle-secondary-extent"
+"Mod+Ctrl+Q" = "window-modify-height-down:-0.1"
+"Mod+Ctrl+E" = "window-modify-height-down:0.1"
+
+# Launching Applications
+"Mod+Return" = { action = "spawn:alacritty", repeat = false }
+"Mod+Equal" = { action = "spawn:gnome-calculator", repeat = false }
+"Ctrl+Shift+Escape" = { action = "spawn:alacritty -t btop_float -e btop", repeat = false }
+"Alt+Shift+Escape" = { action = "spawn:alacritty -t nvtop_float -e nvtop", repeat = false }
+"Mod+Shift+F" = { action = "spawn:thunar", repeat = false }
+"Mod+V" = { action = "spawn:pavucontrol", repeat = false }
+"Mod+Shift+V" = { action = "spawn:alsa-scarlett-gui", repeat = false }
+"Mod+Shift+B" = { action = "spawn:brave --incognito", repeat = false }
+"Mod+Shift+Slash" = "cheatsheet-toggle"
+
+# Scripts
+"Mod+Shift+Z" = { action = "spawn:noctalia msg session lock", allow_when_locked = true }
+"Mod+Ctrl+Z" = { action = "dpms-off", allow_when_locked = true }
+"Alt+Ctrl+Z" = { action = "spawn:systemctl suspend", allow_when_locked = true }
+"Mod+Shift+X" = "spawn:~/.config/umbriel/scripts/rofi-power"
+"Mod+R" = "spawn:noctalia msg panel-toggle launcher"
+"Mod+Shift+R" = "spawn:rofi -show run"
+"Mod+0" = "spawn:~/.config/umbriel/scripts/toggletv"
+
+# Screenshots
+"Print" = "spawn:noctalia msg screenshot-fullscreen"
+"Mod+Print" = "spawn:noctalia msg screenshot-region"
 
 # Applications and session
-"Mod+Return" = { action = "spawn:alacritty", repeat = false }
-"Mod" = "spawn:noctalia msg panel-toggle launcher"
 "Mod+Escape" = "session-quit"
 "Mod+Shift+Escape" = { action = "shortcuts-inhibit-toggle", allow_when_inhibited = true, repeat = false }
 
-# Window state and layout
-"Mod+P" = { action = "window-toggle-pinned", repeat = false }
-"Mod+R" = "window-cycle-primary-extent"
-"Mod+Shift+R" = "window-cycle-primary-extent-back"
-"Mod+Comma" = "window-consume-left"
-"Mod+Period" = "window-consume-right"
-"Mod+Ctrl+Comma" = "window-consume-from-left"
-"Mod+Ctrl+Period" = "window-consume-from-right"
-# Needs layout.mode = "dwindle".
-# "Mod+Alt+T" = "layout-toggle-split"
-"Mod+Alt+Right" = "column-focus-tab-next"
-"Mod+Alt+Left" = "column-focus-tab-previous"
-"Mod+WheelUp" = "window-focus-left"
-"Mod+WheelDown" = "window-focus-right"
-
-# Workspaces
+# Mouse Controls
+"Mod+WheelUp" = "output-focus-previous"
+"Mod+WheelDown" = "workspace-next"
+"Mod+WheelLeft" = "window-focus-left"
+"Mod+WheelRight" = "window-focus-right"
+"Mod+Shift+WheelDown" = "window-move-to-workspace-next"
+"Mod+Shift+WheelUp" = "window-move-to-workspace-previous"
+"Mod+Shift+WheelLeft" = "column-move-left"
+"Mod+Shift+WheelRight" = "column-move-left"
 
 # Scratchpad
 #"Mod+Shift+Space" = { action = "window-move-to-scratchpad", repeat = false }

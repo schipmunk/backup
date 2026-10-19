@@ -8,6 +8,12 @@
 [[window_rule]]
 blur = true
 background_render = true
+border_width = 0
+outer_border_width = 0
+
+[[window_rule]]
+match.is_focused = true
+outer_border_width = 2
 
 #Startup Apps on Certain Workspaces
 [[window_rule]]

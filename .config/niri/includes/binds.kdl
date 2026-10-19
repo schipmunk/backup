@@ -104,22 +104,14 @@ binds {
     Mod+O repeat=false hotkey-overlay-title="Toggle Overview"       { toggle-overview; }
 
     //Resize Windows
-    Mod+N hotkey-overlay-title="Cycle Column Width"           { switch-preset-column-width; }
     Mod+E hotkey-overlay-title="Cycle Column Width"           { switch-preset-column-width; }
-    Mod+Shift+N hotkey-overlay-title="Shrink Column Width"    { set-column-width "-10%"; }
     Mod+Shift+Q hotkey-overlay-title="Shrink Column Width"    { set-column-width "-10%"; }
-    Mod+M hotkey-overlay-title="Cycle Column Height"          { switch-preset-window-height; }
-    Mod+Q hotkey-overlay-title="Cycle Column Height"          { switch-preset-window-height; }
-    Mod+Shift+M hotkey-overlay-title="Shrink Window Height"   { set-window-height "-10%"; }
-    Mod+Ctrl+Q hotkey-overlay-title="Shrink Window Height"   { set-window-height "-10%"; }
-    Mod+Comma hotkey-overlay-title="Full Height Window"       { set-window-height "100%"; }
-    Alt+Ctrl+R hotkey-overlay-title="Full Height Window"       { set-window-height "100%"; }
-    Mod+Shift+Comma hotkey-overlay-title="Grow Window Height" { set-window-height "+10%"; }
-    Mod+Ctrl+E hotkey-overlay-title="Grow Window Height" { set-window-height "+10%"; }
-    Mod+Period hotkey-overlay-title="Full Width Column"       { set-column-width "100%"; }
-    Alt+Shift+R hotkey-overlay-title="Full Width Column"       { set-column-width "100%"; }
-    Mod+Shift+Period hotkey-overlay-title="Grow Column Width" { set-column-width "+10%"; }
     Mod+Shift+E hotkey-overlay-title="Grow Column Width" { set-column-width "+10%"; }
+    Alt+Shift+R hotkey-overlay-title="Full Width Column"       { set-column-width "100%"; }
+    Mod+Q hotkey-overlay-title="Cycle Column Height"          { switch-preset-window-height; }
+    Mod+Ctrl+Q hotkey-overlay-title="Shrink Window Height"   { set-window-height "-10%"; }
+    Mod+Ctrl+E hotkey-overlay-title="Grow Window Height" { set-window-height "+10%"; }
+    Alt+Ctrl+R hotkey-overlay-title="Full Height Window"       { set-window-height "100%"; }
 
     //Launching Programs
     Mod+Equal hotkey-overlay-title="Calculator"         { spawn "gnome-calculator"; }

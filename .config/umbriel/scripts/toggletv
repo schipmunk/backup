@@ -1,12 +1,12 @@
 #!/bin/bash
 
 #Define the file and pattern
-FILE="$HOME/.config/niri/includes/output.kdl"
+FILE="$HOME/.config/umbriel/includes/output.toml"
 
-if grep -q "//off //toggletv" "$FILE"; then
-    sed -i 's/\/\/off \/\/toggletv/off \/\/toggletv/' "$FILE"
+if grep -q "enabled = true #toggletv" "$FILE"; then
+    sed -i 's/enabled = true #toggletv/enabled = false #toggletv/' "$FILE"
     notify-send "Output Changed" "TV is Off"
 else
-    sed -i 's/off \/\/toggletv/\/\/off \/\/toggletv/' "$FILE"
+    sed -i 's/enabled = false #toggletv/enabled = true #toggletv/' "$FILE"
     notify-send "Output Changed" "TV is On"
 fi
