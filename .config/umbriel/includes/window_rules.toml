@@ -7,7 +7,7 @@
 # moves anything behind them.
 [[window_rule]]
 blur = true
-background_render = true
+#background_render = true
 border_width = 0
 outer_border_width = 0
 
@@ -66,6 +66,7 @@ match.app_id = [
     "brave-browser",
     "mpv",
     "vlc",
+    "tixati",
     "steam_app_1284210",
 ]
 default_maximize = true
@@ -107,6 +108,7 @@ match.title = "Guild Wars 2"
 border_width = 0
 outer_border_width = 0
 border_effect = "off"
+blur = false
 
 [[window_rule]]
 match.title = "^notificationtoasts_.+_desktop"

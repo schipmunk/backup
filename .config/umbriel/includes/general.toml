@@ -31,6 +31,7 @@ xwayland_xsettings = true
 [environment]
 ELECTRON_OZONE_PLATFORM_HINT = "auto"
 QT_QPA_PLATFORM = "wayland"
+SDL_VIDEODRIVER= "wayland"
 PROTON_ENABLE_WAYLAND = "1"
 
 # Screencast

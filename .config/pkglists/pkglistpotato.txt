@@ -21,7 +21,6 @@ dgop
 dmraid
 dos2unix
 downgrade
-dunst
 dysk
 ecryptfs-utils
 emacs

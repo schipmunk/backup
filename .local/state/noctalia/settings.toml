@@ -155,6 +155,7 @@ widget_order = [ "lockscreen-login-box@DP-2", "lockscreen-login-box@DP-3" ]
         show_weather = true
 
 [notification]
+history_retention_hours = 720
 layer = "overlay"
 
 [osd.kinds]
