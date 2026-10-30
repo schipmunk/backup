@@ -44,26 +44,26 @@
 "Alt+Ctrl+L" = "window-move-to-output-next"
 
 # Moving window to numbered workspaces
-"Mod+Shift+1" = "window-move-to-workspace:1"
-"Mod+Shift+2" = "window-move-to-workspace:2"
-"Mod+Shift+3" = "window-move-to-workspace:3"
-"Mod+Shift+4" = "window-move-to-workspace:4"
-"Mod+Shift+5" = "window-move-to-workspace:5"
-"Mod+Shift+6" = "window-move-to-workspace:6"
-"Mod+Shift+7" = "window-move-to-workspace:7"
-"Mod+Shift+8" = "window-move-to-workspace:8"
-"Mod+Shift+9" = "window-move-to-workspace:9"
+"Mod+Shift+1" = "window-move-to-workspace 1"
+"Mod+Shift+2" = "window-move-to-workspace 2"
+"Mod+Shift+3" = "window-move-to-workspace 3"
+"Mod+Shift+4" = "window-move-to-workspace 4"
+"Mod+Shift+5" = "window-move-to-workspace 5"
+"Mod+Shift+6" = "window-move-to-workspace 6"
+"Mod+Shift+7" = "window-move-to-workspace 7"
+"Mod+Shift+8" = "window-move-to-workspace 8"
+"Mod+Shift+9" = "window-move-to-workspace 9"
 
 # Focusing numbered workspaces
-"Mod+1" = "workspace-switch:1"
-"Mod+2" = "workspace-switch:2"
-"Mod+3" = "workspace-switch:3"
-"Mod+4" = "workspace-switch:4"
-"Mod+5" = "workspace-switch:5"
-"Mod+6" = "workspace-switch:6"
-"Mod+7" = "workspace-switch:7"
-"Mod+8" = "workspace-switch:8"
-"Mod+9" = "workspace-switch:9"
+"Mod+1" = "workspace-switch 1"
+"Mod+2" = "workspace-switch 2"
+"Mod+3" = "workspace-switch 3"
+"Mod+4" = "workspace-switch 4"
+"Mod+5" = "workspace-switch 5"
+"Mod+6" = "workspace-switch 6"
+"Mod+7" = "workspace-switch 7"
+"Mod+8" = "workspace-switch 8"
+"Mod+9" = "workspace-switch 9"
 
 # Focusing directional workspaces and monitors
 "Mod+A" = "output-focus-previous"
@@ -80,58 +80,58 @@
 "Alt+Shift+Tab" = "workspace-previous"
 
 # Moving directional workspaces or to different monitor
-"Mod+Shift+A" = "workspace-move-to-output-left"
+"Mod+Shift+A" = "workspace-move-to-output-previous"
 "Mod+Shift+S" = "workspace-move-down"
 "Mod+Shift+W" = "workspace-move-up"
-"Mod+Shift+D" = "workspace-move-to-output-right"
-"Mod+Shift+H" = "workspace-move-to-output-left"
+"Mod+Shift+D" = "workspace-move-to-output-next"
+"Mod+Shift+H" = "workspace-move-to-output-previous"
 "Mod+Shift+J" = "workspace-move-down"
 "Mod+Shift+K" = "workspace-move-up"
-"Mod+Shift+L" = "workspace-move-to-output-right"
+"Mod+Shift+L" = "workspace-move-to-output-next"
 
 # Manipulate Windows
 "Mod+Shift+C" = { action = "window-close", repeat = false }
 "Mod+F" = { action = "window-toggle-maximize", repeat = false }
 "Alt+F" = { action = "window-toggle-maximize-to-edges", repeat = false }
 "Mod+Ctrl+F" = { action = "window-toggle-fullscreen", repeat = false }
-"Mod+Space" = { action = "window-focus-switch-floating", repeat = false }
+"Alt+Space" = { action = "window-focus-switch-floating", repeat = false }
 "Mod+Shift+Space" = { action = "window-toggle-floating", repeat = false }
 "Mod+T" = { action = "column-toggle-tabbed", repeat = false }
 "Mod+O" = { action = "overview-toggle", repeat = false }
-"Mod+G" = "workspace-set-layout:toggle:scrolling,master"
+"Mod+G" = "workspace-set-layout toggle scrolling master"
 "Mod+P" = { action = "window-toggle-pinned", repeat = false }
 
 # Resize Windows
 "Mod+E" = "window-cycle-primary-extent"
-"Mod+Shift+Q" = "window-modify-width-right:-0.1"
-"Mod+Shift+E" = "window-modify-width-right:0.1"
+"Mod+Shift+Q" = "window-modify-width-right -0.1"
+"Mod+Shift+E" = "window-modify-width-right 0.1"
 "Mod+Q" = "window-cycle-secondary-extent"
-"Mod+Ctrl+Q" = "window-modify-height-down:-0.1"
-"Mod+Ctrl+E" = "window-modify-height-down:0.1"
+"Mod+Ctrl+Q" = "window-modify-height-down -0.1"
+"Mod+Ctrl+E" = "window-modify-height-down 0.1"
 
 # Launching Applications
-"Mod+Return" = { action = "spawn:alacritty", repeat = false }
-"Mod+Equal" = { action = "spawn:gnome-calculator", repeat = false }
-"Ctrl+Shift+Escape" = { action = "spawn:alacritty -t btop_float -e btop", repeat = false }
-"Alt+Shift+Escape" = { action = "spawn:alacritty -t nvtop_float -e nvtop", repeat = false }
-"Mod+Shift+F" = { action = "spawn:thunar", repeat = false }
-"Mod+V" = { action = "spawn:pavucontrol", repeat = false }
-"Mod+Shift+V" = { action = "spawn:alsa-scarlett-gui", repeat = false }
-"Mod+Shift+B" = { action = "spawn:brave --incognito", repeat = false }
+"Mod+Return" = { action = "spawn alacritty", repeat = false }
+"Mod+Equal" = { action = "spawn gnome-calculator", repeat = false }
+"Ctrl+Shift+Escape" = { action = "spawn alacritty -t btop_float -e btop", repeat = false }
+"Alt+Shift+Escape" = { action = "spawn alacritty -t nvtop_float -e nvtop", repeat = false }
+"Mod+Shift+F" = { action = "spawn thunar", repeat = false }
+"Mod+V" = { action = "spawn pavucontrol", repeat = false }
+"Mod+Shift+V" = { action = "spawn alsa-scarlett-gui", repeat = false }
+"Mod+Shift+B" = { action = "spawn brave --incognito", repeat = false }
 "Mod+Shift+Slash" = "cheatsheet-toggle"
 
 # Scripts
-"Mod+Shift+Z" = { action = "spawn:noctalia msg session lock", allow_when_locked = true }
+"Mod+Shift+Z" = { action = "spawn noctalia msg session lock", allow_when_locked = true }
 "Mod+Ctrl+Z" = { action = "dpms-off", allow_when_locked = true }
-"Alt+Ctrl+Z" = { action = "spawn:systemctl suspend", allow_when_locked = true }
-"Mod+Shift+X" = "spawn:~/.config/umbriel/scripts/rofi-power"
-"Mod+R" = "spawn:noctalia msg panel-toggle launcher"
-"Mod+Shift+R" = "spawn:rofi -show run"
-"Mod+0" = "spawn:~/.config/umbriel/scripts/toggletv"
+"Alt+Ctrl+Z" = { action = "spawn systemctl suspend", allow_when_locked = true }
+"Mod+Shift+X" = "spawn ~/.config/umbriel/scripts/rofi-power"
+"Mod+R" = "spawn noctalia msg panel-toggle launcher"
+"Mod+Shift+R" = "spawn rofi -show run"
+"Mod+0" = "spawn ~/.config/umbriel/scripts/toggletv"
 
 # Screenshots
-"Print" = "spawn:noctalia msg screenshot-fullscreen"
-"Mod+Print" = "spawn:noctalia msg screenshot-region"
+"Print" = "spawn noctalia msg screenshot-fullscreen"
+"Mod+Print" = "spawn noctalia msg screenshot-region"
 
 # Applications and session
 "Mod+Escape" = "session-quit"
@@ -156,11 +156,11 @@
 # Media, volume and brightness keys from any input device, routed through the
 # Noctalia shell so its OSDs show. Safe while the session is locked.
 # https://docs.noctalia.dev/noctalia/compositor-settings/umbriel
-"XF86AudioRaiseVolume" = { action = "spawn:noctalia msg volume-up", allow_when_locked = true }
-"XF86AudioLowerVolume" = { action = "spawn:noctalia msg volume-down", allow_when_locked = true }
-"XF86AudioMute" = { action = "spawn:noctalia msg volume-mute", allow_when_locked = true, repeat = false }
-"XF86AudioPlay" = { action = "spawn:noctalia msg media toggle", allow_when_locked = true, repeat = false }
-"XF86AudioNext" = { action = "spawn:noctalia msg media next", allow_when_locked = true }
-"XF86AudioPrev" = { action = "spawn:noctalia msg media previous", allow_when_locked = true }
-"XF86MonBrightnessUp" = { action = "spawn:noctalia msg brightness-up", allow_when_locked = true }
-"XF86MonBrightnessDown" = { action = "spawn:noctalia msg brightness-down", allow_when_locked = true }
+"XF86AudioRaiseVolume" = { action = "spawn noctalia msg volume-up", allow_when_locked = true }
+"XF86AudioLowerVolume" = { action = "spawn noctalia msg volume-down", allow_when_locked = true }
+"XF86AudioMute" = { action = "spawn noctalia msg volume-mute", allow_when_locked = true, repeat = false }
+"XF86AudioPlay" = { action = "spawn noctalia msg media toggle", allow_when_locked = true, repeat = false }
+"XF86AudioNext" = { action = "spawn noctalia msg media next", allow_when_locked = true }
+"XF86AudioPrev" = { action = "spawn noctalia msg media previous", allow_when_locked = true }
+"XF86MonBrightnessUp" = { action = "spawn noctalia msg brightness-up", allow_when_locked = true }
+"XF86MonBrightnessDown" = { action = "spawn noctalia msg brightness-down", allow_when_locked = true }

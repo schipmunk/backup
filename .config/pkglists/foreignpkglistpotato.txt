@@ -1,8 +1,9 @@
-dankcalendar-bin
-greetd-dms-greeter-bin
+downgrade
+dux-calendar-bin
+dux-greeter-bin
 lib32-extest
 minecraft-server
-noctalia-greeter
+noctalia-greeter-git
 private-internet-access-vpn
 python313
 scarlett2

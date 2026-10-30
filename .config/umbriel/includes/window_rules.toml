@@ -7,7 +7,7 @@
 # moves anything behind them.
 [[window_rule]]
 blur = true
-#background_render = true
+background_render = true
 border_width = 0
 outer_border_width = 0
 
@@ -117,9 +117,9 @@ default_focused = false
 default_pinned = true
 
 # Keep game menus inside their window; a focus or workspace keybind releases the pointer.
-# [[window_rule]]
-# match.app_id = "^steam_app_.*$"
-# confine_pointer = true
+[[window_rule]]
+match.app_id = "^steam_app_.*$"
+confine_pointer = true
 
 # Keep an application drawing while it is hidden on another workspace, for programs whose other work stalls without it.
 # [[window_rule]]

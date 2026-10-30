@@ -20,7 +20,6 @@ cronie
 dgop
 dmraid
 dos2unix
-downgrade
 dysk
 ecryptfs-utils
 emacs
@@ -48,7 +47,6 @@ libreoffice-still
 linux-meta
 linux-nvidia-meta
 linux618-nvidia
-linux72-nvidia
 lutris
 lxappearance
 lxinput
@@ -131,7 +129,6 @@ xfce4-power-manager
 xorg-xev
 xorg-xeyes
 xorg-xfontsel
-xorg-xinit
 xorg-xkill
 xorg-xlsclients
 xsensors

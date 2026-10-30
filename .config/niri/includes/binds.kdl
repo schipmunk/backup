@@ -98,7 +98,7 @@ binds {
     Mod+F hotkey-overlay-title="Maximize Column"                    { maximize-column; }
     Alt+F hotkey-overlay-title="Windowed Fullscreen Focused Window" { maximize-window-to-edges; }
     Mod+Ctrl+F hotkey-overlay-title="Fullscreen Focused Window"     { fullscreen-window; }
-    Mod+Space hotkey-overlay-title="Focus Toggle Floating/Tiling"   { switch-focus-between-floating-and-tiling; }
+    Alt+Space hotkey-overlay-title="Focus Toggle Floating/Tiling"   { switch-focus-between-floating-and-tiling; }
     Mod+Shift+Space hotkey-overlay-title="Toggle Window Floating"   { toggle-window-floating; }
     Mod+T hotkey-overlay-title="Toggle Column Tabbed"               { toggle-column-tabbed-display; }
     Mod+O repeat=false hotkey-overlay-title="Toggle Overview"       { toggle-overview; }

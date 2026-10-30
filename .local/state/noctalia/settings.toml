@@ -158,9 +158,12 @@ widget_order = [ "lockscreen-login-box@DP-2", "lockscreen-login-box@DP-3" ]
 history_retention_hours = 720
 layer = "overlay"
 
-[osd.kinds]
-media = false
-privacy = false
+[osd]
+position = "bottom_center"
+
+    [osd.kinds]
+    media = false
+    privacy = false
 
 [plugins]
 enabled = [ "yuuto/arch-updater" ]
@@ -214,7 +217,7 @@ type = "yuuto/arch-updater:widget"
 [widget.workspaces]
 empty_color = "outline"
 focused_color = "tertiary"
-font_scale = 1.1000000000000001
+font_scale = 1.2
 inactive_pill_size = 2.2000000000000002
 label_source = "name"
 max_label_chars = 7
