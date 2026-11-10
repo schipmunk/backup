@@ -1,7 +1,6 @@
 config_version = 14
 
 [bar.default]
-background_opacity = 0.0
 border = "on_surface"
 capsule = true
 capsule_border = "#2E3440"
@@ -91,6 +90,9 @@ behavior_order = [ "lock", "screen-off", "lock-and-suspend" ]
 [location]
 address = "04092"
 
+[lockscreen]
+transition = [ "disc", "fade", "honeycomb", "stripes", "wipe", "zoom" ]
+
 [lockscreen_widgets]
 schema_version = 2
 widget_order = [ "lockscreen-login-box@DP-2", "lockscreen-login-box@DP-3" ]
@@ -177,7 +179,13 @@ polkit_agent = true
 
 [theme]
 builtin = "Nord"
-custom_palette = "Nord Aurora"
+community_palette = "Nord Aurora"
+custom_palette = "nord_blue"
+source = "custom"
+
+    [theme.templates]
+    builtin_ids = [ "alacritty" ]
+    community_ids = [ "neovim", "steam" ]
 
 [wallpaper]
 directory = "/home/schipmunk/Pictures/Wallpapers"

@@ -19,6 +19,7 @@ cpupower
 cronie
 dgop
 dmraid
+dms-shell
 dos2unix
 dysk
 ecryptfs-utils
@@ -63,6 +64,7 @@ manjaro-ranger-settings
 manjaro-release
 manjaro-system
 matcha-gtk-theme
+meld
 memtest86+
 mkinitcpio-openswap
 mpv

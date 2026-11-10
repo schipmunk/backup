@@ -1,5 +1,9 @@
+[calendar_reminders]
+digest_date = "2026-11-03"
+fired = ""
+
 [security_migrations]
 calendar_credentials_v1 = true
 
 [theme_templates]
-applied_builtin_ids = ""
+applied_builtin_ids = "alacritty"

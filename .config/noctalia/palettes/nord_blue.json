@@ -1,10 +1,10 @@
 {
   "dark": {
-    "mPrimary": "#b48ead",
+    "mPrimary": "#5e81ac",
     "mOnPrimary": "#2e3440",
     "mSecondary": "#a3be8c",
     "mOnSecondary": "#2e3440",
-    "mTertiary": "#ebcb8b",
+    "mTertiary": "#5e81ac",
     "mOnTertiary": "#2e3440",
     "mError": "#bf616a",
     "mOnError": "#2e3440",

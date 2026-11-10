@@ -95,7 +95,7 @@
 "Alt+F" = { action = "window-toggle-maximize-to-edges", repeat = false }
 "Mod+Ctrl+F" = { action = "window-toggle-fullscreen", repeat = false }
 "Alt+Space" = { action = "window-focus-switch-floating", repeat = false }
-"Mod+Shift+Space" = { action = "window-toggle-floating", repeat = false }
+"Alt+Shift+Space" = { action = "window-toggle-floating", repeat = false }
 "Mod+T" = { action = "column-toggle-tabbed", repeat = false }
 "Mod+O" = { action = "overview-toggle", repeat = false }
 "Mod+G" = "workspace-set-layout toggle scrolling master"
