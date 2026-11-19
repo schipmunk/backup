@@ -114,7 +114,7 @@
 "Mod+Equal" = { action = "spawn gnome-calculator", repeat = false }
 "Ctrl+Shift+Escape" = { action = "spawn alacritty -t btop_float -e btop", repeat = false }
 "Alt+Shift+Escape" = { action = "spawn alacritty -t nvtop_float -e nvtop", repeat = false }
-"Mod+Shift+F" = { action = "spawn thunar", repeat = false }
+"Mod+Shift+F" = { action = "spawn luciole", repeat = false }
 "Mod+V" = { action = "spawn pavucontrol", repeat = false }
 "Mod+Shift+V" = { action = "spawn alsa-scarlett-gui", repeat = false }
 "Mod+Shift+B" = { action = "spawn brave --incognito", repeat = false }

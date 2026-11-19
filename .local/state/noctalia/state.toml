@@ -1,9 +1,16 @@
+[calendar_discovery]
+personal_google_calendars = "{\"calendars\":[{\"default_selected\":true,\"id\":\"en.usa#holiday@group.v.calendar.google.com\",\"name\":\"Holidays in United States\"},{\"default_selected\":true,\"id\":\"utn9i2tiqvh65os3fn1iuvvu9o@group.calendar.google.com\",\"name\":\"Dayforce lls\"},{\"default_selected\":true,\"id\":\"nhamann@gmail.com\",\"name\":\"nhamann@gmail.com\"}]}"
+
 [calendar_reminders]
-digest_date = "2026-11-03"
+digest_date = "2026-11-15"
 fired = ""
+
+[calendar_sync]
+personal_google_last_synced = "1795084098"
 
 [security_migrations]
 calendar_credentials_v1 = true
 
 [theme_templates]
-applied_builtin_ids = "alacritty"
+applied_builtin_ids = "alacritty luciole"
+applied_community_ids = "neovim steam"

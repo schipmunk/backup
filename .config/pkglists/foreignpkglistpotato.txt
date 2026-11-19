@@ -3,7 +3,9 @@ dux-calendar-bin
 dux-greeter-bin
 lib32-extest
 lichii-bin
+luciole-git
 minecraft-server
+noctalia-git
 noctalia-greeter-git
 private-internet-access-vpn
 python313
