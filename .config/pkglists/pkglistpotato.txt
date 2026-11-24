@@ -17,10 +17,10 @@ cantarell-fonts
 clipit
 cpupower
 cronie
-dgop
 dmraid
-dms-shell
 dos2unix
+dux-gop
+dux-shell
 dysk
 ecryptfs-utils
 emacs
@@ -87,7 +87,6 @@ obs-studio
 openrgb
 pamac-tray-icon-plasma
 pamixer
-papirus-icon-theme
 patch
 patchutils
 pavucontrol

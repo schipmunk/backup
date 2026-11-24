@@ -6,7 +6,6 @@ lichii-bin
 luciole-git
 minecraft-server
 noctalia-git
-noctalia-greeter-git
 private-internet-access-vpn
 python313
 scarlett2

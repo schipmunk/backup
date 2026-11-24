@@ -51,3 +51,6 @@ background_blur = true
 workspace_wallpaper = true
 shortcuts = true
 shortcut_keys = "1234567890"
+
+[global_shortcuts."com.discordapp.Discord"]
+"push-to-talk" = "Shift+Alt+f3"

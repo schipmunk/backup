@@ -51,6 +51,7 @@ x-scheme-handler/magnet=tixati.desktop
 x-scheme-handler/mailto=userapp-Thunderbird.desktop
 x-scheme-handler/sgnl=signal.desktop
 x-scheme-handler/signalcaptcha=signal.desktop
+video/mp2t=mpv.desktop
 
 [Added Associations]
 application/json=nvim.desktop;

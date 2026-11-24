@@ -96,7 +96,12 @@ transition = [ "crt", "diamond", "disc", "fade", "golden", "honeycomb", "melt", 
 [lockscreen_widgets]
 enabled = true
 schema_version = 2
-widget_order = [ "lockscreen-login-box@DP-2", "lockscreen-login-box@DP-3" ]
+widget_order = [
+    "lockscreen-login-box@DP-2",
+    "lockscreen-login-box@DP-3",
+    "lockscreen-widget-0000000000000001",
+    "lockscreen-widget-0000000000000002"
+]
 
     [lockscreen_widgets.grid]
     cell_size = 16
@@ -160,6 +165,37 @@ widget_order = [ "lockscreen-login-box@DP-2", "lockscreen-login-box@DP-3" ]
         show_session_buttons = true
         show_unlock_hint = false
         show_weather = true
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000001]
+    box_height = 128.0
+    box_width = 256.0
+    cx = 1280.0
+    cy = 512.0
+    output = "DP-2"
+    placement_height = 1440.0
+    placement_width = 2560.0
+    rotation = 0.0
+    type = "clock"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000001.settings]
+        background_opacity = 0.0
+        clock_style = "digital"
+        color = "on_surface"
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000002]
+    box_height = 128.0
+    box_width = 272.0
+    cx = 1280.0
+    cy = 512.0
+    output = "DP-3"
+    placement_height = 1440.0
+    placement_width = 2560.0
+    rotation = 0.0
+    type = "clock"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000002.settings]
+        background_opacity = 0.0
+        shadow = true
 
 [notification]
 history_retention_hours = 720
