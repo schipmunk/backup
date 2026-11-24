@@ -6,7 +6,7 @@ digest_date = "2026-11-15"
 fired = ""
 
 [calendar_sync]
-personal_google_last_synced = "1795483499"
+personal_google_last_synced = "1795494528"
 
 [security_migrations]
 calendar_credentials_v1 = true

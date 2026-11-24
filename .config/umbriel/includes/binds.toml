@@ -134,7 +134,6 @@
 "Mod+Print" = "spawn noctalia msg screenshot-region"
 
 # Applications and session
-"Mod+Escape" = "session-quit"
 "Mod+Shift+Escape" = { action = "shortcuts-inhibit-toggle", allow_when_inhibited = true, repeat = false }
 
 # Mouse Controls

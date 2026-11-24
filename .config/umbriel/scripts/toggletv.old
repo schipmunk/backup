@@ -1,0 +1,12 @@
+#!/bin/bash
+
+#Define the file and pattern
+FILE="$HOME/.config/umbriel/includes/output.toml"
+
+if grep -q "enabled = true #toggletv" "$FILE"; then
+    sed -i 's/enabled = true #toggletv/enabled = false #toggletv/' "$FILE"
+    notify-send "Output Changed" "TV is Off"
+else
+    sed -i 's/enabled = false #toggletv/enabled = true #toggletv/' "$FILE"
+    notify-send "Output Changed" "TV is On"
+fi
